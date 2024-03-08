@@ -1,0 +1,14 @@
+@import "../style/mixins.scss";
+
+.color_swatch_group {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.75rem;
+  @include tablet {
+    row-gap: 2rem;
+  }
+  @include desktop {
+    row-gap: 1rem;
+  }
+}

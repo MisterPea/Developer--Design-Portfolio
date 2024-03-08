@@ -1,0 +1,8 @@
+@import "../style/mixins.scss";
+
+.chip_group {
+  list-style: none;
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}

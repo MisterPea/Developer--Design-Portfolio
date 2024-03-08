@@ -1,0 +1,41 @@
+@import "../style/mixins.scss";
+
+.project-headline {
+  h1 {
+    font-family: var(--main-font);
+    color: var(--dark-1);
+    font-size: 2.1875rem;
+    line-height: 120%;
+    font-weight: 600;
+  }
+  p {
+    font-family: var(--main-font);
+    margin-top: 1rem;
+    color: var(--dark-2);
+    font-size: 0.9375rem;
+    font-weight: 300;
+    letter-spacing: 0.00938rem;
+    line-height: 130%;
+  }
+  @include tablet {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 107.5%;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 150%;
+      letter-spacing: 0.01rem;
+    }
+  }
+  @include desktop {
+    h1 {
+      font-size: 3.125rem;
+      line-height: 120%;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 150%;
+    }
+  }
+}

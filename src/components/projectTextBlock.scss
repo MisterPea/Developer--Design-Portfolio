@@ -1,0 +1,61 @@
+@import "../style/mixins.scss";
+
+.project_text_block {
+  font-family: var(--main-font);
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  color: var(--dark-1);
+  &--reg {
+    font-weight: 300;
+  }
+  &--bold {
+    font-weight: 600;
+  }
+  p,
+  li {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137%;
+    letter-spacing: 0.02rem;
+    color: var(--dark-2);
+  }
+  li {
+    margin-left: 1rem;
+
+    span {
+      // text-decoration: underline;
+      border-bottom: 1px solid #25252555;
+      padding-bottom: 0.1rem;
+    }
+  }
+  @include tablet {
+    font-size: 1.375rem;
+    font-style: normal;
+    line-height: normal;
+    p,
+    li {
+      margin-top: 0.25rem;
+      font-size: 0.9375rem;
+      font-style: normal;
+      line-height: 150%;
+      letter-spacing: 0.00938rem;
+    }
+  }
+  @include desktop {
+    font-size: 1.5625rem;
+    p,
+    li {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 137%;
+      letter-spacing: 0.01rem;
+    }
+    li {
+      margin-top: 0.45rem;
+    }
+  }
+}

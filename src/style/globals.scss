@@ -1,0 +1,81 @@
+@import "./mixins.scss";
+@import "../components/projectHeadline.scss";
+@import "../components/chip.scss";
+@import "../components/chipGroup.scss";
+@import "../components/toolRoleTitle.scss";
+@import "../components/projectTextBlock.scss";
+@import "../components/divideLine.scss";
+@import "../components/colorSwatch.scss";
+@import "../components/colorSwatchGroup.scss";
+@import "../components/backToAllWork.scss";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-lausanne);
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --dark-1: #1d1d1f;
+  --dark-2: #424244;
+  --dark-3: #595959;
+  --dark-4: #7b7b7b;
+  --golden: #e4a70c;
+  --grid-base-size: 100px;
+  --main-font: "Lausanne", sans-serif;
+}
+
+@font-face {
+  font-family: "Lausanne";
+  src: url("/fonts/TWKLausanne-150.woff") format("woff");
+  font-weight: 150;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lausanne";
+  src:
+    url("/fonts/TWKLausanne-300.woff") format("woff"),
+    url("/fonts/TWKLausanne-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lausanne";
+  src:
+    url("/fonts/TWKLausanne-600.woff") format("woff"),
+    url("/fonts/TWKLausanne-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lausanne";
+  src: url("/fonts/TWKLausanne-800.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}

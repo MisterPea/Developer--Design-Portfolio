@@ -1,0 +1,16 @@
+@import "../style/mixins.scss";
+
+.area_top_title {
+  font-family: var(--main-font);
+  color: var(--dark-2);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  span {
+    color: var(--dark-1);
+  }
+  @include desktop {
+    font-size: 1.25rem;
+  }
+}

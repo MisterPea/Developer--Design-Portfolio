@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".org-stories-dont-use/Button.stories.ts", ".org-stories-dont-use/Button.tsx", ".org-stories-dont-use/Header.stories.ts", ".org-stories-dont-use/Header.tsx", ".org-stories-dont-use/Page.stories.ts", ".org-stories-dont-use/Page.tsx"],
   "exclude": ["node_modules"]
 }

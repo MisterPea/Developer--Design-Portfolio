@@ -1,0 +1,41 @@
+@import "../style/mixins.scss";
+
+.color_swatch {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  max-width: 6.7rem;
+  &-square {
+    padding-bottom: 70%;
+    border-radius: 0.3rem;
+    border: 0.5px solid #59595970;
+  }
+  p {
+    margin-top: 2px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: var(--dark-2);
+    line-height: 120%;
+    letter-spacing: 0.015rem;
+  }
+  span {
+    font-weight: 600;
+  }
+  .color_swatch-contrast {
+    margin-top: 0px;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: var(--dark-2);
+    line-height: 120%;
+    letter-spacing: 0.025rem;
+    white-space: nowrap;
+  }
+  @include tablet {
+    max-width: 7rem;
+  }
+  @include desktop {
+    max-width: 9rem;
+  }
+}

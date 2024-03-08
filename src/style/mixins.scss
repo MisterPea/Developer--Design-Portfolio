@@ -1,0 +1,47 @@
+$mobile-vert: 600px;
+$tablet-begin: 767px;
+// $tablet: 985px;
+$tablet: 1100px;
+$desktop: 1024px;
+
+@mixin hi-dpi-mobile {
+  @media only screen and (min-resolution: 192dpi) and (max-width: 767px) and (max-device-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin milk-blur {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.7) 100%);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+@mixin unset-milk-blur {
+  background: unset;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+@mixin h2_text {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@mixin paragraph_text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0.01rem;
+}
