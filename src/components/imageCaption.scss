@@ -1,0 +1,15 @@
+@import "../style/mixins.scss";
+
+.image_caption {
+  font-family: var(--main-font);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 150;
+  line-height: 128%;
+  letter-spacing: 0.025rem;
+  color: #8c8c8c;
+  span {
+    color: var(--dark-1);
+    font-weight: 300;
+  }
+}

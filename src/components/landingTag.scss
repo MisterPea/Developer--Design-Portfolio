@@ -1,0 +1,42 @@
+@import "../style/mixins.scss";
+
+.landing_tag {
+  &-main_wrapper {
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 0.75rem;
+    color: var(--dark-2);
+  }
+  &-slash {
+    color: var(--dark-1);
+    font-weight: 600;
+  }
+  &-main_wrapper > div {
+    // background-color: lavender;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+
+    & > p {
+      opacity: 0.1;
+      transform: translate(0, 0);
+      transition: transform 500ms cubic-bezier(0.8, 0, 0.1, 0.95);
+      &.up {
+        transform: translate(3px, -105%);
+      }
+      &.down {
+        transform: translate(-3px, 105%);
+      }
+    }
+  }
+  @include tablet {
+    &-main_wrapper {
+      font-size: 1.125rem;
+    }
+  }
+  @include desktop {
+    &-main_wrapper {
+      font-size: 1.25rem;
+    }
+  }
+}

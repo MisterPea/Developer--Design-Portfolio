@@ -7,6 +7,9 @@
   font-weight: 300;
   line-height: 120%;
   color: var(--dark-1);
+  &.collapsible {
+    cursor: pointer;
+  }
   &--reg {
     font-weight: 300;
   }
@@ -23,16 +26,38 @@
     letter-spacing: 0.02rem;
     color: var(--dark-2);
   }
+  p[class="project_text_block_cta"] {
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: var(--dark-4);
+  }
   li {
     margin-left: 1rem;
-
     span {
-      // text-decoration: underline;
       border-bottom: 1px solid #25252555;
       padding-bottom: 0.1rem;
     }
   }
+
+  &-collapsible--open,
+  .-collapsible--std {
+    overflow: hidden;
+    height: fit-content;
+    max-height: 20rem;
+    transition: max-height 300ms ease-in-out;
+  }
+  &-collapsible--closed {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 300ms ease-in-out;
+  }
   @include tablet {
+    &.collapsible {
+      cursor: unset;
+    }
     font-size: 1.375rem;
     font-style: normal;
     line-height: normal;
@@ -44,8 +69,15 @@
       line-height: 150%;
       letter-spacing: 0.00938rem;
     }
+    p[class="project_text_block_cta"] {
+      display: none;
+    }
+    &-collapsible--closed {
+      max-height: 20rem;
+    }
   }
   @include desktop {
+    cursor: unset;
     font-size: 1.5625rem;
     p,
     li {
