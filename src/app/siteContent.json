@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "the-times-pilot",
+    "projectHeadline": "the.times.pilot: Tailoring Your NY Times Digest",
+    "description": "Seamlessly curate and receive the stories that matter to you with a custom news aggregator and subscriber-focused daily email service.",
+    "landingToolList": [
+      "Figma",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Storybook",
+      "SCSS",
+      "NoSQL",
+      "Twilio SendGrid"
+    ],
+    "projectPage": {
+      "headlineOne": "the.times.pilot",
+      "headlineTwo": "Tailoring Your NY Times Digest",
+      "summaryHeadline": "A More Personalized News Experience",
+      "summaryBody": "The.times.pilot looks to improve the news consumption experience by offering a personalized, accessible, and navigable platform that leverages the New York Times Top-Stories API. It addresses the lack of personalization and a one-size-fits-all approach present in the news media, specifically for The New York Times readers.",
+      "role": "Concept, Design, Development",
+      "tools": [
+        "Figma",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Storybook",
+        "SCSS",
+        "Firebase NoSQL",
+        "Node.js",
+        "GCP Cloud Functions",
+        "GCP Cloud Scheduler",
+        "Twilio SendGrid"
+      ],
+      "links": [
+        {
+          "label": "View the Components in Storybook.js",
+          "url": "https://65d287f2e2f0d9b863b88cfa-tvijbshvmk.chromatic.com/?path=/story/article-article-group--primary"
+        },
+        {
+          "label": "Browse the Github Repo",
+          "url": "https://github.com/MisterPea/times-pilot"
+        },
+        {
+          "label": "Visit the Website",
+          "url": "https://times-pilot.vercel.app/home"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "circuit-app",
+    "projectHeadline": "Circuit: Revolutionizing Time Management for Creatives",
+    "description": "An iOS app to empower creative minds by bettering focus and eliminating burnout.",
+    "landingToolList": [
+      "Figma",
+      "Photoshop"
+    ],
+    "projectPage": {
+      "headlineOne": "Circuit App",
+      "headlineTwo": "Revolutionizing Time Management for Creatives",
+      "summaryHeadline": "Making Time To Make Time",
+      "summaryBody": "Circuit App is designed to address the unique time management challenges faced by creative professionals. It offers users a way to deal with the contradictory issues of distraction mitigation and preventing burnout from overworking. By structuring time into focused work periods and restful breaks, Circuit App aims to enhance productivity and creativity, while reducing stress and mental exhaustion.",
+      "role": "Concept, Design",
+      "tools": [
+        "Figma",
+        "Photoshop"
+      ],
+      "links": [
+        {
+          "label": "",
+          "url": ""
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+@import "./mixins.scss";
+
+.project_page {
+  &-wrapper {
+    padding: 0 1rem;
+  }
+  &-hero {
+    margin: 2rem 0 0;
+    img {
+      @include fullWidthImage;
+    }
+  }
+  
+  &-top_info-wrapper {
+    margin-top: 1rem;
+    display: flex ;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  &-top_info-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}

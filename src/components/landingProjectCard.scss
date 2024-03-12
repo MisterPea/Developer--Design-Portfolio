@@ -1,0 +1,83 @@
+@import "../style/mixins.scss";
+
+@media (hover: hover) {
+  .landing_project_card-cta {
+    transform: translateX(-1rem);
+    transition: transform 400ms cubic-bezier(0.88, 0.01, 0.36, 0.99);
+    span svg {
+      transform: translateX(0);
+      transition: transform 400ms cubic-bezier(0.88, 0.01, 0.36, 0.99);
+    }
+  }
+  .landing_project_card:hover {
+    .landing_project_card-cta {
+      transform: translateX(-0.5rem);
+      span svg {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+  @include tablet {
+    .landing_project_card-cta {
+      transform: translateX(0);
+      span svg {
+        transform: translateX(0);
+      }
+    }
+    .landing_project_card:hover {
+      .landing_project_card-cta {
+        transform: translateX(0.5rem);
+        span svg {
+          transform: translateX(0.25rem);
+        }
+      }
+    }
+  }
+}
+
+.landing_project {
+  &_card {
+    cursor: pointer;
+  }
+
+  &_card-cta {
+    font-family: var(--main-font);
+    font-size: 0.875rem;
+    color: var(--dark-2);
+    font-weight: 600;
+    float: right;
+    margin-top: 0.25rem;
+    span {
+      margin-left: 0.25rem;
+      height: 1rem;
+      svg {
+        width: 0.75rem;
+      }
+    }
+  }
+  &_card-image {
+    margin: 0.75rem 0 0;
+    img {
+      @include fullWidthImage;
+    }
+  }
+  @include tablet {
+    &_card {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
+      &-image {
+        margin-top: 0;
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+      }
+      &-cta {
+        grid-column: 4 / 6;
+      }
+    }
+    &_headline {
+      grid-column: 4 / 6;
+    }
+  }
+}
