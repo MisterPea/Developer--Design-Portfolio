@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     loader: 'custom',
     imageSizes: [100, 185, 252, 375, 480, 567, 865, 1250],

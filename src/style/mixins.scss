@@ -9,6 +9,11 @@ $desktop: 1024px;
     @content;
   }
 }
+@mixin smallPhone {
+  @media only screen and (device-pixel-ratio: 3) and (max-width: 391px) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media only screen and (min-width: 800px) {
@@ -44,4 +49,30 @@ $desktop: 1024px;
   font-size: 0.875rem;
   line-height: 1.4;
   letter-spacing: 0.01rem;
+}
+
+@mixin fullWidthImage {
+  width: 100%;
+  object-fit: scale-down;
+  height: fit-content;
+  will-change: transform;
+  filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2)) drop-shadow(2px 1px 4px rgba(0, 0, 0, 0.5));
+}
+
+@mixin forma-djr-900 {
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin forma-djr-400 {
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin museo-slab {
+  font-family: museo-slab-rounded, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }

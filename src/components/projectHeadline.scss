@@ -1,4 +1,5 @@
 @import "../style/mixins.scss";
+@import "../style/animations";
 
 .project-headline {
   h1 {
@@ -7,6 +8,8 @@
     font-size: 2.1875rem;
     line-height: 120%;
     font-weight: 600;
+    opacity: 0;
+    @include fade-in-down;
   }
   p {
     font-family: var(--main-font);
@@ -16,6 +19,8 @@
     font-weight: 300;
     letter-spacing: 0.00938rem;
     line-height: 130%;
+    opacity: 0;
+    @include fade-in-down(1200ms, 150ms);
   }
   @include tablet {
     h1 {

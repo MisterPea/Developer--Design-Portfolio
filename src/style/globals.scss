@@ -11,6 +11,16 @@
 @import "../components/imageCaption.scss";
 @import "../components/landingTitle.scss";
 @import "../components/landingTag.scss";
+@import "../components/landingProjectHeadline.scss";
+@import "../components/landingHeader.scss";
+@import "../components/landingProjectCard.scss";
+@import "../components/projectLinks.scss";
+@import "../components/projectNavBar.scss";
+@import "../components/videoPlayer.scss";
+@import "../components/typeSpecimen.scss";
+@import "../components/projectFooter.scss";
+@import "../style/main-page.scss";
+@import "../style/project-pages.scss";
 
 html {
   box-sizing: border-box;
@@ -47,6 +57,7 @@ a {
   --dark-3: #595959;
   --dark-4: #7b7b7b;
   --golden: #e4a70c;
+  --links: rgb(0, 102, 204);
   --grid-base-size: 100px;
   --main-font: "Lausanne", sans-serif;
 }

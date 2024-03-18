@@ -1,176 +1,117 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { once } from "events";
-import { RefObject, useEffect, useRef, useState } from "react";
+'use client';
+
+import { motion, useAnimation } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
 
 export default function LandingTag() {
-
-  const [move, setMove] = useState(false);
-  const textOne = useRef<HTMLParagraphElement>(null);
-  const textTwo = useRef<HTMLParagraphElement>(null);
-  const textThree = useRef<HTMLParagraphElement>(null);
-  const slashOne = useRef<HTMLParagraphElement>(null);
-  const slashTwo = useRef<HTMLParagraphElement>(null);
-
-
-  const refArray = [textOne, textTwo, textThree, slashOne, slashTwo];
   const [index, setIndex] = useState(0);
+  const controls = useAnimation();
+  const isMounted = useRef(false);
 
-  const tags = [
-    {
-      one: 'Developer',
-      slashOne: '/',
-      two: 'Designer',
-      slashTwo: '/',
-      three: 'Programmatic Pixel Pusher'
-    },
-    {
-      one: 'Cat Wrangler',
-      slashOne: '/',
-      two: 'Writer of Missives',
-      slashTwo: '/',
-      three: 'Friend of CSS'
-    },
-    {
-      one: 'Curator of Pixels',
-      slashOne: '/',
-      two: 'Connoisseur of Coffee',
-      slashTwo: undefined,
-      three: undefined
-    },
-    {
-      one: 'Painter of Pictures',
-      slashOne: '/',
-      two: 'Fancier of The Equine',
-      slashTwo: undefined,
-      three: undefined
-    },
-    {
-      one: 'They Are Gutting',
-      slashOne: '/',
-      two: 'A Body of Water',
-      slashTwo: undefined,
-      three: undefined
-    },
-    {
-      one: 'Piano',
-      slashOne: '/',
-      two: 'Bass',
-      slashTwo: '/',
-      three: 'Drums'
-    },
-    {
-      one: 'Ice Cream Maker',
-      slashOne: '/',
-      two: 'Chocolate Covered Potato Chip Lover',
-      slashTwo: undefined,
-      three: undefined
+  const [tags, setTags] = useState([
+    { one: 'Developer', two: '/', three: 'Designer', four: '/', five: 'Programmatic Pixel Pusher' },
+    { one: 'Cat Wrangler', two: '/', three: 'Friend of CSS' },
+    { one: 'Curator of Pixels', two: '/', three: 'Connoisseur of Coffee' },
+    { one: 'Painter of Pictures', two: '/', three: 'Fancier of The Equine' },
+    { one: 'Tagabow is tops' },
+    { one: 'Piano', two: '/', three: 'Bass', four: '/', five: 'Drums' },
+    { one: 'Chocolate Covered Potato Chip Lover' },
+    { one: 'Dancing Like Somebody May Be Looking' }
+  ]);
+
+  function shuffleArray() {
+    for (let i = tags.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [tags[i], tags[j]] = [tags[j], tags[i]];
     }
-  ];
+    setTags(tags);
+  }
 
-  const removeAction = (element: RefObject<HTMLParagraphElement>, classToApply: string) => element.current!.classList.remove(classToApply);
-  const addAction = (element: RefObject<HTMLParagraphElement>, classToApply: string) => element.current!.classList.add(classToApply);
-
-  /* Actions to batch class and style modification */
-  function applyActionToRef(action: (element: RefObject<HTMLParagraphElement>, classToApply: string) => any, classToApply: string, callback?: () => void) {
-    refArray.forEach((ref) => {
-      if (ref.current) {
-        action(ref, classToApply);
+  /*
+  Instead of randomizing the index on each iteration, we're incrementing 
+  the index by 1 and randomizing the list on every reset to index 0 
+  */
+  function cycleTags() {
+    setIndex((i) => {
+      const nextIndex = (i + 1) % tags.length;
+      if (nextIndex === 0) {
+        // Shuffle array on 0 index
+        shuffleArray();
       }
-    });
-    if (callback) {
-      callback();
-    }
-  };
-
-  function applyStylesToRefs(styles: Partial<CSSStyleDeclaration>) {
-    refArray.forEach(ref => {
-      if (ref.current) {
-        Object.entries(styles).forEach(([styleKey, value]) => {
-          (ref.current!.style as any)[styleKey] = value;
-        });
-      }
+      return nextIndex;
     });
   }
 
-  const lastIndex = useRef(-1);
-  const seenIndex = useRef([0]);
-  function randomIndexTag() {
-    if (seenIndex.current.length === tags.length) {
-      seenIndex.current.length = 0;
-    }
-    setIndex(() => {
-      let randomIndex;
-      do {
-        randomIndex = Math.floor(Math.random() * tags.length);
-      } while (randomIndex === lastIndex.current || seenIndex.current.includes(randomIndex));
-
-      lastIndex.current = randomIndex;
-
-      seenIndex.current.push(randomIndex);
-      return randomIndex;
-    });
-  }
-
-  function getRandomNumber() {
-    const randomNumber = Math.random();
-    const scaledNumber = (randomNumber * (10000 - 5000)) + 5000;
-    const randomInteger = Math.round(scaledNumber);
-    return randomInteger;
-  }
-
-  function removeAndAdvanceText() {
-    textThree.current?.classList.add('up');
-    setTimeout(() => slashTwo.current?.classList.add('up'), 10, { once: true });
-    setTimeout(() => textTwo.current?.classList.add('up'), 50, { once: true });
-    setTimeout(() => slashOne.current?.classList.add('up'), 90, { once: true });
-    setTimeout(() => textOne.current?.classList.add('up'), 100, { once: true });
-    textOne.current?.addEventListener('transitionend', () => {
-      randomIndexTag();
-      applyStylesToRefs({ opacity: '0' });
-      applyActionToRef(removeAction, 'up');
-      applyActionToRef(addAction, 'down', renderText);
-    }, { once: true });
-  }
-
-  function renderText() {
-    applyActionToRef(addAction, 'down');
-    textThree.current?.addEventListener('transitionend', () => {
-      applyStylesToRefs({ opacity: '1' });
-      textOne.current?.classList.remove('down');
-      setTimeout(() => slashOne.current?.classList.remove('down'), 10, { once: true });
-      setTimeout(() => textTwo.current?.classList.remove('down'), 50, { once: true });
-      setTimeout(() => slashTwo.current?.classList.remove('down'), 90, { once: true });
-      setTimeout(() => textThree.current?.classList.remove('down'), 100, { once: true });
-      setTimeout(() => removeAndAdvanceText(), getRandomNumber(), { once: true });
-    }, { once: true });
-  }
 
   useEffect(() => {
-    applyStylesToRefs({ opacity: '1' });
-    textOne.current?.classList.remove('down');
-    setTimeout(() => slashOne.current?.classList.remove('down'), 10, { once: true });
-    setTimeout(() => textTwo.current?.classList.remove('down'), 50, { once: true });
-    setTimeout(() => slashTwo.current?.classList.remove('down'), 90, { once: true });
-    setTimeout(() => textThree.current?.classList.remove('down'), 100, { once: true });
-    setTimeout(() => removeAndAdvanceText(), 5000, { once: true });
-  }, []);
+    isMounted.current = true;
+    const sequence = async () => {
+      await controls.start('show'); // Start the show animation
+      const delay = Math.random() * (10000 - 5000) + 5000;
+      await new Promise((resolve: any) => setTimeout(resolve, delay));
+      if (isMounted.current === false) return;
+      await controls.start('hidden'); // Hide after showing
+      cycleTags(); // Change the tag
+
+
+      controls.start('show'); // Show the next tag
+    };
+
+    sequence();
+    return () => {
+      isMounted.current = false;
+    };
+  }, [index, controls]); // This effect runs every time the index changes
+
+  const container = {
+    hidden: {
+      transition: {
+        staggerChildren: 0.04, // Stagger the hiding of children
+        staggerDirection: 1, // Stagger from the first element to the last
+      }
+    },
+    show: {
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: 1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      y: '100%',
+      x: '-5px',
+      transition: {
+        duration: 0.2,
+        ease: [0.5, 0.12, 0.90, 0.99]
+      }
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      x: '0px',
+      transition: {
+        duration: 0.85,
+        ease: [0.8, 0, 0.1, 0.99]
+      }
+    },
+  };
 
   return (
-    <>
-      <div className="landing_tag-main_wrapper">
-        <div className="landing_tag-one_wrapper">
-          <p ref={textOne} className='landing_tag-one_text'>{tags[index].one}</p>
-          <p ref={slashOne} className="landing_tag-slash">&nbsp;{tags[index].slashOne}&nbsp;</p>
-        </div>
-
-        <div className="landing_tag-two_wrapper">
-          <p ref={textTwo} className='landing_tag-two_text'>{tags[index].two}</p>
-          <p ref={slashTwo} className="landing_tag-slash">&nbsp;{tags[index].slashTwo}&nbsp;</p>
-        </div>
-        <div className="landing_tag-three_wrapper">
-          <p ref={textThree} className='landing_tag-three_text'>{tags[index].three}</p>
-        </div>
-      </div>
-    </>
+    <motion.div
+      className='landing_tag-main_wrapper'
+      initial="hidden"
+      animate={controls}
+      variants={container}
+    >
+      {Object.entries(tags[index]).map(([key, value]) => (
+        <motion.div key={key} className="landing_tag-one_wrapper" variants={item}>
+          <p className={`landing_tag-text${value === '/' ? ' --slash' : ''}`}>{value}</p>
+        </motion.div>
+      ))}
+    </motion.div>
   );
 }

@@ -10,9 +10,5 @@ const meta: Meta<typeof LandingTag> = {
 export default meta;
 type Story = StoryObj<typeof LandingTag>;
 
-export const Primary: Story = {
-  args: {
-    label:'TypeScript'
-  }
-}
+export const Primary: Story = {}
 

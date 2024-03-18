@@ -4,7 +4,7 @@ import '../style/globals.scss';
 import { Color } from "@/components/_types";
 
 const meta: Meta<typeof ColorSwatchGroup> = {
-  title: 'Project/ColorSwatchGroup',
+  title: 'Project/Color Swatch Group',
   component: ColorSwatchGroup,
 };
 

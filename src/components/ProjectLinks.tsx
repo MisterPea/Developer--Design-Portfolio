@@ -5,7 +5,7 @@ export default function ProjectLinks({ links }: ProjectLinkProps) {
   return (
     <div className="project_links-wrapper">
       <ToolRoleTitle label="Links:" />
-      <ul project_links-ul>
+      <ul className="project_links-ul">
         {links.map(({ label, url }) => (
           <li className="project_links-li" key={`link-${label}`}>
             <a href={url} rel="noopener noreferrer" target="_blank">{label}</a>

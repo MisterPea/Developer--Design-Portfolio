@@ -11,7 +11,7 @@ export const SvgIllustration = {
       <rect x="97" y="95.0942" width="70" height="39" rx="7" fill="#D9D9D9" />
       <rect x="182" y="95.0942" width="70" height="39" rx="7" fill="#D9D9D9" />
       <rect x="12" y="149.094" width="70" height="39" rx="7" fill="#D9D9D9" />
-      <rect x="115" y="207.094" width="27" height="27" rx="13.5" fill="#424244" fill-opacity="0.6" />
+      <rect x="115" y="207.094" width="27" height="27" rx="13.5" fill="#424244" fillOpacity="0.6" />
       <path d="M133.75 215.344L123.25 225.844" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M123.25 215.344L133.75 225.844" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <rect x="292.25" y="25.3442" width="263.5" height="177.5" rx="9.75" stroke="#7B7B7B" strokeWidth="0.5" />

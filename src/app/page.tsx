@@ -1,30 +1,30 @@
-// import ProjectCard from './components/ProjectCard';
-// import siteContent from "./siteContent.json";
-
-import ProjectHeadline from "@/components/ProjectHeadline";
+import siteContent from "./siteContent.json";
+import timesImage from "../../public/images/times_pilot/timesPilotSingle.png";
+import circuitImage from "../../public/images/circuit/MainStaticFrontPage.png";
+import LandingHeader from "../components/LandingHeader";
+import LandingProjectCard from "../components/LandingProjectCard";
 
 export default function Home() {
-
+  const images = [timesImage, circuitImage];
   return (
     <main className='main_wrap'>
-      <ProjectHeadline
-        topHead="Circuit App"
-        bottomHead="Revolutionizing Time Management for Creatives"
-        subHead="An iOS app to empower creatives by bettering focus and eliminating burnout."
-        accentColor="#FABD8C"
-      />
-      <ul className='project_card_wrap'>
-        {/* {siteContent.map(({ title, stack, slug, description, image_url }, index) => ( */}
-        <li className='project_card-li'>
-          {/*           <ProjectCard title={title}
+      <LandingHeader />
+      <ul className="landing_project-ul">
+        {siteContent.map(({ projectHeadline, description, landingToolList, slug }, index) => (
+          <li className="landing_project-li" key={projectHeadline}>
+            <LandingProjectCard
+              headline={projectHeadline}
               desc={description}
-              stack={stack}
+              tools={landingToolList}
+              image={images[index]}
               slug={slug}
-              image={image_url}
-            /> */}
-        </li>
-        {/* ))} */}
+            />
+          </li>
+        ))}
       </ul>
+      <div className="main_wrap-about_wrap">
+        About
+      </div>
     </main>
   );
 }

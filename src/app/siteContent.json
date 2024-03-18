@@ -16,8 +16,6 @@
     "projectPage": {
       "headlineOne": "the.times.pilot",
       "headlineTwo": "Tailoring Your NY Times Digest",
-      "summaryHeadline": "A More Personalized News Experience",
-      "summaryBody": "The.times.pilot looks to improve the news consumption experience by offering a personalized, accessible, and navigable platform that leverages the New York Times Top-Stories API. It addresses the lack of personalization and a one-size-fits-all approach present in the news media, specifically for The New York Times readers.",
       "role": "Concept, Design, Development",
       "tools": [
         "Figma",
@@ -45,7 +43,136 @@
           "label": "Visit the Website",
           "url": "https://times-pilot.vercel.app/home"
         }
-      ]
+      ],
+      "summaryHeadline": "A More Personalized News Experience",
+      "summaryBody": "The.times.pilot looks to improve the news consumption experience by offering a personalized, accessible, and navigable platform that leverages the New York Times Top-Stories API. It addresses the lack of personalization and a one-size-fits-all approach present in the news media, specifically for The New York Times readers.",
+      "problemHeadline": "What Was The Problem?",
+      "problemBody": "Despite the New York Times's devotion to world-class journalism and forward-looking user experiences, users struggle with the time commitment required to sift through the various sections and placement hierarchies to find stories that match their interests. Additionally, there's an absence of customizability in the daily top-stories emails.",
+      "userResearchHeadline": "What Were Users Saying?",
+      "userResearchBody": {
+        "body": "Users were frustrated with being forced to browse through topics they felt to be overwhelming, and often depressing. This highlighted a desire for a more tailored news/news-email experience. Some specific problems were:",
+        "list": [
+          "Lack of customization (NY Times doesn't provide a way to have a user organized news homepage).",
+          "There is no way to customize the daily top-stories emails.",
+          "Exposure to topics ill-fitting to their tastes.",
+          "The news is too depressing to look at all the time."
+        ]
+      },
+      "approachSectionTitle": "The Approach",
+      "approaches": [
+        {
+          "headline": "Provide users the means to personalize their daily email",
+          "body": "With the subscribe/unsubscribe feature, users are empowered to curate their daily email content based on their interests, moving away from the traditional one-size-fits-all model. This significantly improves user engagement by promoting a more interactive approach to the news."
+        },
+        {
+          "headline": "Enhance Content Accessibility",
+          "body": "By shifting from the traditional newspaper hierarchy to a model of content equality, users are impelled to explore a wider range of articles without the bias of page prominence influencing their choices. Recognizing that our perception of the world is influenced by time and sequence, achieving a completely neutral experience may be challenging. However, by equalizing content presentation, significant steps are made towards a more balanced and inclusive user experience."
+        },
+        {
+          "headline": "Bring focus and calm by allowing users to choose what news sections are presented to them",
+          "body": "When users are afforded straightforward options to tailor their news intake, we enable them to foster a deeper relationship to the content that interests them—unburdened by content they're not interested in."
+        },
+        {
+          "headline": "Allow easy access to all settings",
+          "body": "There shouldn't be extraneous steps when wanting to update news topics, preferences, account info, or access bookmarked stories. Access to all of these settings are reachable through a single button click."
+        }
+      ],
+      "design": {
+        "designHeadline": "Design Considerations",
+        "designList": [
+          "Highly Visible: High contrast ratios and system-relative font sizes are selected to cater to users with suboptimal eyesight, while still maintaining a pleasing aesthetic.",
+          "Unencumbered Navigation: Users can navigate around the site without being logged in or having an account, while access to member features remains blocked.",
+          "User-Account Autonomy: Users maintain complete control over their accounts, enabling them to modify all informational aspects freely, without any dark patterns.",
+          "No Spamming: Only send emails when there is an intersection between the topics the user wishes to see and the top stories of the day."
+        ],
+        "typeHeadline": "Typefaces",
+        "typeSamples": "undefined",
+        "colorHeadline": "Colors",
+        "colorList": [
+          {
+            "name": "Darkest",
+            "color": "#262626",
+            "contrast": 13.51
+          },
+          {
+            "name": "Dark",
+            "color": "#3D3D3D",
+            "contrast": 9.70
+          },
+          {
+            "name": "Lightest Text",
+            "color": "#767676",
+            "contrast": 4.54
+          },
+          {
+            "name": "Background",
+            "color": "#F3F2EF",
+            "contrast": 1.00
+          },
+          {
+            "name": "Green",
+            "color": "#368433",
+            "contrast": 4.66
+          },
+          {
+            "name": "Warning",
+            "color": "#F58F00",
+            "contrast": 2.18
+          },
+          {
+            "name": "Error",
+            "color": "#DC0105",
+            "contrast": 5.18
+          },
+          {
+            "name": "Accent",
+            "color": "#CCFF00",
+            "contrast": 9.24
+          }
+        ]
+      },
+      "siteFlow": {
+        "headline": "High-Level Site Flow",
+        "body": "It's important that users are able to get a sense of what the site has to offer without going through the signup process. Too often users are forced through a signup funnel only to find out they're not interested in the product. To allow this, the site is set up in a tiered fashion, where an unauthenticated user can still look around, but they will be unable to save articles or subscribe to email topics, as those require an email address."
+      },
+      "problems": {
+        "headline": "Problems Met, Issues Solved",
+        "body": [
+          "Creating article-card interactions that utilize the inherent attributes of the screen; be it mobile or tablet/desktop.",
+          "When displaying article-cards on a tablet or desktop environment there are occasions where we have a full row preceding a row with one article—and the remaining space is empty and unutilized. This was a hamper on usability and aesthetics, and needed to be rectified.",
+          "Developing a new account sign-up flow that expeditiously guides the user through the several steps of account creation—while also being tolerant to stalled signups and premature exits from the sign-up flow."
+        ],
+        "problemOne": {
+          "headline": "Desktop Article Card versus Mobile Article Card",
+          "body": "Because interaction with mobile is done with fingers (not a pointer) and space is at a premium, the mobile implementation of bookmarks uses modified placement of the bookmark flag, and a slide-to-reveal interaction. A common and, now, natural interaction on mobile devices."
+        },
+        "problemTwo": {
+          "headline": "Optimizing Article Layout",
+          "body": "When organizing article summaries, efforts were made to create a consistent, unbiased format. This included addressing layout gaps caused by too few articles to fill the space. This was solved by calculating headline and description lengths, which allowed the prioritization of the five longest summaries to fill any excess space. This enhanced the visual appeal and readability, thereby engaging users more effectively."
+        },
+        "problemThree": {
+          "headline": "New User Signup Flow",
+          "body": "Once a user enters a username, email, and password—they will have an account; whether or not they go through each signup step or if they get to the end of the flow.",
+          "imageCaption": [
+            {
+              "headline": "User enters their username, email, and password.",
+              "body": "Contact database and check that email isn't in use. If it's a new email, we create a unique uid (user id) within the auth database. We then allocate space within the NoSQL database for the new user under their uid."
+            },
+            {
+              "headline": "User chooses which sections are exposed to them.",
+              "body": "If we exit from this point, the user will have default settings applied."
+            },
+            {
+              "headline": "Further personalize with an avatar.",
+              "body": "To allow for a personal experience we can accept an avatar."
+            },
+            {
+              "headline": "Signup completed.",
+              "body": "If they get to the end, the user is shown a confirmation of account creation."
+            }
+          ]
+        }
+      }
     }
   },
   {

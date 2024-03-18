@@ -3,7 +3,7 @@ import ChipGroup from "../components/ChipGroup";
 import '../style/globals.scss';
 
 const meta: Meta<typeof ChipGroup> = {
-  title: 'Project/ChipGroup',
+  title: 'Project/Chip Group',
   component: ChipGroup,
 };
 

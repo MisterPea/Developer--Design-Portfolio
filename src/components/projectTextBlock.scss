@@ -2,7 +2,7 @@
 
 .project_text_block {
   font-family: var(--main-font);
-  font-size: 1.3125rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
@@ -11,9 +11,11 @@
     cursor: pointer;
   }
   &--reg {
+    font-size: 1.25rem;
     font-weight: 300;
   }
   &--bold {
+    font-size: 1.125rem;
     font-weight: 600;
   }
   p,
@@ -46,15 +48,29 @@
   .-collapsible--std {
     overflow: hidden;
     height: fit-content;
-    max-height: 20rem;
-    transition: max-height 300ms ease-in-out;
+    max-height: 30rem;
+    opacity: 1;
+    transition:
+      max-height 1100ms cubic-bezier(0.45, 0.08, 0.09, 1),
+      opacity 600ms ease 100ms;
   }
   &-collapsible--closed {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 300ms ease-in-out;
+    opacity: 0;
+    transition:
+      max-height 800ms cubic-bezier(0.2, 0.8, 0.5, 1),
+      opacity 600ms ease-in;
   }
   @include tablet {
+    &--small-title {
+      color: var(--dark-2);
+      text-align: center;
+      font-family: var(--main-font);
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 100%;
+    }
     &.collapsible {
       cursor: unset;
     }
@@ -74,6 +90,7 @@
     }
     &-collapsible--closed {
       max-height: 20rem;
+      opacity: 1;
     }
   }
   @include desktop {

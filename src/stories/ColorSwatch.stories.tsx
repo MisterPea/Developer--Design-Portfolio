@@ -3,7 +3,7 @@ import ColorSwatch from "../components/ColorSwatch";
 import '../style/globals.scss';
 
 const meta: Meta<typeof ColorSwatch> = {
-  title: 'Project/ColorSwatch',
+  title: 'Project/Color Swatch',
   component: ColorSwatch,
 };
 

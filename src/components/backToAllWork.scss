@@ -1,13 +1,13 @@
 @import "../style/mixins.scss";
 
 .back_to_all_work {
-  position: absolute;
+  cursor: pointer;
+  position: fixed;
   bottom: 0;
   left: 50%;
-  // display: none;
+  z-index: 1000;
   transform: translate(-50%, 100px);
   &.--show {
-    display: inline-block;
     animation: back_to_work-initial-open 450ms;
     animation-fill-mode: forwards;
   }
@@ -32,7 +32,10 @@
   }
 
   &-wrapper_inner {
-    background-color: #59595915;
+    background-color: rgb(239, 239, 239);
+    box-shadow:
+      rgba(60, 64, 67, 0.25) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 1.5px;
     max-width: fit-content;
     transform: scaleX(0.27);
     border-radius: 50%;
@@ -57,6 +60,7 @@
     padding-top: 0.1rem;
     text-align: center;
     opacity: 0;
+    white-space: nowrap;
     &.--show {
       animation: back_to_work-text-open 400ms ease-in-out forwards;
       animation-delay: 800ms;
@@ -67,18 +71,46 @@
   }
 }
 
+.back_to_all_work-scaler--hover {
+  animation: hoverOn 800ms cubic-bezier(0.38, 1.7, 0.33, 1.03);
+  animation-fill-mode: forwards;
+}
+
+.back_to_all_work-scaler--no-hover {
+  animation: hoverOff 200ms ease-in;
+  animation-fill-mode: backwards;
+}
+
+@keyframes hoverOn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hoverOff {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes back_to_work-initial-open {
   0% {
     transform: translate(-50%, 100px);
   }
   100% {
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, -4.5rem);
   }
 }
 
 @keyframes back_to_work-initial-close {
   0% {
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, -4.5rem);
   }
   100% {
     transform: translate(-50%, 100px);

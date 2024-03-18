@@ -1,5 +1,5 @@
-export default function DivideLine() {
+export default function DivideLine({ className }: { className?: string; }) {
   return (
-    <div className="divide_line" />
+    <div className={`divide_line${className ? ' ' + className : ''}`} />
   );
 }
