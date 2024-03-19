@@ -44,6 +44,15 @@
     }
   }
 
+  &--small-title {
+    color: var(--dark-2);
+    text-align: left;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
   &-collapsible--open,
   .-collapsible--std {
     overflow: hidden;

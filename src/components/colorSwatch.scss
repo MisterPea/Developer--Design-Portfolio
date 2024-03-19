@@ -33,7 +33,7 @@
     white-space: nowrap;
   }
   @include tablet {
-    max-width: 7rem;
+    // max-width: auto;
   }
   @include desktop {
     max-width: 9rem;

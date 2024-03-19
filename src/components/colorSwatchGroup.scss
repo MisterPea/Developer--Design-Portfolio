@@ -6,7 +6,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   @include tablet {
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
   @include desktop {
     row-gap: 1rem;

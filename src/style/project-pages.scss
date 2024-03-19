@@ -2,172 +2,182 @@
 @import "./animations";
 @import "../style/layout";
 
+figure {
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  object-fit: scale-down;
+  height: fit-content;
+}
+
 .full-width-line {
   grid-column: 1 / -1;
 }
 
-.project_page {
-  &-wrapper {
-    padding: 0 1rem;
-    position: relative;
-    z-index: 0;
+.mobile_divide_line {
+  grid-column: 1 / -1;
+}
+
+.tablet_spacer {
+  display: none;
+}
+
+.project_page-wrapper {
+  padding: 0 1rem;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  .hero_line {
+    display: none;
   }
-  &-hero {
-    margin: 2rem 0 0;
+  .project_navbar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+  .project-headline {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    margin-bottom: 3rem;
+  }
+  .project_page-hero {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin: 1.88rem 0 0;
     img {
       @include fullWidthImage;
     }
   }
+  .project_page-info {
+    &-wrapper {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    &-tools {
+      order: 1;
+    }
+    &-role {
+      order: 2;
+    }
+    &-links {
+      order: 3;
+    }
+  }
+  .project_page-summary {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  }
+  .project_page-problem {
+    grid-column: 1 / -1;
+    grid-row: 8 / 9;
+  }
+  .project_page-user_research {
+    display: none;
+  }
 
-  //   &-top_info-wrapper {
-  //     margin-top: 1rem;
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 1.25rem;
-  //   }
-  //   &-top_info-tools {
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 0.3rem;
-  //     @include fade-in-up-quick;
-  //   }
-  //   &-top_info-role {
-  //     margin-top: 0.5rem;
-  //     @include fade-in-up-quick($delay: 100ms);
-  //   }
+  /* Approach */
+  .nyt_project_page-approach {
+    grid-column: 1 / -1;
+    h4 {
+      color: var(--dark-1);
+      text-align: center;
+      font-family: var(--main-font);
+      font-size: 1.875rem;
+      font-weight: 300;
+      line-height: 100%;
+    }
+  }
+
+  .nyt_project_page-design {
+    grid-column: 1 / -1;
+    .nyt_project_page-design-small_headline {
+      margin: 0 0 1.25rem;
+      color: var(--dark-3);
+      font-family: var(--main-font);
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 0.0225rem;
+    }
+  }
+  .nyt_project_page-site_flow {
+    display: none;
+  }
+  /* Problems */
+  .nyt_project_page-problems {
+    grid-column: 1 / -1;
+    &-section_three {
+      grid-column: 1 / -1;
+      &-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      &-image.image_one,
+      &-image.image_three {
+        grid-column: 1 / 2;
+      }
+      img {
+        @include fullWidthImage;
+      }
+    }
+  }
 }
-
-// .project_page-approach_section {
-//   h4 {
-//     font-size: 1.875rem;
-//     font-weight: 300;
-//     text-align: center;
-//     font-family: var(--main-font);
-//     color: var(--dark-1);
-//   }
-//   &-wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 4.38rem;
-//   }
-//   .project_text_block {
-//     margin-bottom: 0.94rem;
-//   }
-//   figure {
-//     width: 100%;
-//     margin: 0;
-//     svg,
-//     img {
-//       width: 100%;
-//       object-fit: scale-down;
-//       height: fit-content;
-//     }
-//   }
-// }
-
-// .project_page-design_section {
-//   &-small_headline {
-//     margin: 3rem 0 1rem;
-//     font-family: var(--main-font);
-//     color: var(--dark-3);
-//     font-size: 1rem;
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: 100%;
-//     letter-spacing: 0.02rem;
-//   }
-//   &-type_specimen_wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 1rem;
-//   }
-// }
-
-// .project_page-problem_section {
-//   figure {
-//     margin: 0;
-//   }
-//   &-problems_wrapper {
-//     margin-top: 2.25rem;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 2.25rem;
-//   }
-//   &-problem {
-//     padding-top: 1rem;
-//     &.--single_image img {
-//       width: 100%;
-//       object-fit: scale-down;
-//       height: fit-content;
-//     }
-//     &.--single_svg svg {
-//       height: auto;
-//       width: 100%;
-//     }
-//   }
-// }
-
-// .project_page-problem_section-problem_three {
-//   &-group {
-//     margin-top: 1.44rem;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     gap: 1.81rem 1rem;
-//     &:nth-child(even) {
-//       grid-column: 2 / 3;
-//     }
-//     &:nth-child(odd) {
-//       grid-column: 1 / 2;
-//     }
-//   }
-//   &-image {
-//     margin: 0;
-//     figcaption {
-//       margin-top: 0.75rem;
-//     }
-//     img {
-//       @include fullWidthImage;
-//     }
-//   }
-// }
-
+/* ?/////////////////////////////////////////////////////////////// */
 @include tablet {
+  .tablet_spacer {
+    display: unset;
+  }
+  .mobile_divide_line {
+    display: none;
+  }
   .project_page-wrapper {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0px 20px;
+    .hero_line {
+      display: unset;
+    }
     .project_navbar {
       grid-column: 1 / 5;
-      grid-row: 1 / 2;
     }
     .project-headline {
-      grid-column: 1 / 5;
       grid-row: 2 / 3;
-      margin-bottom: 3rem;
     }
     .project_page-summary {
       grid-column: 1 / 3;
       grid-row: 3 / 4;
     }
-    .project_page-info-wrapper {
-      grid-column: 3 / 5;
-      grid-row: 3 / 4;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-    .project_page-info-role {
-      order: 1;
-    }
-    .project_page-info-tools {
-      order: 2;
-    }
-    .project_page-info-links {
-      order: 3;
-    }
     .project_page-hero {
-      grid-column: 1 / 5;
       grid-row: 4 / 5;
+    }
+    .project_page-info {
+      &-wrapper {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+      }
+      &-role {
+        order: 1;
+      }
+      &-tools {
+        order: 2;
+        h2 {
+          margin-bottom: 0.125rem;
+        }
+      }
+      &-links {
+        order: 3;
+      }
     }
     .hero_line {
       grid-column: 1 / -1;
@@ -178,27 +188,51 @@
       grid-row: 6 / 7;
     }
     .project_page-user_research {
+      display: unset;
       grid-column: 3 / 5;
       grid-row: 6 / 7;
+    }
+    /* Site Flow */
+    .nyt_project_page-site_flow {
+      display: block;
+      grid-column: 1 / -1;
+      img {
+        border-radius: 0.25rem;
+        border: 1px solid var(--dark-2);
+      }
+    }
+    .nyt_project_page-problems {
+      &-section_three {
+        &-group {
+          grid-template-columns: repeat(4, 1fr);
+          .project_text_block {
+            grid-column: 2 / 4;
+          }
+        }
+        &-image.image_one {
+          grid-column: 1 / 2;
+        }
+        &-image.image_two {
+          grid-column: 2 / 3;
+        }
+        &-image.image_three {
+          grid-column: 3 / 4;
+        }
+        &-image.image_four {
+          grid-column: 4 / 5;
+        }
+      }
     }
   }
 
   .nyt_project_page-approach {
-    margin-top: 5rem;
-    grid-column: 1 / -1;
     h4 {
-      color: var(--dark-1);
-      text-align: center;
-      font-family: var(--main-font);
+      margin: 0;
       font-size: 2.1875rem;
-      font-weight: 300;
-      line-height: 100%;
       grid-row: 1 / 2;
-      grid-column: 1 / -1;
     }
     &-section_one {
       @include nested-double-wide-grid;
-      margin-bottom: 10rem;
       div.project_text_block {
         @include double-wide-left;
       }
@@ -208,33 +242,20 @@
     }
     &-section_two {
       @include nested-double-wide-grid;
-      margin-bottom: 10rem;
       div.project_text_block {
         @include double-wide-right;
       }
       figure {
         @include double-wide-left;
-        margin: 0;
-        svg {
-          width: 100%;
-          height: 100%;
-        }
       }
     }
     &-section_three {
       @include nested-double-wide-grid;
-      margin-bottom: 10rem;
       div.project_text_block {
         @include double-wide-left;
       }
       figure {
         @include double-wide-right;
-        margin: 0;
-        img {
-          width: 100%;
-          object-fit: scale-down;
-          height: fit-content;
-        }
       }
     }
     &-section_four {
@@ -247,39 +268,8 @@
       }
     }
   }
-  .nyt_project_page-problems-section_three {
-  
-    &-group {
-      margin-top: 1.44rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.81rem 1rem;
-      &:nth-child(even) {
-        grid-column: 2 / 3;
-      }
-      &:nth-child(odd) {
-        grid-column: 1 / 2;
-      }
-    }
-    .project_text_block{
-      grid-column: 2 / 4;
-      grid-row: 1 / 2;
-    }
-    &-image {
-      grid-row: 2 / 3;
-      margin: 0;
-      figcaption {
-        margin-top: 0.75rem;
-      }
-      img {
-        @include fullWidthImage;
-      }
-    }
-  }
-}
 
-/* Design Considerations */
-.project_page-wrapper {
+  /* Design Considerations */
   .nyt_project_page-design {
     grid-column: 1 / -1;
     &-considerations {
@@ -303,77 +293,38 @@
       letter-spacing: 0.0225rem;
     }
     &-typography_and_color {
-      margin-top: 3.5rem;
       @include nested-double-wide-grid;
       &-type_wrapper {
         @include double-wide-left;
       }
-      .type_specimen-main_wrapper {
-        margin-bottom: 1.5rem;
-        &:last-child {
-          margin-bottom: 0;
-        }
+      div[class$="-type_specimen_wrapper"] {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
       }
       &-color_wrapper {
         @include double-wide-right;
       }
     }
   }
-}
 
-/* Site Flow */
-.nyt_project_page-site_flow {
-  grid-column: 1 / -1;
-  margin-top: 5rem;
-
-  img {
-    margin-top: 1.5rem;
-    width: 100%;
-    object-fit: scale-down;
-    height: fit-content;
-    border-radius: 0.25rem;
-    border: 1px solid var(--dark-2);
-  }
-}
-
-/* Problems */
-.nyt_project_page-problems {
-  @include nested-double-wide-grid;
-  figure {
-    margin: 0;
-  }
-  &_left {
-    @include double-wide-left;
-  }
-  &_right {
-    @include double-wide-right;
-  }
-
-  &-section_one {
-    margin-top: 5rem;
-    @include double-wide-left;
-    grid-row: 2 / 3;
-    img {
-      width: 100%;
-      object-fit: scale-down;
-      height: fit-content;
+  /* Problems */
+  .nyt_project_page-problems {
+    @include nested-double-wide-grid;
+    &_left {
+      @include double-wide-left;
     }
-  }
-  &-section_two {
-    margin-top: 5rem;
-    @include double-wide-right;
-    grid-row: 2 / 3;
-    svg {
-      height: auto;
-      width: 100%;
+    &_right {
+      @include double-wide-right;
     }
-  }
-  &-section_three {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    svg {
-      height: auto;
-      width: 100%;
+
+    &-section_one {
+      @include double-wide-left;
+      grid-row: 2 / 3;
+    }
+    &-section_two {
+      @include double-wide-right;
+      grid-row: 2 / 3;
     }
   }
 }

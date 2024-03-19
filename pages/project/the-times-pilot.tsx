@@ -25,6 +25,7 @@ import TypeSpecimen from "@/components/TypeSpecimen";
 import BackToAllWork from "@/components/BackToAllWork";
 import ProjectFooter from "@/components/ProjectFooter";
 import IntersectionWrapper from "@/components/IntersectionWrapper";
+import Spacer from "@/components/Spacer";
 
 export default function TimesPilot() {
   const { description, projectPage } = siteContent[0];
@@ -56,10 +57,12 @@ export default function TimesPilot() {
           accentColor="#E4C24D"
           subHead={description}
         />
+
         <figure className="project_page-hero">
           <ExportedImage src={heroImage} alt="Image of the desktop/tablet and mobile version of the times.pilot website." />
         </figure>
-        <DivideLine className="hero_line" />
+
+        <DivideLine className="hero_line " />
         <section className="project_page-summary">
           <ProjectTextBlock title={summaryHeadline} body={summaryBody} titleIsBold />
         </section>
@@ -75,36 +78,39 @@ export default function TimesPilot() {
             <ProjectLinks links={links} />
           </div>
         </section>
+        <DivideLine className="mobile_divide_line post_summary" />
         <section className="project_page-problem">
           <ProjectTextBlock title={problemHeadline} body={`${problemBody}`} />
         </section>
+        <DivideLine className="mobile_divide_line post_problem" />
         <section className="project_page-user_research">
           <ProjectTextBlock title={userResearchHeadline} body={userResearchBody} />
         </section>
 
         {/* Approach */}
+        <Spacer amount={1.5} className="tablet_spacer" />
         <article className="nyt_project_page-approach">
           <h4>{approachSectionTitle}</h4>
-
+          <Spacer />
           <section className="nyt_project_page-approach-section_one">
             <ProjectTextBlock title={approaches![0].headline} body={approaches![0].body} collapsible />
             <VideoPlayer videoSource="/video/times_pilot/nyt_raw_capture-large_final-resize.mp4" />
           </section>
-
+          <Spacer amount={6} />
           <section className="nyt_project_page-approach-section_two">
             <ProjectTextBlock title={approaches![1].headline} body={approaches![1].body} collapsible />
             <figure className="project-figure svg">
               <Icon.contentAccessability />
             </figure>
           </section>
-
+          <Spacer amount={6} />
           <section className="nyt_project_page-approach-section_three">
             <ProjectTextBlock title={approaches![2].headline} body={approaches![2].body} collapsible />
             <figure className="project-figure svg">
               <ExportedImage src={sectionsSelections} alt="Section Selections panel illustrating how the user can select a specific group of topics to suite their taste." />
             </figure>
           </section>
-
+          <Spacer amount={6} />
           <section className="nyt_project_page-approach-section_four">
             <ProjectTextBlock title={approaches![3].headline} body={approaches![3].body} collapsible />
             <VideoPlayer videoSource="/video/times_pilot/nyt_allow_access.mp4" />
@@ -118,6 +124,7 @@ export default function TimesPilot() {
             <ProjectTextBlock title={design?.designHeadline} body={[design!.designList[0], design!.designList[1]]} className="nyt_project_page-design-considerations_left" />
             <ProjectTextBlock title="" body={[design!.designList[2], design!.designList[3]]} className="nyt_project_page-design-considerations_right" />
           </section>
+          <Spacer amount={2} />
           <section className="nyt_project_page-design-typography_and_color">
             <div className="nyt_project_page-design-typography_and_color-type_wrapper">
               <h5 className="nyt_project_page-design-small_headline">{design!.typeHeadline}</h5>
@@ -132,10 +139,12 @@ export default function TimesPilot() {
               <ColorSwatchGroup swatches={design!.colorList} />
             </div>
           </section>
+          <Spacer amount={2} />
         </article>
 
         <article className="nyt_project_page-site_flow">
           <ProjectTextBlock title={projectPage.siteFlow!.headline} body={projectPage.siteFlow!.body} />
+          <Spacer amount={0.5} />
           <ExportedImage src={nytFlowchart} alt="High-level site flow of the Times.Pilot; showing different authentication states as it relates to user access." />
         </article>
 
@@ -146,6 +155,7 @@ export default function TimesPilot() {
           <ProjectTextBlock title="" body={[problems!.body[2]]} className="nyt_project_page-problems_right" />
 
           <section className="nyt_project_page-problems-section_one" >
+            <Spacer amount={1.5} />
             <ProjectTextBlock title={problems!.problemOne.headline} body={problems!.problemOne.body} smallTitle collapsible />
             <figure className="project_page-problem_section-problem --single_image">
               <ExportedImage src={problemOne} alt="Illustration of the different states of article bookmarking for mobile as opposed to bookmarking on desktop." />
@@ -153,6 +163,7 @@ export default function TimesPilot() {
           </section>
 
           <section className="nyt_project_page-problems-section_two">
+            <Spacer amount={1.5} />
             <ProjectTextBlock title={problems!.problemTwo.headline} body={problems!.problemTwo.body} smallTitle collapsible />
             <figure className="project_page-problem_section-problem --single_svg">
               <SvgIllustration.optimizedLayout />
@@ -160,27 +171,28 @@ export default function TimesPilot() {
           </section>
 
           <section className="nyt_project_page-problems-section_three">
+            <Spacer amount={1.5} />
             <div className="nyt_project_page-problems-section_three-group">
               <ProjectTextBlock title={problems!.problemThree.headline} body={problems!.problemThree.body} smallTitle={true} collapsible />
-              <figure className="nyt_project_page-problems-section_three-image">
+              <figure className="nyt_project_page-problems-section_three-image image_one">
                 <ExportedImage src={nytLoginOne} alt="Screen capture of initial screen for the times.pilot onboarding." />
                 <figcaption>
                   <ImageCaption headline={problems!.problemThree.imageCaption[0].headline} body={problems!.problemThree.imageCaption[0].body} />
                 </figcaption>
               </figure>
-              <figure className="nyt_project_page-problems-section_three-image">
+              <figure className="nyt_project_page-problems-section_three-image image_two">
                 <ExportedImage src={nytLoginTwo} alt="Screen capture of second screen for the times.pilot onboarding." />
                 <figcaption>
                   <ImageCaption headline={problems!.problemThree.imageCaption[1].headline} body={problems!.problemThree.imageCaption[1].body} />
                 </figcaption>
               </figure>
-              <figure className="nyt_project_page-problems-section_three-image">
+              <figure className="nyt_project_page-problems-section_three-image image_three">
                 <ExportedImage src={nytLoginThree} alt="Screen capture of third screen for the times.pilot onboarding." />
                 <figcaption>
                   <ImageCaption headline={problems!.problemThree.imageCaption[2].headline} body={problems!.problemThree.imageCaption[2].body} />
                 </figcaption>
               </figure>
-              <figure className="nyt_project_page-problems-section_three-image">
+              <figure className="nyt_project_page-problems-section_three-image image_four">
                 <ExportedImage src={nytLoginFour} alt="Screen capture of fourth screen for the times.pilot onboarding." />
                 <figcaption>
                   <ImageCaption headline={problems!.problemThree.imageCaption[3].headline} body={problems!.problemThree.imageCaption[3].body} />
@@ -193,4 +205,4 @@ export default function TimesPilot() {
       <ProjectFooter />
     </>
   );
-}
+};
