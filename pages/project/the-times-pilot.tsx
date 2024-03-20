@@ -139,7 +139,7 @@ export default function TimesPilot() {
               <ColorSwatchGroup swatches={design!.colorList} />
             </div>
           </section>
-          <Spacer amount={2} />
+          <Spacer amount={2} className="spacer-post_color" />
         </article>
 
         <article className="nyt_project_page-site_flow">

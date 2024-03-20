@@ -16,11 +16,13 @@ export default function BackToAllWork() {
 
   function getElementDistanceToBottom() {
     // Get the element's bottom edge position relative to the document.
+    
     if (contentFrame.current) {
       const elementRect = contentFrame.current.getBoundingClientRect();
       const elementBottom = elementRect.bottom;
       const windowHeight = window.innerHeight;
       const difference = elementBottom - windowHeight;
+      console.log(difference)
       if (difference < 150) {
         setIsOpen(true);
       } else {

@@ -18,6 +18,10 @@
     color: var(--dark-2);
     line-height: 120%;
     letter-spacing: 0.015rem;
+    @include desktop {
+      font-size: 0.9rem;
+      letter-spacing: 0.025rem;
+    }
   }
   span {
     font-weight: 600;
@@ -31,11 +35,15 @@
     line-height: 120%;
     letter-spacing: 0.025rem;
     white-space: nowrap;
+    @include desktop {
+      font-size: 0.9rem;
+      letter-spacing: 0.025rem;
+    }
   }
   @include tablet {
     // max-width: auto;
   }
   @include desktop {
-    max-width: 9rem;
+    // max-width: 9rem;
   }
 }

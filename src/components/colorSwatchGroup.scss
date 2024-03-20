@@ -4,11 +4,9 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   @include tablet {
-    row-gap: 1rem;
-  }
-  @include desktop {
+    gap: 2rem;
     row-gap: 1rem;
   }
 }

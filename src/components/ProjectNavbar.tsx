@@ -16,19 +16,21 @@ export default function ProjectNavbar() {
 
   return (
     <div className="project_navbar">
-      <h1>Perry Angelora</h1>
-      <nav>
-        <Link
-          onMouseEnter={handleRollOver.bind(null, homeRef)}
-          onMouseLeave={handleRollOut.bind(null, homeRef)}
-          onMouseDown={handleRollOut.bind(null, homeRef)}
-          ref={homeRef} href='/'>Home</Link>
-        <Link
-          onMouseEnter={handleRollOver.bind(null, aboutRef)}
-          onMouseLeave={handleRollOut.bind(null, aboutRef)}
-          onMouseDown={handleRollOut.bind(null, aboutRef)}
-          ref={aboutRef} href='/about'>About</Link>
-      </nav>
+      <div className="project_navbar-content_wrapper" >
+        <h1>Perry Angelora</h1>
+        <nav>
+          <Link
+            onMouseEnter={handleRollOver.bind(null, homeRef)}
+            onMouseLeave={handleRollOut.bind(null, homeRef)}
+            onMouseDown={handleRollOut.bind(null, homeRef)}
+            ref={homeRef} href='/'>Home</Link>
+          <Link
+            onMouseEnter={handleRollOver.bind(null, aboutRef)}
+            onMouseLeave={handleRollOut.bind(null, aboutRef)}
+            onMouseDown={handleRollOut.bind(null, aboutRef)}
+            ref={aboutRef} href='/about'>About</Link>
+        </nav>
+      </div>
     </div>
   );
 }

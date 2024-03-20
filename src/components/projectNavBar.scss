@@ -1,16 +1,23 @@
 @import "../style/mixins.scss";
+@import "../style/layout";
 
 .project_navbar {
   font-family: var(--main-font);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   @include milk-blur;
   margin: 0 -1rem 1rem;
   padding: 1rem 1rem;
   z-index: 100;
+  @include desktop {
+    @include nested-six-wide-grid;
+  }
+  .project_navbar-content_wrapper {
+    grid-column: 2 / 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   h1 {
     font-size: 1.125rem;
     font-style: normal;
@@ -22,7 +29,10 @@
 
   nav {
     display: flex;
-    gap: 1.39rem;
+    gap: 0.25rem;
+    @include tablet {
+      gap: 1.39rem
+    }
   }
 
   nav a {
