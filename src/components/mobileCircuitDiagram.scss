@@ -1,0 +1,326 @@
+@import "../style/mixins.scss";
+
+.circuit_diagram {
+  font-family: var(--main-font);
+  font-weight: 150;
+  line-height: 120%;
+  color: var(--dark-2);
+  font-size: 0.8125rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  &-one_label,
+  &-three_label {
+    z-index: 10;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    height: 100%;
+    width: 100%;
+    .label_line {
+      flex: 1 1;
+      height: 1px;
+      background-color: var(--dark-4);
+    }
+    p {
+      max-width: 45%;
+    }
+  }
+
+  &-two_label {
+    z-index: 10;
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    height: 100%;
+    width: 100%;
+    .label_line {
+      flex: 1 1;
+      height: 1px;
+      background-color: var(--dark-4);
+    }
+    p {
+      max-width: 45%;
+    }
+  }
+
+  &-one_image_wrap,
+  &-three_image_wrap {
+    z-index: 0;
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    img {
+      @include fullWidthImagePhone;
+      position: relative;
+    }
+  }
+  &-two_image_wrap {
+    z-index: 0;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    img {
+      @include fullWidthImagePhone;
+      position: relative;
+    }
+  }
+
+  .circuit_label {
+    /*
+    This centers the content in the div 
+    So regardless of the amount of content, 
+    the div will always be centered
+    */
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &.two {
+      flex-direction: row-reverse;
+    }
+  }
+
+  /* One  */
+  &-one_label.label_one {
+    transform: translateY(-38.5%);
+    .label_line {
+      margin-right: 26%;
+    }
+  }
+  &-one_label.label_two {
+    transform: translateY(-14%);
+    .label_line {
+      margin-right: 17%;
+    }
+  }
+  &-one_label.label_three {
+    transform: translateY(11.75%);
+    .label_line {
+      margin-right: 27%;
+    }
+  }
+  &-one_label.label_four {
+    transform: translateY(23%);
+    .label_line {
+      margin-right: 27%;
+    }
+  }
+
+  /* Two */
+  &-two_label.label_one {
+    transform: translateY(-1%);
+    .label_line {
+      margin-left: 19%;
+      margin-right: 0.5rem;
+    }
+  }
+
+  /* Three  */
+  &-three_label.label_one {
+    transform: translateY(-25%);
+    .label_line {
+      margin-right: 25%;
+    }
+  }
+  &-three_label.label_two {
+    transform: translateY(2.5%);
+    .label_line {
+      margin-right: 25%;
+    }
+  }
+}
+
+@include tablet {
+  .circuit_diagram {
+    &-three_image_wrap {
+      grid-column: 2 / 4;
+    }
+    &-three_label.label_one {
+      grid-column: 3 / -1;
+      transform: translate(2%, -24.5%);
+      .circuit_label {
+        flex-direction: row-reverse;
+      }
+      .label_line {
+        margin-left: 40%;
+        margin-right: 0.5rem;
+      }
+    }
+    &-three_label.label_two {
+      transform: translate(-4%, 2.5%);
+      .label_line {
+        margin-right: 55%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .circuit_diagram {
+    &-three_label.label_two {
+      grid-column: 3 / -1;
+      .circuit_label {
+        flex-direction: row-reverse;
+      }
+      .label_line {
+        margin-left: 43%;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .circuit_diagram.two {
+    display: block;
+  }
+  .circuit_diagram-two_label.label_one {
+    display: none;
+  }
+}
+
+.circuit_diagram.four {
+  display: none;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0px 30px;
+
+  .circuit_diagram-left {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    @include nested-three-wide;
+    &_image_wrap {
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
+      img {
+        @include fullWidthImagePhone;
+      }
+    }
+    &_label {
+      z-index: 10;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      height: 100%;
+      width: 100%;
+      .label_line {
+        flex: 1 1;
+        height: 1px;
+        background-color: var(--dark-4);
+      }
+      p {
+        max-width: 45%;
+      }
+    }
+    &_label.label_one {
+      transform: translateY(-38.5%);
+      .label_line {
+        margin-right: 34%;
+      }
+    }
+    &_label.label_two {
+      transform: translateY(-14%);
+      .label_line {
+        margin-right: 20%;
+      }
+    }
+    &_label.label_three {
+      transform: translateY(11.75%);
+      .label_line {
+        margin-right: 35%;
+      }
+    }
+    &_label.label_four {
+      transform: translateY(23.5%);
+      .label_line {
+        margin-right: 36%;
+      }
+    }
+  }
+  .circuit_diagram-center {
+    grid-row: 1 / 2;
+    grid-column: 4 / 6;
+    @include nested-two-wide;
+    &_label {
+      grid-row: 2 / -1;
+      grid-column: 1 / 3;
+      z-index: 10;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      p {
+        width: 100%;
+        margin-top: 2%;
+      }
+      .circuit_label {
+        flex-direction: column-reverse;
+        div {
+          margin-top: -2%;
+          margin-right: 60%;
+          height: 74%;
+          width: 1.2px;
+          background-color: var(--dark-4);
+        }
+      }
+    }
+    &_image_wrap {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      img {
+        @include fullWidthImagePhone;
+      }
+    }
+  }
+  .circuit_diagram-right {
+    grid-row: 1 / 2;
+    grid-column: 6 / 9;
+    @include nested-three-wide;
+
+    &_image_wrap {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      img {
+        @include fullWidthImagePhone;
+      }
+    }
+    &_label {
+      z-index: 10;
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+      height: 100%;
+      width: 100%;
+      .circuit_label {
+        flex-direction: row-reverse;
+      }
+      .label_line {
+        flex: 1 1;
+        height: 1px;
+        background-color: var(--dark-4);
+      }
+      p {
+        max-width: 45%;
+      }
+    }
+    &_label.label_one {
+      transform: translateY(-25%);
+      .label_line {
+        margin-left: 37%;
+        margin-right: 2%;
+      }
+    }
+    &_label.label_two {
+      transform: translateY(2.5%);
+      .label_line {
+        margin-left: 37%;
+        margin-right: 2%;
+      }
+    }
+  }
+}
+
+/* We're controlling the appearance of the 3-up app here */
+@include desktop {
+  .circuit_diagram,
+  .circuit_diagram.two {
+    display: none;
+    &.four {
+      display: grid;
+    }
+  }
+}
