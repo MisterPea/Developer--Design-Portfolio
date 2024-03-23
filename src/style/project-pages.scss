@@ -32,6 +32,7 @@ img {
   display: none;
 }
 
+/* Begin Main Style */
 .project_page-wrapper {
   padding: 0 1rem;
   position: relative;
@@ -45,6 +46,8 @@ img {
   .project_navbar {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    opacity: 0;
+    @include fade-in-down-5pct($delay:500ms, $duration:2500ms);
   }
   .project-headline {
     grid-column: 1 / -1;
@@ -70,20 +73,28 @@ img {
     &-tools {
       order: 1;
       margin-bottom: 0.4rem;
+      opacity: 0;
+      @include fade-in-up-quick($duration: 1s, $delay: 400ms);
       h2 {
         margin-bottom: 0.35rem;
       }
     }
     &-role {
       order: 2;
+      opacity: 0;
+      @include fade-in-up-quick($duration: 1s, $delay: 500ms);
     }
     &-links {
       order: 3;
+      opacity: 0;
+      @include fade-in-up-quick($duration: 1s, $delay: 300ms);
     }
   }
   .project_page-summary {
     grid-column: 1 / -1;
     grid-row: 5 / 6;
+    opacity: 0;
+    @include fade-in-down($delay: 300ms);
   }
   .project_page-problem {
     grid-column: 1 / -1;
@@ -263,6 +274,7 @@ img {
     &-section_one,
     &-section_three {
       @include nested-double-wide-grid;
+      
       div.project_text_block {
         @include double-wide-left;
       }
@@ -288,6 +300,7 @@ img {
       figure {
         @include double-wide-right;
       }
+      
     }
   }
 
@@ -359,7 +372,9 @@ img {
     .project_navbar {
       grid-column: 1 / -1;
     }
-    .project-headline,
+    .project-headline {
+      grid-column: 2 / 5;
+    }
     .project_page-hero,
     .hero_line,
     .nyt_project_page-site_flow {

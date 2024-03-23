@@ -19,6 +19,14 @@
   @include forma-djr-400;
 }
 
+.barlow-semibold {
+  @include barlowSemibold;
+}
+
+.barlow-regular {
+  @include barlowRegular;
+}
+
 .type_specimen {
   &-main_wrapper {
     display: grid;

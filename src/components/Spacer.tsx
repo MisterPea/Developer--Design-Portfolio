@@ -8,7 +8,6 @@ export default function Spacer({ amount = 1,
       gridColumn: '1/-1',
       marginTop: `${1.88 * amount}rem`,
       marginBottom: `${1.88 * amount}rem`,
-      backgroundColor: 'red'
     }}
   />;
 }

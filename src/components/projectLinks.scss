@@ -1,10 +1,10 @@
 @import "../style/mixins.scss";
 @import "../style/animations";
 
-.project_links-wrapper {
-  opacity: 0;
-  @include fade-in-up-quick($duration: 1s, $delay: 300ms);
-}
+// .project_links-wrapper {
+//   opacity: 0;
+//   @include fade-in-up-quick($duration: 1s, $delay: 300ms);
+// }
 
 .project_links {
   &-ul {
@@ -46,7 +46,7 @@
     @media (hover: hover) {
       &.active {
         &::before {
-          animation: linkRollOver 800ms cubic-bezier(0.17, 1.49, 0.52, 1.02);
+          animation: linkRollOver 600ms cubic-bezier(0.17, 1.49, 0.52, 1.02);
           animation-fill-mode: forwards;
         }
       }

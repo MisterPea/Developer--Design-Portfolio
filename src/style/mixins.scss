@@ -76,3 +76,28 @@ $desktop: 1024px;
   font-weight: 500;
   font-style: normal;
 }
+
+@mixin barlowSemibold {
+  font-family: "barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin barlowRegular {
+  font-family: "barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin phoneShadow {
+  will-change: transform;
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(11px 18px 15px rgba(0, 0, 0, 0.33));
+}
+
+@mixin fullWidthImagePhone {
+  width: 100%;
+  object-fit: scale-down;
+  height: fit-content;
+  will-change: transform;
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(11px 18px 15px rgba(0, 0, 0, 0.33));
+}

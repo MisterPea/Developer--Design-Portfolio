@@ -22,7 +22,6 @@ export default function BackToAllWork() {
       const elementBottom = elementRect.bottom;
       const windowHeight = window.innerHeight;
       const difference = elementBottom - windowHeight;
-      console.log(difference)
       if (difference < 150) {
         setIsOpen(true);
       } else {

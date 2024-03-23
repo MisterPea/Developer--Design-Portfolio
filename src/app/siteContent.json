@@ -186,8 +186,6 @@
     "projectPage": {
       "headlineOne": "Circuit App",
       "headlineTwo": "Revolutionizing Time Management for Creatives",
-      "summaryHeadline": "Making Time To Make Time",
-      "summaryBody": "Circuit App is designed to address the unique time management challenges faced by creative professionals. It offers users a way to deal with the contradictory issues of distraction mitigation and preventing burnout from overworking. By structuring time into focused work periods and restful breaks, Circuit App aims to enhance productivity and creativity, while reducing stress and mental exhaustion.",
       "role": "Concept, Design",
       "tools": [
         "Figma",
@@ -195,10 +193,81 @@
       ],
       "links": [
         {
-          "label": "",
-          "url": ""
+          "label": "Figma Prototype",
+          "url": "#"
+        },
+        {
+          "label": "Figma Layout",
+          "url": "#"
         }
-      ]
+      ],
+      "summaryHeadline": "Making Time To Make Time",
+      "summaryBody": "Circuit App is designed to address the unique time management challenges faced by creative professionals. It offers users a way to deal with the contradictory issues of distraction mitigation and preventing burnout from overworking. By structuring time into focused work periods and restful breaks, Circuit App aims to enhance productivity and creativity, while reducing stress and mental exhaustion.",
+      "problemHeadline": "How Did We Get Here?",
+      "problemBody": "Creative professionals (and the larger public in general) are often grappling with contrasting challenges: the lure of distractions, including social media and meetings, and a tendency to work for extended periods without breaks, leading to mental fatigue. Maintaining a balance is a crucial aspect in avoiding burnout and general well-being.",
+      "userResearchHeadline": "The Gravity That Captures Us All",
+      "userResearchBody": "Time management exerts enormous gravity in the life of a creative. It has a significant impact on the productivity and stress levels of creatives, and is a constant source of tension. At some point  creatives have struggled with balancing project deadlines, learning new technologies, and managing the distractions of working in a tightly-woven digital environment. The need for a solution that helps navigate these challenges efficiently is evident.",
+      "approachSectionTitle": "The Proposition",
+      "approaches": [
+        {
+          "headline": "Easy Selection, Easy Modification",
+          "body": "Eliminate visual clutter to facilitate quick program selections and straightforward modifications. Prioritize legibility and accessibility of essential information for quick scanning."
+        },
+        {
+          "headline": "Custom Circuit Creation",
+          "body": "Creating a bespoke program (Circuit) is simple: pick a title, define the active/rest durations and the repetition count—that’s it. A total duration (active + rest, multiplied by repeats) is shown at the base of the input area, providing users with the total time commitment."
+        },
+        {
+          "headline": "Intuitive Feedback",
+          "body": "With a matrix of circles we are able to visually represent time as discrete visual elements. In one glance the user is able to see roughly how far along they are in the current timer/period. This matrix configuration also allows the user to have a timing scheme for up to 8 hours, which is the current limit of Apple's Live Activities for iOS."
+        }
+      ],
+      "design": {
+        "designHeadline": "Design Considerations",
+        "designList": [
+          "Intuitive User Interface: As a productivity app, it should offer easy interaction at a glance, requiring minimal mental effort from users with fleeting focus.",
+          "Smart Presets: Options are provided pre-configured for easy, out-of-the-box operation.",
+          "Progress Tracking: To help track work patterns and progress, the system will give the user access to a record of their progress.",
+          "Native API: Utilize Apple iOS 16+ LiveActivities to offer users live feedback, minimizing the need to pick up and open their devices."
+        ],
+        "typeHeadline": "Typefaces",
+        "typeSamples": "undefined",
+        "colorHeadline": "Colors",
+        "colorList": [
+          {
+            "name": "Warm Black",
+            "color": "#2d2c2c"
+          },
+          {
+            "name": "Text Light",
+            "color": "#6f766f"
+          },
+          {
+            "name": "Warm White",
+            "color": "#fbf8f3"
+          },
+          {
+            "name": "Rest Blue",
+            "color": "#32ade6"
+          },
+          {
+            "name": "Go Green",
+            "color": "#34c759"
+          },
+          {
+            "name": "Error Red",
+            "color": "#ff3b30"
+          },
+          {
+            "name": "Warn Orange",
+            "color": "#ff9500"
+          }
+        ]
+      },
+      "siteFlow": {
+        "headline": "Potential App Structure",
+        "body": "The app is divided into 3 screens and 1 large-detent sheet. User data can be stored within the device’s persistent storage which would allow transferring or offloading of data to different devices. This app should also make use of Apple’s Live Activities for iOS. This would allow the user to view progress from their iPhone lock-screen without explicitly opening the Circuit app."
+      }
     }
   }
 ]
