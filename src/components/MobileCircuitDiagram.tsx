@@ -115,6 +115,7 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
             blurDataUrl={circuitDesignConsiderationsOne.blurDataUrl}
             imageSize={circuitDesignConsiderationsOne.imageSize}
             imageUrls={circuitDesignConsiderationsOne.imageUrls}
+            dropShadow={circuitDesignConsiderationsOne.dropShadow}
           />
         </div>
       </figure>
@@ -135,6 +136,7 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
             blurDataUrl={circuitDesignConsiderationsTwo.blurDataUrl}
             imageSize={circuitDesignConsiderationsTwo.imageSize}
             imageUrls={circuitDesignConsiderationsTwo.imageUrls}
+            dropShadow={circuitDesignConsiderationsTwo.dropShadow}
           />
         </div>
       </figure>
@@ -161,7 +163,7 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
             blurDataUrl={circuitDesignConsiderationsThree.blurDataUrl}
             imageSize={circuitDesignConsiderationsThree.imageSize}
             imageUrls={circuitDesignConsiderationsThree.imageUrls}
-            className="image_three"
+            dropShadow={circuitDesignConsiderationsThree.dropShadow}
           />
         </div>
       </figure>
@@ -202,7 +204,7 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
               blurDataUrl={circuitDesignConsiderationsOne.blurDataUrl}
               imageSize={circuitDesignConsiderationsOne.imageSize}
               imageUrls={circuitDesignConsiderationsOne.imageUrls}
-              className="image_three"
+              dropShadow={circuitDesignConsiderationsOne.dropShadow}
             />
           </div>
         </div>
@@ -220,7 +222,7 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
               blurDataUrl={circuitDesignConsiderationsTwo.blurDataUrl}
               imageSize={circuitDesignConsiderationsTwo.imageSize}
               imageUrls={circuitDesignConsiderationsTwo.imageUrls}
-              className="image_three"
+              dropShadow={circuitDesignConsiderationsTwo.dropShadow}
             />
           </div>
         </div>
@@ -244,7 +246,7 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
               blurDataUrl={circuitDesignConsiderationsThree.blurDataUrl}
               imageSize={circuitDesignConsiderationsThree.imageSize}
               imageUrls={circuitDesignConsiderationsThree.imageUrls}
-              className="image_three"
+              dropShadow={circuitDesignConsiderationsThree.dropShadow}
             />
           </div>
         </div>

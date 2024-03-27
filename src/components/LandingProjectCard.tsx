@@ -19,6 +19,7 @@ export default function LandingProjectCard({ headline, desc, tools, image, slug 
             imageSize={imageSize}
             imageUrls={imageUrls}
             blurDataUrl={blurDataUrl}
+            dropShadow={1}
           />
         </figure>
         <p className="landing_project_card-cta">View Case Study<span>{Icon.rightArrow()}</span></p>

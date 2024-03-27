@@ -132,7 +132,6 @@ const circuitCompletedScreen: ResponsiveImageProps = {
 };
 const circuitFlowchart: ResponsiveImageProps = {
   alt: "High-level site flow of the Times.Pilot; showing different authentication states as it relates to user access.",
-  dropShadow: 2,
   blurDataUrl: "data:image/webp;base64,UklGRtQDAABXRUJQVlA4WAoAAAAgAAAAYQEAmwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgg5gEAAPAYAJ0BKmIBnAA+tVilT6ctp62hMgnZsBaJaW7gRkp16gWpvuFvBnes+SnYAIQKAaeu0zO+MyvIMPxCz0T12Yz3CHN4p+eHodSxLxHPmcBfP7wP9ONe5LuVGuwYASI+pr13cLrcD/qcSLdWBam709KHB2v6xDJTWTQjoi9qzsXnYE/p/cjBiLTDgnA+MJ9Iqr8ASq5WkAE9ObkDrBXpN0D/U+2cOBiN7rfC43MjZhM4aUNbDkIfVDgfJBj58MpFcL+LWepqj39uqwykVwv7tEAA/u8J7unK95jUq5ntEjBjwP751Nc5ekDLflHzXePLZUAkck8/2K8jqso77CV9gSwpOXmFryWxwl5p1UukNO4+kfALJHYb8C3nZwaiFbxrMqoJQQ4oS+R5u5Hu/N/iV5ctgYYR39ZMRPVz1VXg3ndyk5G2Sp1qh1syMNID1lLj0cx0zTfJWnpOqzNfByS5ynZqBaVjPioIrIzycgsRDXuZu+8L18mhiNRSgERvjWw5jivZJAqzFOvRh4vQRqWmE7z+IVDlKovAWxwE5H5IUY9yUcjYhiNZL+FEHq5DEJpKMjKFElUBw3+NguOskd4Yr4042GXKimmnwx2VOUgvICR3h6q7VKnv+zdDV56A0HfBhzkeSAAAAA==",
   imageSize: {
     h: 1542,
@@ -248,6 +247,7 @@ export default function TimesPilot() {
             blurDataUrl={heroImage.blurDataUrl}
             imageUrls={heroImage.imageUrls}
             imageSize={heroImage.imageSize}
+            dropShadow={heroImage.dropShadow}
           />
           {/* <ExportedImage
             src={heroImage}
@@ -314,6 +314,7 @@ export default function TimesPilot() {
               blurDataUrl={circuitInitialScreen.blurDataUrl}
               imageSize={circuitInitialScreen.imageSize}
               imageUrls={circuitInitialScreen.imageUrls}
+              dropShadow={circuitInitialScreen.dropShadow}
               className="image_one"
             />
             {/* <ExportedImage src={intuitiveFeedback} alt="dd" className="image_one" /> */}
@@ -328,6 +329,7 @@ export default function TimesPilot() {
               blurDataUrl={circuitInProgressScreen.blurDataUrl}
               imageSize={circuitInProgressScreen.imageSize}
               imageUrls={circuitInProgressScreen.imageUrls}
+              dropShadow={circuitInProgressScreen.dropShadow}
               className="image_two"
             />
             {/* <ExportedImage src={activeCircuit} alt="dd" className="image_two" /> */}
@@ -342,6 +344,7 @@ export default function TimesPilot() {
               blurDataUrl={circuitCompletedScreen.blurDataUrl}
               imageSize={circuitCompletedScreen.imageSize}
               imageUrls={circuitCompletedScreen.imageUrls}
+              dropShadow={circuitCompletedScreen.dropShadow}
               className="image_three"
             />
             {/* <ExportedImage src={finishedCircuit} alt="dd" className="image_three" /> */}
@@ -397,7 +400,6 @@ export default function TimesPilot() {
             blurDataUrl={circuitFlowchart.blurDataUrl}
             imageSize={circuitFlowchart.imageSize}
             imageUrls={circuitFlowchart.imageUrls}
-            dropShadow={false}
           />
         </article>
         <DivideLine className="full-width-line" />
@@ -409,6 +411,7 @@ export default function TimesPilot() {
             blurDataUrl={circuitAltDesignOne.blurDataUrl}
             imageSize={circuitAltDesignOne.imageSize}
             imageUrls={circuitAltDesignOne.imageUrls}
+            dropShadow={circuitAltDesignOne.dropShadow}
             className="alt_one"
           />
           <ProjectTextBlock smallTitle title="Alternate Matrix One" body="In this iteration the rest periods are grouped together. Doing so presents the user with an alternative sectional representation, which augments the description via semantic color. From a development point of view, this may be a slightly more complex route to take as we're essentially treating time in 2 different ways: by minimal instance (minute dots) and by section (rest lines)." className="text_one" />
@@ -419,6 +422,7 @@ export default function TimesPilot() {
             blurDataUrl={circuitAltDesignTwo.blurDataUrl}
             imageSize={circuitAltDesignTwo.imageSize}
             imageUrls={circuitAltDesignTwo.imageUrls}
+            dropShadow={circuitAltDesignTwo.dropShadow}
             className="alt_two"
           />
           <ProjectTextBlock smallTitle title="Alternate Matrix Two" body="In this iteration the active and rest periods are treated the same. This allows us to treat all measurements of time the same. By bridging the dots we create cohesive areas that are easy to visually discern by color or density. Another issue for users is that this format may read too closely to text-placeholder graphics." className="text_two" />
