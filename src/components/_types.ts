@@ -34,7 +34,7 @@ export interface LandingProjectHeadProps {
 }
 
 export interface LandingProjectCardProps extends LandingProjectHeadProps {
-  image: StaticImageData;
+  image: ResponsiveImageProps;
   slug: string;
 }
 
@@ -54,11 +54,45 @@ export type MixedText = {
 
 export type BodyContent = string | string[] | MixedText | undefined;
 
-export interface ProjectTextBlockProps{
+export interface ProjectTextBlockProps {
   title: string | undefined;
   titleIsBold?: boolean;
   body: BodyContent;
   collapsible?: boolean;
   smallTitle?: boolean;
   [x: string]: any;
+}
+
+export type ImageSize = {
+  h: number;
+  w: number;
+};
+
+export type ImageResolutionObject = {
+  imageUrl_1x: string,
+  imageUrl_2x: string,
+  imageUrl_3x: string,
+};
+
+export interface ImageGroup {
+  small: ImageResolutionObject;
+  medium: ImageResolutionObject;
+  large: ImageResolutionObject;
+};
+
+type HeightUnit = '%' | 'px' | 'em' | 'rem' | 'vh';
+type HeightProp = `${number}${HeightUnit}`;
+
+export interface ResponsiveImageProps {
+  imageUrls: ImageGroup;
+  alt: any;
+  loading?: 'lazy' | 'eager';
+  imageSize: ImageSize;
+  blurDataUrl: string;
+  // Add drop shadow filter to the final image. 1 is regular, 2 is for phone images
+  dropShadow?: number;
+  // Add Blur to the animation
+  addBlur?: boolean;
+  // Root Margin (offset) for the intersection observer to activate
+  activationDistance?: HeightProp;
 }

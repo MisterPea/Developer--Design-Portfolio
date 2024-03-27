@@ -2,7 +2,6 @@ import ProjectHeadline from "../../src/components/ProjectHeadline";
 import siteContent from "../../src/app/siteContent.json";
 import "../../src/style/globals.scss";
 import ExportedImage from "next-image-export-optimizer";
-import heroImage from "../../public/images/times_pilot/timesPilot2Up.png";
 import ToolRoleTitle from "../../src/components/ToolRoleTitle";
 import ChipGroup from "../../src/components/ChipGroup";
 import ProjectTextBlock from "@/components/ProjectTextBlock";
@@ -26,6 +25,8 @@ import BackToAllWork from "@/components/BackToAllWork";
 import ProjectFooter from "@/components/ProjectFooter";
 import IntersectionWrapper from "@/components/IntersectionWrapper";
 import Spacer from "@/components/Spacer";
+import { ImageGroup, ImageSize } from "@/components/_types";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function TimesPilot() {
   const { description, projectPage } = siteContent[0];
@@ -46,6 +47,30 @@ export default function TimesPilot() {
     userResearchBody,
     userResearchHeadline
   } = projectPage;
+
+  const heroDataUrl = "data:image/jpeg;base64,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";
+  const imageUrls: ImageGroup = {
+    small: {
+      imageUrl_1x: "/optimizedImages/timesPilotSingle.c577402c-opt-771.WEBP",
+      imageUrl_2x: "/optimizedImages/timesPilotSingle.c577402c-opt-1920.WEBP",
+      imageUrl_3x: "/optimizedImages/timesPilotSingle.c577402c-opt-2332.WEBP"
+    },
+    medium: {
+      imageUrl_1x: "/optimizedImages/timesPilotSingle.c577402c-opt-1166.WEBP",
+      imageUrl_2x: "/optimizedImages/timesPilotSingle.c577402c-opt-2332.WEBP",
+      imageUrl_3x: "/optimizedImages/timesPilotSingle.c577402c-opt-3498.WEBP"
+    },
+    large: {
+      imageUrl_1x: "/optimizedImages/timesPilotSingle.c577402c-opt-1125.WEBP",
+      imageUrl_2x: "/optimizedImages/timesPilotSingle.c577402c-opt-2332.WEBP",
+      imageUrl_3x: "/optimizedImages/timesPilotSingle.c577402c-opt-3498.WEBP"
+    }
+  };
+  const imageSize: ImageSize = {
+    h: 2680,
+    w: 3498
+  };
+
   return (
     <>
       <div className="project_page-wrapper">
@@ -57,11 +82,14 @@ export default function TimesPilot() {
           accentColor="#E4C24D"
           subHead={description}
         />
-
         <figure className="project_page-hero">
-          <ExportedImage src={heroImage} alt="Image of the desktop/tablet and mobile version of the times.pilot website." />
+          <ResponsiveImage
+            imageUrls={imageUrls}
+            imageSize={imageSize}
+            alt="Image of the desktop/tablet and mobile version of the times.pilot website."
+            blurDataUrl={heroDataUrl}
+          />
         </figure>
-
         <DivideLine className="hero_line " />
         <section className="project_page-summary">
           <ProjectTextBlock title={summaryHeadline} body={summaryBody} titleIsBold />
@@ -205,4 +233,4 @@ export default function TimesPilot() {
       <ProjectFooter />
     </>
   );
-};
+};;

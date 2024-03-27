@@ -56,9 +56,13 @@ img {
   .project_page-hero {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+    // height: auto;
     margin: 1.25rem 0;
+    // height: fit-content;
     img {
-      @include fullWidthImage;
+      height: fit-content;
+      
+      // @include fullWidthImage;
     }
   }
   .project_page-info {

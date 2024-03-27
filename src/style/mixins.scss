@@ -54,7 +54,7 @@ $desktop: 1024px;
 @mixin fullWidthImage {
   width: 100%;
   object-fit: scale-down;
-  height: fit-content;
+  height: auto;
   will-change: transform;
   filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2)) drop-shadow(2px 1px 4px rgba(0, 0, 0, 0.5));
 }
@@ -97,7 +97,7 @@ $desktop: 1024px;
 @mixin fullWidthImagePhone {
   width: 100%;
   object-fit: scale-down;
-  height: fit-content;
+  height: auto;
   will-change: transform;
   filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(11px 18px 15px rgba(0, 0, 0, 0.33));
 }
