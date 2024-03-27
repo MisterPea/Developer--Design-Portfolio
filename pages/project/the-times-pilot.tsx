@@ -25,7 +25,7 @@ import BackToAllWork from "@/components/BackToAllWork";
 import ProjectFooter from "@/components/ProjectFooter";
 import IntersectionWrapper from "@/components/IntersectionWrapper";
 import Spacer from "@/components/Spacer";
-import { ImageGroup, ImageSize, ResponsiveImageProps } from "@/components/_types";
+import { ResponsiveImageProps } from "@/components/_types";
 import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function TimesPilot() {
