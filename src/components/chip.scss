@@ -1,11 +1,12 @@
 @import "../style/mixins.scss";
 
 .tools-chip {
-  border-radius: 0.5rem;
-  border: 0.5px solid var(--Stroke-60, rgba(66, 66, 68, 0.6));
+  // border-radius: 0.5rem;
+  border-radius: 4rem;
+  border: 0.8px solid var(--Stroke-60, rgba(66, 66, 68, 0.6));
   background: #fefeff;
   display: inline-flex;
-  padding: 0.3rem 0.5rem 0.15rem;
+  padding: 0.3rem 0.65rem 0.15rem;
 
   p {
     color: var(--dark-2);

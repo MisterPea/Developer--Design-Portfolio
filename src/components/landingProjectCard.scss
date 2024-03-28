@@ -66,11 +66,14 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: auto;
-      gap: 10px;
+      gap: 15px;
       &-image {
         margin-top: 0;
         grid-column: 1 / 4;
         grid-row: 1 / 4;
+        img {
+          object-fit: fill;
+        }
       }
       &-cta {
         grid-column: 4 / 6;

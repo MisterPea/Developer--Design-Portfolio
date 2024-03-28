@@ -427,7 +427,6 @@ export default function TimesPilot() {
           />
           <ProjectTextBlock smallTitle title="Alternate Matrix Two" body="In this iteration the active and rest periods are treated the same. This allows us to treat all measurements of time the same. By bridging the dots we create cohesive areas that are easy to visually discern by color or density. Another issue for users is that this format may read too closely to text-placeholder graphics." className="text_two" />
         </section>
-
       </div >
       <ProjectFooter />
     </>

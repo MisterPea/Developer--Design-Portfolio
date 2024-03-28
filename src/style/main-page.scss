@@ -2,10 +2,16 @@
 
 .main_wrap {
   padding: 1rem;
+  &-about_wrap {
+    display: none;
+  }
 }
 
 .landing_project-ul {
   list-style: none;
+}
+.project_footer {
+  position: absolute;
 }
 .landing_project-li {
   margin-top: 5rem;
@@ -24,6 +30,12 @@
   .main_wrap {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto 1fr auto;
+    @media (hover:hover) {
+      min-height: 100vh;
+    }
+    min-height: calc(100vh - 40px);
+    &-right_side,
     .landing_header,
     .landing_project-ul {
       grid-column: 1 / -1;
@@ -31,20 +43,14 @@
     .landing_header {
       grid-row: 1 / 2;
     }
-    &-about_wrap {
-      grid-column: 6 / 7;
-      grid-row: 1 / 2;
-      justify-content: flex-end;
-      width: 100%;
-      height: fit-content;
-      display: flex;
-      
-      background-color: darkcyan;
-
+    .project_footer-home_page {
+      grid-column: 1 / -1;
+      bottom: 0;
     }
   }
   @media (hover: hover) {
     .main_wrap {
+      &-right_side,
       .landing_header,
       .landing_project-ul {
         grid-column: 2 / 7;
@@ -58,18 +64,59 @@
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: 14rem 1fr;
+    gap: 10px;
+    position: fixed;
+    max-height: 100vh;
+    margin-right: -16px;
     .landing_header {
-      grid-column: 2 / 5;
+      grid-column: 2 /-1;
       grid-row: 2 / 3;
     }
-    .landing_project-ul {
-      grid-column: 6 / 11;
-      grid-row: 2 / 3;
+    &-right_side {
+      grid-column: 5 / -1;
+      grid-row: 1 / -1;
+      padding-top: 14rem;
+      height: 100vh;
+      overflow-y: scroll;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 1fr;
+      margin-left: 10px;
+
+      .landing_project-ul {
+        grid-column: 2 / -2;
+        grid-row: 1 / -1;
+      }
+      .landing_project-li {
+        margin-top: 10rem;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 2rem;
+        }
+      }
     }
-    .landing_project-li {
-      margin-top: 10rem;
-      &:first-child {
-        margin-top: 0;
+    .project_footer-home_page {
+      display: none;
+    }
+    &-about_wrap {
+      grid-column: 5/ -1;
+      grid-row: 1 / 2;
+      height: 7rem;
+      justify-content: center;
+      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 7rem;
+      @include milk-blur;
+      align-items: center;
+      nav {
+        grid-column: 5 / 7;
+        height: fit-content;
+      }
+      a {
+        height: fit-content;
       }
     }
   }

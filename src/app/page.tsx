@@ -3,6 +3,8 @@ import siteContent from "./siteContent.json";
 import LandingHeader from "../components/LandingHeader";
 import LandingProjectCard from "../components/LandingProjectCard";
 import { ResponsiveImageProps } from "@/components/_types";
+import HomeAboutNavigation from "@/components/NavHomeAbout";
+import ProjectFooter from "@/components/ProjectFooter";
 
 export default function Home() {
   const images: ResponsiveImageProps[] = [
@@ -60,22 +62,25 @@ export default function Home() {
   return (
     <main className='main_wrap'>
       <LandingHeader />
-      <ul className="landing_project-ul">
-        {siteContent.map(({ projectHeadline, description, landingToolList, slug }, index) => (
-          <li className="landing_project-li" key={projectHeadline}>
-            <LandingProjectCard
-              headline={projectHeadline}
-              desc={description}
-              tools={landingToolList}
-              image={images[index]}
-              slug={slug}
-            />
-          </li>
-        ))}
-      </ul>
       <div className="main_wrap-about_wrap">
-        About
+        <HomeAboutNavigation currentPage="home" />
       </div>
+      <div className="main_wrap-right_side">
+        <ul className="landing_project-ul">
+          {siteContent.map(({ projectHeadline, description, landingToolList, slug }, index) => (
+            <li className="landing_project-li" key={projectHeadline}>
+              <LandingProjectCard
+                headline={projectHeadline}
+                desc={description}
+                tools={landingToolList}
+                image={images[index]}
+                slug={slug}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <ProjectFooter isHomePage/>
     </main>
   );
 }

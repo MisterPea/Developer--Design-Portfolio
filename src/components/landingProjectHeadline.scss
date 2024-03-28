@@ -3,19 +3,19 @@
 .landing_project_headline {
   font-family: var(--main-font);
   &-headline {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     color: var(--dark-1);
   }
   &-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-style: normal;
     font-weight: 300;
     line-height: 137%;
     letter-spacing: 0.02rem;
     color: var(--dark-2);
-    margin: 0.3rem 0;
+    margin: 0.125rem 0 0.8rem;
   }
 }
