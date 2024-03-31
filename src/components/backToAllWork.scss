@@ -6,6 +6,7 @@
   bottom: 0;
   left: 50%;
   z-index: 1000;
+  opacity: 0;
   transform: translate(-50%, 100px);
   &.--show {
     animation: back_to_work-initial-open 450ms;
@@ -102,18 +103,22 @@
 @keyframes back_to_work-initial-open {
   0% {
     transform: translate(-50%, 100px);
+    opacity: 0;
   }
   100% {
     transform: translate(-50%, -4.5rem);
+    opacity: 1;
   }
 }
 
 @keyframes back_to_work-initial-close {
   0% {
     transform: translate(-50%, -4.5rem);
+    opacity: 1;
   }
   100% {
     transform: translate(-50%, 100px);
+    opacity: 0;
   }
 }
 

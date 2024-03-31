@@ -59,6 +59,7 @@ a {
   width: 100%;
   height: auto;
   opacity: 0;
+  max-height: calc(100vh - 10rem);
   animation: simple-opacity-fade 1000ms linear forwards;
 }
 
@@ -72,10 +73,14 @@ a {
 }
 
 .image_frame--image {
-  height: auto;
-  width: 100%;
-  display: block;
-  object-fit: cover;
+  margin: 0 auto;
+
+  // min-height: 100%;
+  // max-width: 100%;
+  // height: auto;
+  // width: 100%;
+  // display: block;
+  // object-fit: cover;
   will-change: transform;
   filter: blur(30px);
   opacity: 0.5;

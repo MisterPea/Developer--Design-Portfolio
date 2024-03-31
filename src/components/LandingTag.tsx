@@ -14,7 +14,7 @@ export default function LandingTag() {
     { one: 'Cat Wrangler', two: '/', three: 'Friend of CSS' },
     { one: 'Curator of Pixels', two: '/', three: 'Connoisseur of Coffee' },
     { one: 'Painter of Pictures', two: '/', three: 'Fancier of The Equine' },
-    { one: 'Tagabow is tops' },
+    { one: 'Identity theft is not a joke, Jim!' },
     { one: 'Piano', two: '/', three: 'Bass', four: '/', five: 'Drums' },
     { one: 'Chocolate Covered Potato Chip Lover' },
     { one: 'Dancing Like Somebody May Be Looking' }
@@ -55,7 +55,7 @@ export default function LandingTag() {
       cycleTags(); // Change the tag
 
 
-      controls.start('show'); // Show the next tag
+      // controls.start('show'); // Show the next tag
     };
 
     sequence();
