@@ -47,7 +47,7 @@ img {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     opacity: 0;
-    @include fade-in-down-5pct($delay:500ms, $duration:2500ms);
+    @include fade-in-down-5pct($delay: 500ms, $duration: 2500ms);
   }
   .project-headline {
     grid-column: 1 / -1;
@@ -56,13 +56,15 @@ img {
   .project_page-hero {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+
     // height: auto;
     margin: 1.25rem 0;
     // height: fit-content;
+    // max-height: calc(100vh - 2.5rem);
+
     img {
+      max-width: 100%;
       height: fit-content;
-      
-      // @include fullWidthImage;
     }
   }
   .project_page-info {
@@ -121,6 +123,20 @@ img {
       line-height: 100%;
     }
   }
+  .nyt_project_page-approach {
+    &-section_one,
+    &-section_four {
+      figure video {
+        border-radius: 0.9rem;
+      }
+    }
+    &-section_three {
+      img {
+        border-radius: 0.9rem;
+        border: 1px solid var(--dark-4);
+      }
+    }
+  }
 
   .nyt_project_page-design {
     grid-column: 1 / -1;
@@ -150,6 +166,10 @@ img {
   }
   /* Problems */
   .nyt_project_page-problems {
+    &-section_one p,
+    &-section_two p {
+      margin-bottom: 1rem;
+    }
     grid-column: 1 / -1;
     &-section_three {
       grid-column: 1 / -1;
@@ -240,10 +260,6 @@ img {
       display: block;
       grid-column: 1 / -1;
       margin-top: 3rem;
-      img {
-        border-radius: 0.25rem;
-        border: 1px solid var(--dark-2);
-      }
     }
     .nyt_project_page-problems {
       &-section_three {
@@ -278,7 +294,7 @@ img {
     &-section_one,
     &-section_three {
       @include nested-double-wide-grid;
-      
+
       div.project_text_block {
         @include double-wide-left;
       }
@@ -304,7 +320,6 @@ img {
       figure {
         @include double-wide-right;
       }
-      
     }
   }
 

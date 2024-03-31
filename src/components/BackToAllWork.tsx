@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function BackToAllWork() {
   const contentFrame = useRef<HTMLElement | null>(null);
+  const hasClicked = useRef<boolean>(false); // temp state holder for click
   const [isOpen, setIsOpen] = useState(false);
   const [isHover, setIsHover] = useState<boolean | null>(null);
 
@@ -16,7 +17,7 @@ export default function BackToAllWork() {
 
   function getElementDistanceToBottom() {
     // Get the element's bottom edge position relative to the document.
-    
+
     if (contentFrame.current) {
       const elementRect = contentFrame.current.getBoundingClientRect();
       const elementBottom = elementRect.bottom;
@@ -43,7 +44,7 @@ export default function BackToAllWork() {
   }
   const showHide = () => {
     if (hasShown.current === true) {
-      if (isOpen === true) {
+      if (isOpen === true && hasClicked.current === false) {
         return ' --show';
       } else {
         return ' --hide';
@@ -53,13 +54,20 @@ export default function BackToAllWork() {
     }
   };
 
+  const handleClickClose = () => {
+    window.removeEventListener('scroll', getElementDistanceToBottom);
+    setIsOpen(false);
+    hasClicked.current = true;
+  };
+
   return (
-    <Link href='/'>
-      <div
-        onMouseEnter={hoverOn}
-        onMouseLeave={hoverOff}
-        onMouseDown={hoverOff}
-        className={`back_to_all_work ${showHide()}`}
+    <Link
+      onMouseEnter={hoverOn}
+      onMouseLeave={hoverOff}
+      onMouseDown={handleClickClose}
+      onClick={handleClickClose}
+      href='/' scroll={false}>
+      <div className={`back_to_all_work ${showHide()}`}
       >
         <div className={`back_to_all_work-scaler${isHover ? '--hover' : '--no-hover'}`}>
           <div className={`back_to_all_work-wrapper_outer${showHide()}`}>

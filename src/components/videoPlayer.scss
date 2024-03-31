@@ -4,10 +4,11 @@
   
   margin: 0;
   video {
-    border-radius: 0.25rem;
+    // border-radius: 0.25rem;
     border: 1px solid rgba(66, 66, 68, 0.6);
     width: 100%;
     height: auto;
+
   }
   &.bezel {
     position: relative;

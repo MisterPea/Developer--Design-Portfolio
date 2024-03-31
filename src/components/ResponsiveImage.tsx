@@ -6,7 +6,7 @@ interface ResponsiveImageComponentProps extends React.HTMLAttributes<HTMLDivElem
 
 import React, { useEffect, useRef } from 'react';
 
-export default function ResponsiveImage({ imageUrls, alt, imageSize, blurDataUrl, loading = 'lazy', dropShadow = 1, addBlur, ...rest }: ResponsiveImageComponentProps) {
+export default function ResponsiveImage({ imageUrls, alt, imageSize, blurDataUrl, loading = 'lazy', dropShadow, addBlur, ...rest }: ResponsiveImageComponentProps) {
   const imageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
