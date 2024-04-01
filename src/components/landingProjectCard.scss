@@ -1,15 +1,23 @@
 @import "../style/mixins.scss";
 
 @media (hover: hover) {
+  .landing_project_card {
+    cursor: pointer;
+    background-color: #59595900;
+    border-radius: 1rem;
+    border: 1rem solid rgba(0, 0, 0, 0);
+    transition: background-color 600ms ease;
+  }
   .landing_project_card-cta {
     transform: translateX(-1rem);
-    transition: transform 400ms cubic-bezier(0.88, 0.01, 0.36, 0.99);
+    transition: transform 600ms cubic-bezier(0.88, 0.01, 0.36, 0.99);
     span svg {
       transform: translateX(0);
-      transition: transform 400ms cubic-bezier(0.88, 0.01, 0.36, 0.99);
+      transition: transform 700ms cubic-bezier(0.88, 0.01, 0.36, 0.99);
     }
   }
   .landing_project_card:hover {
+    background-color: #59595910;
     .landing_project_card-cta {
       transform: translateX(-0.5rem);
       span svg {
@@ -26,9 +34,9 @@
     }
     .landing_project_card:hover {
       .landing_project_card-cta {
-        transform: translateX(0.5rem);
+        transform: translateX(0.4rem);
         span svg {
-          transform: translateX(0.25rem);
+          transform: translateX(0.125rem);
         }
       }
     }
@@ -36,10 +44,6 @@
 }
 
 .landing_project {
-  &_card {
-    cursor: pointer;
-  }
-
   &_card-cta {
     font-family: var(--main-font);
     font-size: 0.875rem;
@@ -81,6 +85,74 @@
     }
     &_headline {
       grid-column: 4 / 6;
+    }
+  }
+}
+
+// Animations
+$base-delay: 0ms;
+$delay-increment: 300ms;
+.landing_project-li {
+  // 2 is number of items to affect
+  @for $i from 1 through 3 {
+    &:nth-of-type(#{$i}) {
+      .landing_project_card-image {
+        will-change: transform;
+        opacity: 0;
+        @include fade-in-custom(
+          $amount: 8px,
+          $delay: 300 +
+            (
+              $delay-increment * ($i - 1)
+            )
+        );
+      }
+      .landing_project_headline-headline {
+        will-change: transform;
+        opacity: 0;
+        @include fade-in-custom(
+          $amount: -8px,
+          $duration: 600ms,
+          $delay: 200 +
+            (
+              $delay-increment * ($i - 1)
+            )
+        );
+      }
+      .landing_project_headline-description {
+        will-change: transform;
+        opacity: 0;
+        @include fade-in-custom(
+          $amount: -8px,
+          $duration: 700ms,
+          $delay: 100 +
+            (
+              $delay-increment * ($i - 1)
+            )
+        );
+      }
+      .chip_group {
+        will-change: transform;
+        opacity: 0;
+        @include fade-in-custom(
+          $duration: 700ms,
+          $amount: 8px,
+          $delay: 300 +
+            (
+              $delay-increment * ($i - 1)
+            )
+        );
+      }
+      .landing_project_card-cta {
+        will-change: transform;
+        opacity: 0;
+        @include fade-in-opacity(
+          $delay: 500 +
+            (
+              $delay-increment * ($i - 1)
+            )
+        );
+      }
     }
   }
 }

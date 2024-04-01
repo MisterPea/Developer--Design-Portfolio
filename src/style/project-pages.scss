@@ -56,11 +56,9 @@ img {
   .project_page-hero {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-
-    // height: auto;
+    opacity: 0;
     margin: 1.25rem 0;
-    // height: fit-content;
-    // max-height: calc(100vh - 2.5rem);
+    @include fade-in-custom($amount: 20px);
 
     img {
       max-width: 100%;
@@ -114,11 +112,11 @@ img {
   .nyt_project_page-approach {
     grid-column: 1 / -1;
     h4 {
-      margin: 0 0 3rem; // **
+      margin: 0 0 3rem;
       color: var(--dark-1);
       text-align: center;
       font-family: var(--main-font);
-      font-size: 1.875rem;
+      font-size: 2rem;
       font-weight: 300;
       line-height: 100%;
     }

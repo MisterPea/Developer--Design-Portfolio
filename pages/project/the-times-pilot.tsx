@@ -1,7 +1,6 @@
+import "../../src/style/globals.scss";
 import ProjectHeadline from "../../src/components/ProjectHeadline";
 import siteContent from "../../src/app/siteContent.json";
-import "../../src/style/globals.scss";
-import ExportedImage from "next-image-export-optimizer";
 import ToolRoleTitle from "../../src/components/ToolRoleTitle";
 import ChipGroup from "../../src/components/ChipGroup";
 import ProjectTextBlock from "@/components/ProjectTextBlock";
@@ -9,29 +8,20 @@ import DivideLine from "@/components/DivideLine";
 import ProjectLinks from "@/components/ProjectLinks";
 import ProjectNavbar from "@/components/ProjectNavbar";
 import { Icon } from "@/components/Icons";
-// import sectionsSelections from "../../public/images/times_pilot/sectionsSelections.png";
-import problemOne from "../../public/images/times_pilot/problem_one.png";
 import ColorSwatchGroup from "@/components/ColorSwatchGroup";
 import { SvgIllustration } from "@/components/SvgIllustration";
 import ImageCaption from "@/components/ImageCaption";
-import nytLoginOne from "../../public/images/times_pilot/times_login_1.png";
-import nytLoginTwo from "../../public/images/times_pilot/times_login_2.png";
-import nytLoginThree from "../../public/images/times_pilot/times_login_3.png";
-import nytLoginFour from "../../public/images/times_pilot/times_login_4.png";
-import nytFlowchart from "../../public/images/times_pilot/nyt_flowchart.png";
 import VideoPlayer from "@/components/VideoPlayer";
 import TypeSpecimen from "@/components/TypeSpecimen";
 import BackToAllWork from "@/components/BackToAllWork";
 import ProjectFooter from "@/components/ProjectFooter";
-import IntersectionWrapper from "@/components/IntersectionWrapper";
 import Spacer from "@/components/Spacer";
-import { ResponsiveImageProps } from "@/components/_types";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { motion } from 'framer-motion';
 import { projectVariant } from '@/components/_helpers/animationVariants';
 import { timesPilotImages } from "@/app/imageContent";
-
-
+import { fadeInUp_1 } from "@/components/_helpers/animationVariants";
+import IntersectionWrapper from "@/components/IntersectionWrapper";
 
 export default function TimesPilot() {
   const { description, projectPage } = siteContent[0];
@@ -97,33 +87,55 @@ export default function TimesPilot() {
             </div>
           </section>
           <DivideLine className="mobile_divide_line post_summary" />
-          <section className="project_page-problem">
-            <ProjectTextBlock title={problemHeadline} body={`${problemBody}`} />
+
+          {/* *********************************** */}
+          <section
+            className="project_page-problem">
+            <ProjectTextBlock intersect title={problemHeadline} body={`${problemBody}`} />
           </section>
+
           <DivideLine className="mobile_divide_line post_problem" />
           <section className="project_page-user_research">
-            <ProjectTextBlock title={userResearchHeadline} body={userResearchBody} />
+            <ProjectTextBlock intersect intersectDelay={300} title={userResearchHeadline} body={userResearchBody} />
           </section>
 
           {/* Approach */}
           <Spacer amount={1.5} className="tablet_spacer" />
           <article className="nyt_project_page-approach">
-            <h4>{approachSectionTitle}</h4>
+            <motion.h4
+              variants={fadeInUp_1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 'all', once: true }}
+            >{approachSectionTitle}</motion.h4>
             <Spacer />
-            <section className="nyt_project_page-approach-section_one">
-              <ProjectTextBlock title={approaches![0].headline} body={approaches![0].body} collapsible />
-              <VideoPlayer videoSource="/video/times_pilot/nyt_email_select-766x2.mp4" />
-            </section>
+            {/* Daily Email */}
+            <motion.section
+              variants={fadeInUp_1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="nyt_project_page-approach-section_one">
+              <ProjectTextBlock intersect title={approaches![0].headline} body={approaches![0].body} collapsible />
+              <VideoPlayer intersect intersectDelay={250} videoSource="/video/times_pilot/nyt_email_select-766x2.mp4" />
+            </motion.section>
             <Spacer amount={6} />
+            {/* Content Layout */}
             <section className="nyt_project_page-approach-section_two">
-              <ProjectTextBlock title={approaches![1].headline} body={approaches![1].body} collapsible />
-              <figure className="project-figure svg">
+              <ProjectTextBlock intersect intersectDelay={100} title={approaches![1].headline} body={approaches![1].body} collapsible />
+              <motion.figure
+                variants={fadeInUp_1}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ amount: 'some', once: true }}
+                className="project-figure svg">
                 <Icon.contentAccessability />
-              </figure>
+              </motion.figure>
             </section>
             <Spacer amount={6} />
+            {/* Section Picker */}
             <section className="nyt_project_page-approach-section_three">
-              <ProjectTextBlock title={approaches![2].headline} body={approaches![2].body} collapsible />
+              <ProjectTextBlock intersect title={approaches![2].headline} body={approaches![2].body} collapsible />
               <figure className="project-figure svg">
                 <ResponsiveImage
                   alt={sectionSelection.alt}
@@ -134,9 +146,10 @@ export default function TimesPilot() {
               </figure>
             </section>
             <Spacer amount={6} />
+            {/* Settings Accessability */}
             <section className="nyt_project_page-approach-section_four">
-              <ProjectTextBlock title={approaches![3].headline} body={approaches![3].body} collapsible />
-              <VideoPlayer videoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4" />
+              <ProjectTextBlock intersect title={approaches![3].headline} body={approaches![3].body} collapsible />
+              <VideoPlayer intersect  intersectDelay={300} videoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4" />
             </section>
           </article >
 
@@ -187,7 +200,7 @@ export default function TimesPilot() {
               <Spacer amount={1.5} />
               <ProjectTextBlock title={problems!.problemOne.headline} body={problems!.problemOne.body} smallTitle collapsible />
               <figure className="project_page-problem_section-problem --single_image">
-                <SvgIllustration.bookmarkPanel/>
+                <SvgIllustration.bookmarkPanel />
               </figure>
             </section>
 
@@ -210,6 +223,7 @@ export default function TimesPilot() {
                     dropShadow={newUserOne.dropShadow}
                     imageSize={newUserOne.imageSize}
                     imageUrls={newUserOne.imageUrls}
+                    
                   />
                   {/* <ExportedImage src={nytLoginOne} alt="Screen capture of initial screen for the times.pilot onboarding." /> */}
                   <figcaption>
@@ -224,6 +238,7 @@ export default function TimesPilot() {
                     dropShadow={newUserTwo.dropShadow}
                     imageSize={newUserTwo.imageSize}
                     imageUrls={newUserTwo.imageUrls}
+                    intersectDelay={200}
                   />
                   <figcaption>
                     <ImageCaption headline={problems!.problemThree.imageCaption[1].headline} body={problems!.problemThree.imageCaption[1].body} />
@@ -237,6 +252,7 @@ export default function TimesPilot() {
                     dropShadow={newUserThree.dropShadow}
                     imageSize={newUserThree.imageSize}
                     imageUrls={newUserThree.imageUrls}
+                    intersectDelay={400}
                   />
                   <figcaption>
                     <ImageCaption headline={problems!.problemThree.imageCaption[2].headline} body={problems!.problemThree.imageCaption[2].body} />
@@ -250,6 +266,7 @@ export default function TimesPilot() {
                     dropShadow={newUserFour.dropShadow}
                     imageSize={newUserFour.imageSize}
                     imageUrls={newUserFour.imageUrls}
+                    intersectDelay={600}
                   />
                   <figcaption>
                     <ImageCaption headline={problems!.problemThree.imageCaption[3].headline} body={problems!.problemThree.imageCaption[3].body} />

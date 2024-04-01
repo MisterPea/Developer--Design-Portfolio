@@ -71,6 +71,17 @@
       max-height 800ms cubic-bezier(0.2, 0.8, 0.5, 1),
       opacity 600ms ease-in;
   }
+  &.intersect {
+    &--not-visible {
+      opacity: 0;
+      will-change: transform;
+      animation: fadeOutProjectText 1000ms cubic-bezier(0.29, 0.65, 0.16, 1) backwards;
+    }
+    &--visible {
+      will-change: transform;
+      animation: fadeInProjectText 2000ms cubic-bezier(0.29, 0.65, 0.16, 1) forwards;
+    }
+  }
   @include tablet {
     &--small-title {
       color: var(--dark-2);
@@ -115,5 +126,28 @@
     li {
       margin-top: 0.45rem;
     }
+  }
+}
+
+@keyframes fadeInProjectText {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 15);
+    opacity: 0;
+  }
+
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutProjectText {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: matrix(1, 0, 0, 0.97, 0, 20);
+    opacity: 0;
   }
 }

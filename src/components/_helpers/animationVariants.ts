@@ -2,7 +2,7 @@ import { Variants } from 'framer-motion';
 
 export const indexVariant: Variants = {
   hidden: {
-    y: 15,
+    y: 20,
     opacity: 0
   },
   show: {
@@ -41,9 +41,40 @@ export const projectVariant: Variants = {
     y: -50,
     opacity: 0,
     transition: {
-      ease: [.79,.02,.29,1],
+      ease: [.79, .02, .29, 1],
       duration: 0.8,
     },
   }
 };
 
+export const fadeInUp_1: Variants = {
+  hidden: {
+    y: 10,
+    opacity: 0
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: [0.5, 1, 0.89, 1],
+      duration: 1
+    }
+  }
+};
+
+export const fadeInUp_1_delay: Variants = {
+  hidden: {
+    y: 10,
+    opacity: 0
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: [0.5, 1, 0.89, 1],
+      duration: 1,
+      delay: 0.4,
+      staggerChildren: 0.2
+    }
+  }
+};

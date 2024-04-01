@@ -60,6 +60,9 @@ export interface ProjectTextBlockProps {
   body: BodyContent;
   collapsible?: boolean;
   smallTitle?: boolean;
+  oneShot?: boolean;
+  intersect?: boolean;
+  intersectDelay?: number;
   [x: string]: any;
 }
 
@@ -95,4 +98,6 @@ export interface ResponsiveImageProps {
   addBlur?: boolean;
   // Root Margin (offset) for the intersection observer to activate
   activationDistance?: HeightProp;
+  // Delay for animating in
+  intersectDelay?: number;
 }

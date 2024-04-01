@@ -6,13 +6,22 @@ interface ResponsiveImageComponentProps extends React.HTMLAttributes<HTMLDivElem
 
 import React, { useEffect, useRef } from 'react';
 
-export default function ResponsiveImage({ imageUrls, alt, imageSize, blurDataUrl, loading = 'lazy', dropShadow, addBlur, ...rest }: ResponsiveImageComponentProps) {
+export default function ResponsiveImage({
+  imageUrls,
+  alt,
+  imageSize,
+  blurDataUrl,
+  loading = 'lazy',
+  dropShadow,
+  addBlur,
+  intersectDelay = 0,
+  ...rest }: ResponsiveImageComponentProps) {
   const imageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '100px',
+      rootMargin: '0px 0px 10% 0px',
       threshold: 0.1,
     };
 
@@ -73,14 +82,16 @@ export default function ResponsiveImage({ imageUrls, alt, imageSize, blurDataUrl
   };
 
   const cleanUpLoadImage = (imageElement: HTMLImageElement, pictureElement: HTMLPictureElement) => {
-    imageElement.style.filter = `blur(0px)${appendToFilter()}`;
-    imageElement.style.opacity = '1';
-    imageElement.setAttribute('alt', alt);
-    imageElement.removeEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement));
-    imageElement.style.removeProperty('background-image');
-    imageElement.style.removeProperty('background-repeat');
-    imageElement.style.removeProperty('background-size');
-    (imageElement as HTMLImageElement | null) = null;
+    window.setTimeout(() => {
+      imageElement.style.filter = `blur(0px)${appendToFilter()}`;
+      imageElement.style.opacity = '1';
+      imageElement.setAttribute('alt', alt);
+      imageElement.removeEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement));
+      imageElement.style.removeProperty('background-image');
+      imageElement.style.removeProperty('background-repeat');
+      imageElement.style.removeProperty('background-size');
+      (imageElement as HTMLImageElement | null) = null;
+    }, intersectDelay);
   };
 
   return (

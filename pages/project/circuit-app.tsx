@@ -1,7 +1,6 @@
 import ProjectHeadline from "../../src/components/ProjectHeadline";
 import siteContent from "../../src/app/siteContent.json";
 import "../../src/style/globals.scss";
-
 import ToolRoleTitle from "../../src/components/ToolRoleTitle";
 import ChipGroup from "../../src/components/ChipGroup";
 import ProjectTextBlock from "@/components/ProjectTextBlock";
@@ -10,23 +9,17 @@ import ProjectLinks from "@/components/ProjectLinks";
 import ProjectNavbar from "@/components/ProjectNavbar";
 import ColorSwatchGroup from "@/components/ColorSwatchGroup";
 import ImageCaption from "@/components/ImageCaption";
-
 import VideoPlayer from "@/components/VideoPlayer";
 import TypeSpecimen from "@/components/TypeSpecimen";
 import BackToAllWork from "@/components/BackToAllWork";
 import ProjectFooter from "@/components/ProjectFooter";
-import IntersectionWrapper from "@/components/IntersectionWrapper";
-
 import Spacer from "@/components/Spacer";
 import CircuitPeriodGroup from "@/components/CircuitPeriodGroup";
 import MobileCircuitDiagram from "@/components/MobileCircuitDiagram";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { motion } from "framer-motion";
 import { circuitImages } from "@/app/imageContent";
-import { projectVariant } from '@/components/_helpers/animationVariants';
-
-
-
+import { projectVariant, fadeInUp_1, fadeInUp_1_delay } from '@/components/_helpers/animationVariants';
 
 
 export default function CircuitApp() {
@@ -106,28 +99,38 @@ export default function CircuitApp() {
           </section>
           <DivideLine className="mobile_divide_line post_summary" />
           <section className="project_page-problem">
-            <ProjectTextBlock title={problemHeadline} body={`${problemBody}`} />
+            <ProjectTextBlock intersect title={problemHeadline} body={`${problemBody}`} />
           </section>
           <DivideLine className="mobile_divide_line post_problem" />
           <section className="project_page-user_research">
-            <ProjectTextBlock title={userResearchHeadline} body={userResearchBody} />
+            <ProjectTextBlock intersect intersectDelay={270} title={userResearchHeadline} body={userResearchBody} />
           </section>
 
           {/* Approach */}
           <Spacer amount={1.5} className="tablet_spacer" />
           <article className="circuit_project_page-approach">
-            <h4>{approachSectionTitle}</h4>
+            <motion.h4
+              variants={fadeInUp_1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 'all', once: true }}
+            >{approachSectionTitle}</motion.h4>
             <Spacer />
             {/* Section One */}
-            <section className="circuit_project_page-approach-section_one">
-              <ProjectTextBlock title={approaches![0].headline} body={approaches![0].body} />
-              <VideoPlayer videoSource="/video/circuit/circuitOne_1.mov" className="bezel" />
-            </section>
+            <motion.section
+              variants={fadeInUp_1_delay}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 'some', once: true }}
+              className="circuit_project_page-approach-section_one">
+              <ProjectTextBlock intersect intersectDelay={500} oneShot={false} title={approaches![0].headline} body={approaches![0].body} />
+              <VideoPlayer intersect intersectDelay={500} onShot={false} videoSource="/video/circuit/circuit_edit-773x2a.mov" className="bezel" />
+            </motion.section>
             <Spacer amount={6} />
             {/* Section Two */}
             <section className="circuit_project_page-approach-section_two">
-              <ProjectTextBlock title={approaches![1].headline} body={approaches![1].body} />
-              <VideoPlayer videoSource="/video/circuit/circuitOne_1.mov" className="bezel" />
+              <ProjectTextBlock intersect intersectDelay={700} title={approaches![1].headline} body={approaches![1].body} />
+              <VideoPlayer intersect intersectDelay={500} videoSource="/video/circuit/circuit_add-773x2.mov" className="bezel" />
             </section>
 
             <Spacer amount={6} />
@@ -162,6 +165,7 @@ export default function CircuitApp() {
                 imageUrls={circuitInProgressScreen.imageUrls}
                 dropShadow={circuitInProgressScreen.dropShadow}
                 className="image_two"
+                intersectDelay={200}
               />
               <ImageCaption
                 body="While in progress, the current minute is animated and bottom text tells the user how much time until the next period."
@@ -176,6 +180,7 @@ export default function CircuitApp() {
                 imageUrls={circuitCompletedScreen.imageUrls}
                 dropShadow={circuitCompletedScreen.dropShadow}
                 className="image_three"
+                intersectDelay={400}
               />
               <ImageCaption
                 body="Once completed, the user is offered the option to reset the timer, or finish and view their progress."
@@ -188,8 +193,8 @@ export default function CircuitApp() {
           {/* Design Considerations */}
           <article className="circuit_project_page-design">
             <section className="circuit_project_page-design-considerations-wrapper">
-              <ProjectTextBlock title={design?.designHeadline} body={[design!.designList[0], design!.designList[1]]} className="circuit_project_page-design-considerations_left" />
-              <ProjectTextBlock title="" body={[design!.designList[2], design!.designList[3]]} className="circuit_project_page-design-considerations_right" />
+              <ProjectTextBlock intersect title={design?.designHeadline} body={[design!.designList[0], design!.designList[1]]} className="circuit_project_page-design-considerations_left" />
+              <ProjectTextBlock intersect intersectDelay={500} title="" body={[design!.designList[2], design!.designList[3]]} className="circuit_project_page-design-considerations_right" />
             </section>
             <Spacer amount={2} />
             <section className="diagram_section">

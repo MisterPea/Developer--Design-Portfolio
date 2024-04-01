@@ -1,8 +1,22 @@
-import { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState, useRef } from "react";
 import { BodyContent, MixedText, ProjectTextBlockProps } from "./_types";
+import useIntersection from "./_helpers/useIntersection";
 
-export default function ProjectTextBlock({ title, titleIsBold = false, body = '', collapsible, smallTitle = false, ...rest }: ProjectTextBlockProps) {
+export default function ProjectTextBlock({
+  title,
+  titleIsBold = false,
+  body = '',
+  collapsible,
+  smallTitle = false,
+  oneShot = true,
+  intersect = false,
+  intersectDelay,
+  ...rest }: ProjectTextBlockProps) {
   const [isOpen, setIsOpen] = useState<boolean>(!collapsible);
+
+  const elementRef = useRef<HTMLDivElement>(null);
+  const isVisible = useIntersection(elementRef, oneShot, intersect, intersectDelay);
 
   function handleShowMore() {
     setIsOpen((s) => !s);
@@ -55,8 +69,26 @@ export default function ProjectTextBlock({ title, titleIsBold = false, body = ''
     return '--reg';
   };
 
+  const compileClass = (() => {
+    const classArray = [];
+    if (collapsible) { classArray.push('collapsible'); };
+    if (rest.className) { classArray.push(rest.className); };
+    if (intersect === true) {
+      if (isVisible) { classArray.push('intersect--visible'); };
+      if (!isVisible) { classArray.push('intersect--not-visible'); };
+    }
+    if (classArray.length) {
+      return ' ' + classArray.join(' ');
+    } else {
+      return '';
+    }
+  })();
+
   return (
-    <div {...rest} className={`project_text_block${collapsible ? ' collapsible' : ''} ${rest.className || ''}`} onClick={handleShowMore} >
+    <div {...rest}
+      ref={elementRef}
+      className={`project_text_block${compileClass}`}
+      onClick={handleShowMore} >
       {title && <h3 className={`project_text_block${titleTreatment()}`}>{title}</h3>}
       <div className={`project_text_block-collapsible${isOpen ? '--open' : '--closed'} ${!collapsible ? '-collapsible--std' : ''}`}>
         {createBodyContent(body)}

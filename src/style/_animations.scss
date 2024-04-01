@@ -29,6 +29,20 @@
     opacity: 1;
   }
 }
+@mixin fade-in-down-quick($duration: 1s, $delay: 0s) {
+  animation: fadeInUpSmall $duration ease forwards $delay;
+}
+
+@keyframes fadeInUpSmall {
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @mixin fade-in-up-med($duration: 1s, $delay: 0s) {
   animation: fadeInUpMed $duration cubic-bezier(0.31, 0.87, 0.3, 1.01) forwards $delay;
@@ -56,6 +70,37 @@
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@mixin fade-in-custom($duration: 1s, $delay: 0s, $amount: 10px) {
+  $animation-name: unique-id();
+  // Generates a unique animation name b/c every different animation value
+  // needs to be independently identifiable
+  @keyframes #{$animation-name} {
+    0% {
+      transform: translateY($amount);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  animation: $animation-name $duration cubic-bezier(0.53, 0, 0.3, 1) forwards $delay;
+}
+
+@mixin fade-in-opacity($duration: 1s, $delay: 0s) {
+  animation: fadeInOpacity $duration cubic-bezier(0.31, 0.87, 0.3, 1.01) forwards $delay;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

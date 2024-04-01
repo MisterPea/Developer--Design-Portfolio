@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { ReactElement, useEffect, useRef, useState } from "react";
+import { ReactElement, ReactNode, useEffect, useRef, useState } from "react";
 
-export default function IntersectionWrapper({ children, oneShot = true, ...rest }: { children: ReactElement, oneShot?: boolean;[x: string]: any; }) {
+export default function IntersectionWrapper({ children, oneShot = true, ...rest }: { children: ReactNode, oneShot?: boolean;[x: string]: any; }) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
