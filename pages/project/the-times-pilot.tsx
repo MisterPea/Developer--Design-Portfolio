@@ -18,12 +18,13 @@ import ProjectFooter from "@/components/ProjectFooter";
 import Spacer from "@/components/Spacer";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { motion } from 'framer-motion';
-import { projectVariant } from '@/components/_helpers/animationVariants';
+import { indexVariant, projectVariant } from '@/components/_helpers/animationVariants';
 import { timesPilotImages } from "@/app/imageContent";
 import { fadeInUp_1 } from "@/components/_helpers/animationVariants";
-import IntersectionWrapper from "@/components/IntersectionWrapper";
+import { useEffect } from "react";
 
 export default function TimesPilot() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   const { description, projectPage } = siteContent[0];
   const {
     headlineOne,
@@ -68,9 +69,11 @@ export default function TimesPilot() {
               alt={heroImage.alt}
               blurDataUrl={heroImage.blurDataUrl}
               dropShadow={heroImage.dropShadow}
+              intersectDelay={300}
+              loading="eager"
             />
           </figure>
-          <DivideLine className="hero_line " />
+          <DivideLine className="hero_line" />
           <section className="project_page-summary">
             <ProjectTextBlock title={summaryHeadline} body={summaryBody} titleIsBold />
           </section>
@@ -88,7 +91,6 @@ export default function TimesPilot() {
           </section>
           <DivideLine className="mobile_divide_line post_summary" />
 
-          {/* *********************************** */}
           <section
             className="project_page-problem">
             <ProjectTextBlock intersect title={problemHeadline} body={`${problemBody}`} />
@@ -96,7 +98,7 @@ export default function TimesPilot() {
 
           <DivideLine className="mobile_divide_line post_problem" />
           <section className="project_page-user_research">
-            <ProjectTextBlock intersect intersectDelay={300} title={userResearchHeadline} body={userResearchBody} />
+            <ProjectTextBlock intersect intersectDelay={200} title={userResearchHeadline} body={userResearchBody} />
           </section>
 
           {/* Approach */}
@@ -124,10 +126,10 @@ export default function TimesPilot() {
             <section className="nyt_project_page-approach-section_two">
               <ProjectTextBlock intersect intersectDelay={100} title={approaches![1].headline} body={approaches![1].body} collapsible />
               <motion.figure
-                variants={fadeInUp_1}
+                variants={indexVariant}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ amount: 'some', once: true }}
+                viewport={{ amount: 'some' }}
                 className="project-figure svg">
                 <Icon.contentAccessability />
               </motion.figure>
@@ -136,20 +138,25 @@ export default function TimesPilot() {
             {/* Section Picker */}
             <section className="nyt_project_page-approach-section_three">
               <ProjectTextBlock intersect title={approaches![2].headline} body={approaches![2].body} collapsible />
-              <figure className="project-figure svg">
+              <motion.figure
+                variants={indexVariant}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ amount: 'some' }}
+                className="project-figure svg">
                 <ResponsiveImage
                   alt={sectionSelection.alt}
                   blurDataUrl={sectionSelection.blurDataUrl}
                   imageSize={sectionSelection.imageSize}
                   imageUrls={sectionSelection.imageUrls}
                 />
-              </figure>
+              </motion.figure>
             </section>
             <Spacer amount={6} />
             {/* Settings Accessability */}
             <section className="nyt_project_page-approach-section_four">
               <ProjectTextBlock intersect title={approaches![3].headline} body={approaches![3].body} collapsible />
-              <VideoPlayer intersect  intersectDelay={300} videoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4" />
+              <VideoPlayer intersect intersectDelay={300} videoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4" />
             </section>
           </article >
 
@@ -223,15 +230,12 @@ export default function TimesPilot() {
                     dropShadow={newUserOne.dropShadow}
                     imageSize={newUserOne.imageSize}
                     imageUrls={newUserOne.imageUrls}
-                    
                   />
-                  {/* <ExportedImage src={nytLoginOne} alt="Screen capture of initial screen for the times.pilot onboarding." /> */}
                   <figcaption>
                     <ImageCaption headline={problems!.problemThree.imageCaption[0].headline} body={problems!.problemThree.imageCaption[0].body} />
                   </figcaption>
                 </figure>
                 <figure className="nyt_project_page-problems-section_three-image image_two">
-                  {/* <ExportedImage src={nytLoginTwo} alt="Screen capture of second screen for the times.pilot onboarding." /> */}
                   <ResponsiveImage
                     alt={newUserTwo.alt}
                     blurDataUrl={newUserTwo.blurDataUrl}
@@ -245,7 +249,6 @@ export default function TimesPilot() {
                   </figcaption>
                 </figure>
                 <figure className="nyt_project_page-problems-section_three-image image_three">
-                  {/* <ExportedImage src={nytLoginThree} alt="Screen capture of third screen for the times.pilot onboarding." /> */}
                   <ResponsiveImage
                     alt={newUserThree.alt}
                     blurDataUrl={newUserThree.blurDataUrl}
@@ -259,7 +262,6 @@ export default function TimesPilot() {
                   </figcaption>
                 </figure>
                 <figure className="nyt_project_page-problems-section_three-image image_four">
-                  {/* <ExportedImage src={nytLoginFour} alt="Screen capture of fourth screen for the times.pilot onboarding." /> */}
                   <ResponsiveImage
                     alt={newUserFour.alt}
                     blurDataUrl={newUserFour.blurDataUrl}

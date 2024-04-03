@@ -20,10 +20,11 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import { motion } from "framer-motion";
 import { circuitImages } from "@/app/imageContent";
 import { projectVariant, fadeInUp_1, fadeInUp_1_delay } from '@/components/_helpers/animationVariants';
+import { useEffect } from "react";
 
 
 export default function CircuitApp() {
-
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   // Text imports
   const { description, projectPage } = siteContent[1];
   const {
@@ -123,14 +124,14 @@ export default function CircuitApp() {
               whileInView="show"
               viewport={{ amount: 'some', once: true }}
               className="circuit_project_page-approach-section_one">
-              <ProjectTextBlock intersect intersectDelay={500} oneShot={false} title={approaches![0].headline} body={approaches![0].body} />
-              <VideoPlayer intersect intersectDelay={500} onShot={false} videoSource="/video/circuit/circuit_edit-773x2a.mov" className="bezel" />
+              <ProjectTextBlock intersect intersectDelay={1000} oneShot={false} title={approaches![0].headline} body={approaches![0].body} />
+              <VideoPlayer intersect intersectDelay={100} onShot={false} videoSource="/video/circuit/circuit_edit-773x2a.mov" className="bezel" />
             </motion.section>
             <Spacer amount={6} />
             {/* Section Two */}
             <section className="circuit_project_page-approach-section_two">
-              <ProjectTextBlock intersect intersectDelay={700} title={approaches![1].headline} body={approaches![1].body} />
-              <VideoPlayer intersect intersectDelay={500} videoSource="/video/circuit/circuit_add-773x2.mov" className="bezel" />
+              <ProjectTextBlock intersect intersectDelay={1000} title={approaches![1].headline} body={approaches![1].body} />
+              <VideoPlayer intersect intersectDelay={100} videoSource="/video/circuit/circuit_add-773x2.mov" className="bezel" />
             </section>
 
             <Spacer amount={6} />
@@ -237,7 +238,13 @@ export default function CircuitApp() {
           </article>
           <DivideLine className="full-width-line" />
           <section className="circuit_project_page-approach circuit_alts">
-            <h4 className="circuit_alts_headline">Matrix Design Alternatives</h4>
+            <motion.h4
+              variants={fadeInUp_1}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 'all', once: true }}
+              className="circuit_alts_headline">Matrix Design Alternatives</motion.h4>
+
             <ResponsiveImage
               alt={circuitAltDesignOne.alt}
               blurDataUrl={circuitAltDesignOne.blurDataUrl}
@@ -246,8 +253,13 @@ export default function CircuitApp() {
               dropShadow={circuitAltDesignOne.dropShadow}
               className="alt_one"
             />
-            <ProjectTextBlock smallTitle title="Alternate Matrix One" body="In this iteration the rest periods are grouped together. Doing so presents the user with an alternative sectional representation, which augments the description via semantic color. From a development point of view, this may be a slightly more complex route to take as we're essentially treating time in 2 different ways: by minimal instance (minute dots) and by section (rest lines)." className="text_one" />
-
+            <ProjectTextBlock
+              intersect
+              intersectDelay={150}
+              smallTitle
+              title="Alternate Matrix One"
+              body="In this iteration the rest periods are grouped together. Doing so presents the user with an alternative sectional representation, which augments the description via semantic color. From a development point of view, this may be a slightly more complex route to take as we're essentially treating time in 2 different ways: by minimal instance (minute dots) and by section (rest lines)."
+              className="text_one" />
             <ResponsiveImage
               alt={circuitAltDesignTwo.alt}
               blurDataUrl={circuitAltDesignTwo.blurDataUrl}
@@ -255,8 +267,14 @@ export default function CircuitApp() {
               imageUrls={circuitAltDesignTwo.imageUrls}
               dropShadow={circuitAltDesignTwo.dropShadow}
               className="alt_two"
+              intersectDelay={200}
             />
-            <ProjectTextBlock smallTitle title="Alternate Matrix Two" body="In this iteration the active and rest periods are treated the same. This allows us to treat all measurements of time the same. By bridging the dots we create cohesive areas that are easy to visually discern by color or density. Another issue for users is that this format may read too closely to text-placeholder graphics." className="text_two" />
+            <ProjectTextBlock
+              intersect
+              intersectDelay={350}
+              smallTitle
+              title="Alternate Matrix Two" body="In this iteration the active and rest periods are treated the same. This allows us to treat all measurements of time the same. By bridging the dots we create cohesive areas that are easy to visually discern by color or density. Another issue for users is that this format may read too closely to text-placeholder graphics."
+              className="text_two" />
           </section>
         </div>
         <ProjectFooter />

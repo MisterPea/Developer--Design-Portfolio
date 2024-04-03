@@ -19,7 +19,7 @@
     letter-spacing: 0.00938rem;
     line-height: 130%;
     opacity: 0;
-    @include fade-in-down(1200ms, 150ms);
+    @include fade-in-down($duration:1300ms, $delay:100ms);
   }
   @include tablet {
     h1 {

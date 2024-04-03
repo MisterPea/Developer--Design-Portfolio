@@ -17,6 +17,7 @@ export default function ResponsiveImage({
   intersectDelay = 0,
   ...rest }: ResponsiveImageComponentProps) {
   const imageRef = useRef<HTMLImageElement>(null);
+  const placeholderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observerOptions = {
@@ -34,7 +35,13 @@ export default function ResponsiveImage({
       });
     }, observerOptions);
 
-    if (imageRef.current) {
+    // If `eager` bypass observer and load image
+    if (loading === 'eager') {
+      populatePictureTag();
+    }
+
+    // If `lazy` implement observer
+    if (loading === 'lazy' && imageRef.current) {
       observer.observe(imageRef.current);
     }
 
@@ -48,7 +55,10 @@ export default function ResponsiveImage({
     const pictureElement = imageElement.parentElement;
     if (!pictureElement) return;
 
-    imageElement.addEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement));
+    const placeholderElement = placeholderRef.current;
+    if (!placeholderElement) return;
+
+    imageElement.addEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement, placeholderElement));
 
     const sourceSizes = [
       { size: 'large', minWidth: '1200px' },
@@ -67,29 +77,33 @@ export default function ResponsiveImage({
         pictureElement.insertBefore(sourceElement, imageElement);
       }
     });
-    imageElement.src = imageUrls.medium.imageUrl_1x; // Load the real image
+    imageElement.src = imageUrls.medium.imageUrl_1x; // Load the default image
   };
 
-  const appendToFilter = () => {
+  const appendToClass = (() => {
     if (dropShadow === 1) {
-      return " drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2)) drop-shadow(2px 1px 4px rgba(0, 0, 0, 0.5))";
+      return '-drop_shadow-1';
     }
     if (dropShadow === 2) {
-      return " drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(11px 18px 15px rgba(0, 0, 0, 0.33))";
+      return '-drop_shadow-2';
     } else {
-      return '';
+      return '-drop_shadow-0';
     }
+  })();
+
+  const removePlaceholder = (placeholder: HTMLDivElement) => {
+    placeholder.remove();
   };
 
-  const cleanUpLoadImage = (imageElement: HTMLImageElement, pictureElement: HTMLPictureElement) => {
+  const cleanUpLoadImage = (imageElement: HTMLImageElement, pictureElement: HTMLPictureElement, placeholderElement: HTMLDivElement) => {
     window.setTimeout(() => {
-      imageElement.style.filter = `blur(0px)${appendToFilter()}`;
-      imageElement.style.opacity = '1';
+      imageElement.classList.add('--mounted');
+      imageElement.classList.add(appendToClass);
       imageElement.setAttribute('alt', alt);
-      imageElement.removeEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement));
-      imageElement.style.removeProperty('background-image');
-      imageElement.style.removeProperty('background-repeat');
-      imageElement.style.removeProperty('background-size');
+      imageElement.removeEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement, placeholderElement));
+      placeholderElement.classList.add('--load-complete');
+      // remove placeholder div upon completion
+      placeholderElement.addEventListener('transitionend', removePlaceholder.bind(null, placeholderElement), { once: true });
       (imageElement as HTMLImageElement | null) = null;
     }, intersectDelay);
   };
@@ -98,19 +112,17 @@ export default function ResponsiveImage({
     <picture {...rest} className={`image_frame${rest.className ? ` ${rest.className}` : ''}`}>
       <img
         ref={imageRef}
-        className={`image_frame--image`}
+        className='image_frame--image'
         height={imageSize.h}
         width={imageSize.w}
         loading={loading}
         alt=''
+      />
+      <div
+        ref={placeholderRef}
+        className="image_frame--placeholder"
         style={{
           backgroundImage: `url(${blurDataUrl})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          width: '100%',
-          height: 'auto',
-          display: 'block',
-          filter: 'blur(10px)',
         }}
       />
     </picture>

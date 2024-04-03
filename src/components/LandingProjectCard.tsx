@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import ExportedImage from "next-image-export-optimizer";
 import LandingProjectHeadline from "./LandingProjectHeadline";
 import { LandingProjectCardProps } from "./_types";
@@ -10,7 +10,7 @@ export default function LandingProjectCard({ headline, desc, tools, image, slug 
   const { alt, imageSize, imageUrls, blurDataUrl } = image;
 
   return (
-    <Link href={`project/${slug}`}>
+    <Link href={`project/${slug}`} scroll={false}>
       <div className="landing_project_card">
         <LandingProjectHeadline headline={headline} desc={desc} tools={tools} />
         <figure className="landing_project_card-image">
@@ -20,6 +20,8 @@ export default function LandingProjectCard({ headline, desc, tools, image, slug 
             imageUrls={imageUrls}
             blurDataUrl={blurDataUrl}
             dropShadow={1}
+            loading="eager"
+            className="landing_image"
           />
         </figure>
         <p className="landing_project_card-cta">View Case Study<span>{Icon.rightArrow()}</span></p>

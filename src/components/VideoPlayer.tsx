@@ -7,7 +7,7 @@ export default function VideoPlayer({ videoSource, intersect, intersectDelay, on
   const isVisible = useIntersection(elementRef, oneShot, intersect, intersectDelay);
 
   const compileClass = (() => {
-    const classArray = ['project-figure video', 'video'];
+    const classArray = ['project-figure', 'video'];
     if (rest.className) { classArray.push(rest.className); };
     if (intersect === true) {
       if (isVisible) { classArray.push('intersect--visible'); };

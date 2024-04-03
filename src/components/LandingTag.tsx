@@ -17,7 +17,9 @@ export default function LandingTag() {
     { one: 'Identity theft is not a joke, Jim!' },
     { one: 'Piano', two: '/', three: 'Bass', four: '/', five: 'Drums' },
     { one: 'Chocolate Covered Potato Chip Lover' },
-    { one: 'Dancing Like Somebody May Be Looking' }
+    { one: 'Dancing Like Somebody May Be Looking' },
+    { one: 'Making Ice Cream', two: '/', three: 'And Cookies' },
+    { one: 'Nationally Ranked Cones of Dunshire Player' }
   ]);
 
   function shuffleArray() {

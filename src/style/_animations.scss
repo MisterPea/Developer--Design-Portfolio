@@ -89,11 +89,11 @@
     }
   }
 
-  animation: $animation-name $duration cubic-bezier(0.53, 0, 0.3, 1) forwards $delay;
+  animation: $animation-name $duration cubic-bezier(0.31, 0.87, 0.3, 1.0) forwards $delay;
 }
 
 @mixin fade-in-opacity($duration: 1s, $delay: 0s) {
-  animation: fadeInOpacity $duration cubic-bezier(0.31, 0.87, 0.3, 1.01) forwards $delay;
+  animation: fadeInOpacity $duration cubic-bezier(0.31, 0.87, 0.3, 1.0) forwards $delay;
 }
 
 @keyframes fadeInOpacity {

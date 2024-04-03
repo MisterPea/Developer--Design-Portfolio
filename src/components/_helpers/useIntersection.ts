@@ -9,8 +9,8 @@ const useIntersection = (elementRef: RefObject<HTMLElement>, oneShot?: boolean, 
     let observer: IntersectionObserver;
     const options: IntersectionObserverInit = {
       root: null,
-      rootMargin: `10px 0px -2% 0px`,
-      threshold: 0.1
+      rootMargin: `-32px 0px -2% 0px`,
+      threshold: 0.2
     };
 
     // Timeout handle
@@ -22,19 +22,26 @@ const useIntersection = (elementRef: RefObject<HTMLElement>, oneShot?: boolean, 
       }
     }
 
+    let timerId: NodeJS.Timeout;
     const intersectionCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          handleVisibleTrue();
-          // Remove observer if we don't want to run continuously 
-          if (oneShot === true) {
-            removeObserver(observer);
+      if (timerId) {
+        clearTimeout(timerId);
+      }
+      // Timer to debounce calls
+      timerId = setTimeout(() => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            handleVisibleTrue();
+            // Remove observer if we don't want to run continuously 
+            if (oneShot === true) {
+              removeObserver(observer);
+            }
+          } else {
+            // if we're back out of range - change it to not visible
+            setIsVisible(false);
           }
-        } else {
-          // if we're back out of range - change it to not visible
-          setIsVisible(false);
-        }
-      });
+        });
+      }, 200);
     };
 
     const removeObserver = (observerArg: IntersectionObserver) => {

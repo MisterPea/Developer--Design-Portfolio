@@ -25,6 +25,7 @@
       }
     }
   }
+  
   @include tablet {
     .landing_project_card-cta {
       transform: translateX(0);
@@ -44,13 +45,14 @@
 }
 
 .landing_project {
+
   &_card-cta {
     font-family: var(--main-font);
     font-size: 0.875rem;
     color: var(--dark-2);
     font-weight: 600;
     float: right;
-    margin-top: 0.25rem;
+    margin-top: 0.7rem;
     span {
       margin-left: 0.25rem;
       height: 1rem;
@@ -60,12 +62,15 @@
     }
   }
   &_card-image {
-    margin: 0.75rem 0 0;
-    img {
-      @include fullWidthImage;
-    }
+    margin: 1rem 0 0;
+  }
+  &-li:last-child {
+    margin-bottom: 2.5rem;
   }
   @include tablet {
+    &-li:last-child {
+      margin-bottom: unset;
+    }
     &_card {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -100,7 +105,7 @@ $delay-increment: 300ms;
         will-change: transform;
         opacity: 0;
         @include fade-in-custom(
-          $amount: 8px,
+          $amount: 12px,
           $delay: 300 +
             (
               $delay-increment * ($i - 1)
@@ -111,7 +116,7 @@ $delay-increment: 300ms;
         will-change: transform;
         opacity: 0;
         @include fade-in-custom(
-          $amount: -8px,
+          $amount: -5px,
           $duration: 600ms,
           $delay: 200 +
             (
@@ -123,7 +128,7 @@ $delay-increment: 300ms;
         will-change: transform;
         opacity: 0;
         @include fade-in-custom(
-          $amount: -8px,
+          $amount: -5px,
           $duration: 700ms,
           $delay: 100 +
             (
@@ -136,7 +141,7 @@ $delay-increment: 300ms;
         opacity: 0;
         @include fade-in-custom(
           $duration: 700ms,
-          $amount: 8px,
+          $amount: 5px,
           $delay: 300 +
             (
               $delay-increment * ($i - 1)
