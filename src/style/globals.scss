@@ -21,12 +21,12 @@
 @import "../components/projectFooter.scss";
 @import "../components/circuitPeriodGroup.scss";
 @import "../components/mobileCircuitDiagram.scss";
+@import "../components/navHomeAbout.scss";
+@import "../components/responsiveImage.scss";
 @import "../style/main-page.scss";
 @import "../style/project-pages.scss";
 @import "../style/circuit-project-page.scss";
-@import "../components/navHomeAbout.scss";
-@import "../components/responsiveImage.scss";
-
+@import "../style/about.scss";
 html {
   box-sizing: border-box;
 }

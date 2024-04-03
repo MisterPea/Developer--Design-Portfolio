@@ -43,6 +43,17 @@
     }
   }
 }
+.project_footer-about_page {
+  .project_footer-link{
+    height: 35px;
+    width: 35px;
+    @include tablet {      
+      margin-top: 1rem;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
 
 @include desktop {
   .project_footer-home_page-about_link {

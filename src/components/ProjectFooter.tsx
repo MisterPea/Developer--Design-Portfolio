@@ -2,14 +2,14 @@ import Link from "next/link";
 import { Icon } from "./Icons";
 import renderEmail from "./_helpers/renderEmail";
 
-export default function ProjectFooter({ isHomePage = false }: { isHomePage?: boolean; }) {
+export default function ProjectFooter({ isHomePage = false, isAboutPage = false }: { isHomePage?: boolean; isAboutPage?: boolean; }) {
 
   function emailClick() {
     return window.location.href = renderEmail();
   }
 
   return (
-    <footer className={`project_footer${isHomePage === true ? "-home_page" : ""}`}>
+    <footer className={`project_footer${isHomePage === true ? "-home_page" : ""}${isAboutPage === true ? "-about_page" : ""}`}>
       <ul className="project_footer-all_links">
         <li className="project_footer-link">
           <a href="https://github.com/MisterPea" rel="noopener noreferrer" target="_blank" >
@@ -27,8 +27,8 @@ export default function ProjectFooter({ isHomePage = false }: { isHomePage?: boo
           </button>
         </li>
       </ul>
-      { isHomePage && <div className="project_footer-home_page-about_link">
-        <Link href='/about' >
+      {isHomePage && <div className="project_footer-home_page-about_link">
+        <Link href='/about' scroll={false} >
           About
         </Link>
       </div>}
