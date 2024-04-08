@@ -13,19 +13,19 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
     },
     imageUrls: {
       small: {
-        imageUrl_1x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-514.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-771.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-1166.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-514.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-771.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-1166.WEBP"
       },
       medium: {
-        imageUrl_1x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-287.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-579.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-861.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-287.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-579.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-861.WEBP"
       },
       large: {
-        imageUrl_1x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-257.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-514.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitPickerScreen.5c31af41-opt-771.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-257.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-514.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-771.WEBP"
       }
     }
   };
@@ -39,19 +39,19 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
     },
     imageUrls: {
       small: {
-        imageUrl_1x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-514.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-771.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-1166.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-514.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-771.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-1166.WEBP"
       },
       medium: {
-        imageUrl_1x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-287.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-579.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-861.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-287.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-579.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-861.WEBP"
       },
       large: {
-        imageUrl_1x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-257.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-514.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitOverviewResults.711b0d7d-opt-771.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-257.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-514.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-771.WEBP"
       }
     }
   };
@@ -65,19 +65,19 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
     },
     imageUrls: {
       small: {
-        imageUrl_1x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-514.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-771.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-1166.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-514.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-771.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-1166.WEBP"
       },
       medium: {
-        imageUrl_1x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-287.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-579.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-861.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-287.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-579.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-861.WEBP"
       },
       large: {
-        imageUrl_1x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-257.WEBP",
-        imageUrl_2x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-514.WEBP",
-        imageUrl_3x: "/optimizedImages/CircuitDetailedResults.ef534f30-opt-771.WEBP"
+        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-257.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-514.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-771.WEBP"
       }
     }
   };

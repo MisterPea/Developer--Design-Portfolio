@@ -1,5 +1,4 @@
 'use client';
-import ExportedImage from "next-image-export-optimizer";
 import LandingProjectHeadline from "./LandingProjectHeadline";
 import { LandingProjectCardProps } from "./_types";
 import { Icon } from "./Icons";
