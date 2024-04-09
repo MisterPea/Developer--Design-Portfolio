@@ -30,21 +30,18 @@ jobs:
           APP_PORT: ${{ env.APP_PORT }}
 
       - name: Start the application
-        run: npx serve@latest out
+        run: npx serve@latest out &
         env:
           APP_PORT: ${{ env.APP_PORT }}
 
       - name: Wait for the application to start
         run: |
-          echo "Waiting up to 1 minute for the application to start..."
-          timeout 60s bash -c 'while ! curl -s http://localhost:${{ env.APP_PORT }} > /dev/null; do sleep 1; echo "Waiting..."; done'
-          echo "Application started successfully."
+          timeout 30s bash -c 'until printf "" 2>>/dev/null >>/dev/tcp/localhost/${{ env.APP_PORT }}; do sleep 1; done'
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v5
         with:
           wait-on: "http://localhost:${{ env.APP_PORT }}"
-          wait-on-timeout: 60 # Increase timeout for wait-on
           browser: chrome
 
       - name: Configure AWS Credentials
@@ -53,6 +50,5 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-
       - run: aws s3 sync ./out s3://misterpea.me
       - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.PORTFOLIO_DISTRIBUTION_ID }} --paths /index.html/*
