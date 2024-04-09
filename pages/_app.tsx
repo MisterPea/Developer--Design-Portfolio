@@ -1,16 +1,18 @@
 'use client';
+import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import '../src/style/globals.scss';
 import localFont from 'next/font/local';
 import { AnimatePresence } from 'framer-motion';
+import onSiteLoad from '@/components/onSiteLoad';
 
 const lausanne = localFont({
   src: [
     {
       path: '../public/fonts/TWKLausanne-800.woff', // Adjusted path for static files
-      weight: '800',
+      weight: '800'
     },
     {
       path: '../public/fonts/TWKLausanne-600.woff2',
@@ -32,14 +34,21 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    // Example use of router, e.g., for logging
-    console.log(router.pathname, router.asPath);
-  }, [router.pathname, router.asPath]);
+    onSiteLoad()
+  }, []);
 
   return (
-    <AnimatePresence mode='wait'>
-      <Component {...pageProps} key={router.asPath}/>
-    </AnimatePresence>
+    <>
+      <Head>
+        <title>The Development and Design Portfolio of Perry Angelora</title>
+        <meta name="description" content="Perry's Portfolio - Developer / Designer / Technologist" key="description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0 viewport-fit=cover" />
+        <meta name="theme-color" content="#303030" />
+      </Head>
+      <AnimatePresence mode='wait'>
+        <Component {...pageProps} key={router.asPath} />
+      </AnimatePresence>
+    </>
   );
 }
 
