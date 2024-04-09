@@ -73,6 +73,7 @@ a {
   src: url("/fonts/TWKLausanne-150.woff") format("woff");
   font-weight: 150;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -82,6 +83,7 @@ a {
     url("/fonts/TWKLausanne-300.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -91,6 +93,7 @@ a {
     url("/fonts/TWKLausanne-600.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -98,4 +101,5 @@ a {
   src: url("/fonts/TWKLausanne-800.woff") format("woff");
   font-weight: 800;
   font-style: normal;
+  font-display: auto;
 }

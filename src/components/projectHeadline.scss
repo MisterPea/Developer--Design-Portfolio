@@ -9,7 +9,7 @@
     line-height: 120%;
     font-weight: 600;
     opacity: 0;
-    @include fade-in-down;
+    @include fade-in-down($duration:1000ms);
   }
   p {
     font-family: var(--main-font);
@@ -19,7 +19,7 @@
     letter-spacing: 0.00938rem;
     line-height: 130%;
     opacity: 0;
-    @include fade-in-down($duration:1300ms, $delay:100ms);
+    @include fade-in-down($duration:1000ms, $delay:100ms);
   }
   @include tablet {
     h1 {

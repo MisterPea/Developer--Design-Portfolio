@@ -18,13 +18,18 @@ export default function LandingHeader() {
       <LandingTag />
       <div className="landing_header-vertical"></div>
       <div className="landing_header-icon_wrapper">
-        <a href="https://github.com/MisterPea" rel="noopener noreferrer" target="_blank">
+        <a
+          title="Github Link"
+          href="https://github.com/MisterPea" rel="noopener noreferrer" target="_blank">
           <Icon.github />
         </a>
-        <a href="https://www.linkedin.com/in/perry-angelora/" rel="noopener noreferrer" target="_blank">
+        <a
+          title="LinkedIn Link"
+          href="https://www.linkedin.com/in/perry-angelora/" rel="noopener noreferrer" target="_blank">
           <Icon.linkedIn />
         </a>
-        <button onClick={emailClick}>
+        <button
+          title="Email Perry!" onClick={emailClick}>
           <Icon.mail />
         </button>
       </div>
