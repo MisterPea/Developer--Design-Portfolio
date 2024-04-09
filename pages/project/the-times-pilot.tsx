@@ -165,7 +165,7 @@ export default function TimesPilot() {
           <article className="nyt_project_page-design">
             <section className="nyt_project_page-design-considerations-wrapper">
               <ProjectTextBlock title={design?.designHeadline} body={[design!.designList[0], design!.designList[1]]} className="nyt_project_page-design-considerations_left" />
-              <ProjectTextBlock title="" body={[design!.designList[2], design!.designList[3]]} className="nyt_project_page-design-considerations_right" />
+              <ProjectTextBlock title={"\u2003"} body={[design!.designList[2], design!.designList[3]]} className="nyt_project_page-design-considerations_right" />
             </section>
             <Spacer amount={2} />
             <section className="nyt_project_page-design-typography_and_color">
@@ -182,7 +182,7 @@ export default function TimesPilot() {
                 <ColorSwatchGroup swatches={design!.colorList} />
               </div>
             </section>
-            <Spacer amount={2} className="spacer-post_color" />
+            <Spacer amount={2} className="spacer-post_color" />   
           </article>
 
           <article className="nyt_project_page-site_flow">

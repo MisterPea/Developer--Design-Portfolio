@@ -348,7 +348,7 @@ img {
     }
     &-typography_and_color {
       @include nested-double-wide-grid;
-      gap: 30px;
+      gap: 30px 60px;
       &-type_wrapper {
         @include double-wide-left;
       }
@@ -451,13 +451,14 @@ img {
     }
   }
   .nyt_project_page-design-typography_and_color {
-    @include nested-six-wide-grid;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 250px)) minmax(auto, 90px) repeat(2, minmax(auto, 250px)) 1fr;
+    gap: 0px;
     &-type_wrapper {
       grid-column: 2 / 4;
     }
     &-color_wrapper {
-      grid-column: 4 / 6;
+      grid-column: 5 / -2;
     }
   }
   .nyt_project_page-problems {

@@ -124,13 +124,13 @@ export default function CircuitApp() {
               whileInView="show"
               viewport={{ amount: 'some', once: true }}
               className="circuit_project_page-approach-section_one">
-              <ProjectTextBlock intersect intersectDelay={1000} oneShot={false} title={approaches![0].headline} body={approaches![0].body} />
+              <ProjectTextBlock intersect intersectDelay={400} oneShot={false} title={approaches![0].headline} body={approaches![0].body} />
               <VideoPlayer intersect intersectDelay={100} onShot={false} videoSource="/video/circuit/circuit_edit-773x2a.mov" className="bezel" />
             </motion.section>
             <Spacer amount={6} />
             {/* Section Two */}
             <section className="circuit_project_page-approach-section_two">
-              <ProjectTextBlock intersect intersectDelay={1000} title={approaches![1].headline} body={approaches![1].body} />
+              <ProjectTextBlock intersect intersectDelay={400} title={approaches![1].headline} body={approaches![1].body} />
               <VideoPlayer intersect intersectDelay={100} videoSource="/video/circuit/circuit_add-773x2.mov" className="bezel" />
             </section>
 
@@ -195,7 +195,7 @@ export default function CircuitApp() {
           <article className="circuit_project_page-design">
             <section className="circuit_project_page-design-considerations-wrapper">
               <ProjectTextBlock intersect title={design?.designHeadline} body={[design!.designList[0], design!.designList[1]]} className="circuit_project_page-design-considerations_left" />
-              <ProjectTextBlock intersect intersectDelay={500} title="" body={[design!.designList[2], design!.designList[3]]} className="circuit_project_page-design-considerations_right" />
+              <ProjectTextBlock intersect intersectDelay={400} title={"\u2003"} body={[design!.designList[2], design!.designList[3]]} className="circuit_project_page-design-considerations_right" />
             </section>
             <Spacer amount={2} />
             <section className="diagram_section">
