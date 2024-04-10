@@ -1,8 +1,8 @@
-import "../../src/style/globals.scss";
-import ProjectHeadline from "../../src/components/ProjectHeadline";
-import siteContent from "../../src/app/siteContent.json";
-import ToolRoleTitle from "../../src/components/ToolRoleTitle";
-import ChipGroup from "../../src/components/ChipGroup";
+import "../../../src/style/globals.scss";
+import ProjectHeadline from "../../../src/components/ProjectHeadline";
+import siteContent from "../../../src/app/siteContent.json";
+import ToolRoleTitle from "../../../src/components/ToolRoleTitle";
+import ChipGroup from "../../../src/components/ChipGroup";
 import ProjectTextBlock from "@/components/ProjectTextBlock";
 import DivideLine from "@/components/DivideLine";
 import ProjectLinks from "@/components/ProjectLinks";
@@ -182,7 +182,7 @@ export default function TimesPilot() {
                 <ColorSwatchGroup swatches={design!.colorList} />
               </div>
             </section>
-            <Spacer amount={2} className="spacer-post_color" />   
+            <Spacer amount={2} className="spacer-post_color" />
           </article>
 
           <article className="nyt_project_page-site_flow">
