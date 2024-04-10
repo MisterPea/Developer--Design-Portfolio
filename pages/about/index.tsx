@@ -1,10 +1,10 @@
-import "../src/style/globals.scss";
+import "../../src/style/globals.scss";
 import ProjectNavbar from "@/components/ProjectNavbar";
 import { motion } from "framer-motion";
-import { projectVariant, fadeInUp_1, fadeInUp_1_delay } from '@/components/_helpers/animationVariants';
+import { projectVariant } from '@/components/_helpers/animationVariants';
 import { useEffect } from "react";
 import BackToAllWork from "@/components/BackToAllWork";
-import AboutImageCanvas from "../src/components/AboutImageCanvas";
+import AboutImageCanvas from "../../src/components/AboutImageCanvas";
 import { SvgIllustration } from "@/components/SvgIllustration";
 import ProjectFooter from "@/components/ProjectFooter";
 
@@ -31,7 +31,7 @@ export default function CircuitApp() {
           </section>
           <p className="about_page-body_text">Serial creator; constant learner; maker of things.<br /> Lauded for development, design and my homemade salted caramel and strawberry ice creams.</p>
           <h3 className="last_heading">Say hi!</h3>
-          <ProjectFooter isAboutPage/>
+          <ProjectFooter isAboutPage />
         </div >
       </motion.div >
     </>

@@ -1,8 +1,8 @@
-import ProjectHeadline from "../../src/components/ProjectHeadline";
-import siteContent from "../../src/app/siteContent.json";
-import "../../src/style/globals.scss";
-import ToolRoleTitle from "../../src/components/ToolRoleTitle";
-import ChipGroup from "../../src/components/ChipGroup";
+import ProjectHeadline from "../../../src/components/ProjectHeadline";
+import siteContent from "../../../src/app/siteContent.json";
+import "../../../src/style/globals.scss";
+import ToolRoleTitle from "../../../src/components/ToolRoleTitle";
+import ChipGroup from "../../../src/components/ChipGroup";
 import ProjectTextBlock from "@/components/ProjectTextBlock";
 import DivideLine from "@/components/DivideLine";
 import ProjectLinks from "@/components/ProjectLinks";
