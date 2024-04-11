@@ -23,6 +23,9 @@
     &:first-child {
       margin-top: 3rem;
     }
+    &:last-child {
+    padding-bottom: 4rem;
+    }
   }
 }
 

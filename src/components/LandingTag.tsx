@@ -12,9 +12,9 @@ export default function LandingTag() {
   const [tags, setTags] = useState([
     { one: 'Developer', two: '/', three: 'Designer', four: '/', five: 'Programmatic Pixel Pusher' },
     { one: 'Cat Wrangler', two: '/', three: 'Friend of CSS' },
+    { one: 'Identity theft is not a joke, Jim!' },
     { one: 'Curator of Pixels', two: '/', three: 'Connoisseur of Coffee' },
     { one: 'Painter of Pictures', two: '/', three: 'Fancier of The Equine' },
-    { one: 'Identity theft is not a joke, Jim!' },
     { one: 'Piano', two: '/', three: 'Bass', four: '/', five: 'Drums' },
     { one: 'Chocolate Covered Potato Chip Lover' },
     { one: 'Dancing Like Somebody May Be Looking' },
@@ -48,6 +48,7 @@ export default function LandingTag() {
 
   useEffect(() => {
     isMounted.current = true;
+
     const sequence = async () => {
       await controls.start('show'); // Start the show animation
       const delay = Math.random() * (10000 - 5000) + 5000;
@@ -55,8 +56,6 @@ export default function LandingTag() {
       if (isMounted.current === false) return;
       await controls.start('hidden'); // Hide after showing
       cycleTags(); // Change the tag
-
-
       // controls.start('show'); // Show the next tag
     };
 
@@ -110,7 +109,11 @@ export default function LandingTag() {
       variants={container}
     >
       {Object.entries(tags[index]).map(([key, value]) => (
-        <motion.div key={key} className="landing_tag-one_wrapper" variants={item}>
+        <motion.div
+          key={`${key}-${value}`}
+          className="landing_tag-one_wrapper"
+          variants={item}
+        >
           <p className={`landing_tag-text${value === '/' ? ' --slash' : ''}`}>{value}</p>
         </motion.div>
       ))}
