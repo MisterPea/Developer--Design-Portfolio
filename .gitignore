@@ -35,3 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .org-stories-dont-use
+public/raw_images
+public/images
