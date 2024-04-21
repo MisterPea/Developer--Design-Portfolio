@@ -12,7 +12,7 @@ const useIntersection = (elementRef: RefObject<HTMLElement>, oneShot?: boolean, 
       if (typeof window !== 'undefined' && !('IntersectionObserver' in window)) {
         // Dynamically import the IntersectionObserver polyfill
         const { default: IntersectionObserverPolyfill } = await import('intersection-observer');
-        window.IntersectionObserver = IntersectionObserverPolyfill;
+        (window as Window & { IntersectionObserver: typeof IntersectionObserver }).IntersectionObserver = IntersectionObserverPolyfill;
       }
     }
 
