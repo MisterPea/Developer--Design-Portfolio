@@ -119,7 +119,12 @@ export default function TimesPilot() {
               viewport={{ once: true }}
               className="nyt_project_page-approach-section_one">
               <ProjectTextBlock intersect title={approaches![0].headline} body={approaches![0].body} collapsible />
-              <VideoPlayer intersect intersectDelay={250} videoSource="/video/times_pilot/nyt_email_select-766x2.mp4" />
+              <VideoPlayer
+                intersect
+                intersectDelay={250}
+                oneShot
+                webmVideoSource="/video/times_pilot/nyt_email_select-766x2.webm"
+              />
             </motion.section>
             <Spacer amount={6} />
             {/* Content Layout */}
@@ -156,7 +161,11 @@ export default function TimesPilot() {
             {/* Settings Accessability */}
             <section className="nyt_project_page-approach-section_four">
               <ProjectTextBlock intersect title={approaches![3].headline} body={approaches![3].body} collapsible />
-              <VideoPlayer intersect intersectDelay={300} videoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4" />
+              <VideoPlayer
+                intersect
+                intersectDelay={300}
+                oneShot
+                webmVideoSource="/video/times_pilot/nyt_settings_raw_766x2.webm" />
             </section>
           </article >
 

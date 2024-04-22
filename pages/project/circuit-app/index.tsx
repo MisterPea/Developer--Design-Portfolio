@@ -125,13 +125,27 @@ export default function CircuitApp() {
               viewport={{ amount: 'some', once: true }}
               className="circuit_project_page-approach-section_one">
               <ProjectTextBlock intersect intersectDelay={400} oneShot={false} title={approaches![0].headline} body={approaches![0].body} />
-              <VideoPlayer intersect intersectDelay={100} onShot={false} videoSource="/video/circuit/circuit_edit-773x2a.mov" className="bezel" />
+              <VideoPlayer
+                intersect
+                intersectDelay={100}
+                webmVideoSource="/video/circuit/circuit_edit-773x2a.webm"
+                mp4VideoSource="/video/circuit/circuit_edit-773x2a.mov"
+                requireAlpha
+                className="bezel"
+              />
             </motion.section>
             <Spacer amount={6} />
             {/* Section Two */}
             <section className="circuit_project_page-approach-section_two">
               <ProjectTextBlock intersect intersectDelay={400} title={approaches![1].headline} body={approaches![1].body} />
-              <VideoPlayer intersect intersectDelay={100} videoSource="/video/circuit/circuit_add-773x2.mov" className="bezel" />
+              <VideoPlayer
+                intersect
+                intersectDelay={100}
+                webmVideoSource="/video/circuit/circuit_add-773x2.webm"
+                mp4VideoSource="/video/circuit/circuit_add-773x2.mov"
+                requireAlpha
+                className="bezel"
+              />
             </section>
 
             <Spacer amount={6} />

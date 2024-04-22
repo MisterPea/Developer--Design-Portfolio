@@ -37,3 +37,4 @@ next-env.d.ts
 .org-stories-dont-use
 public/raw_images
 public/images
+public/video/circuit/old
