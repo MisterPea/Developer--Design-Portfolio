@@ -16,7 +16,7 @@ interface VideoWrapperProps {
 const VideoWrapper: React.FC<VideoWrapperProps> = ({ videoSource }) => {
   return (
     <div style={{ maxWidth: '500px' }}>
-      <VideoPlayer videoSource={videoSource} />
+      <VideoPlayer webmVideoSource={videoSource} />
     </div>
   );
 };
@@ -26,8 +26,8 @@ type Story = StoryObj<typeof VideoPlayer> & {
 };
 
 export const Primary: Story = {
-  render: () => <VideoWrapper videoSource="/video/times_pilot/nyt_raw_capture-large_final-resize.mp4" />,
+  render: () => <VideoWrapper videoSource="/video/times_pilot/nyt_email_select-766x2.webm" />,
   args: {
-    videoSource: "/video/times_pilot/nyt_raw_capture-large_final-resize.mp4"
+    videoSource: "/video/times_pilot/nyt_email_select-766x2.webm"
   }
 };
