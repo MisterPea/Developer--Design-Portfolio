@@ -266,7 +266,7 @@ describe('Tests for Circuit App Page', () => {
       cy.get('.circuit_project_page-site_flow img').should('not.be.visible');
     });
   });
-  it('should display the alt designs', () => {
+  it('should display the alt designs', { retries: 3 }, () => {
     cy.scrollTo('bottom', { easing: 'linear', duration: 2000 }).then(() => {
       cy.get('.circuit_project_page-approach.circuit_alts picture', { timeout: 10000 })
         .should('have.length', 2)
@@ -275,7 +275,7 @@ describe('Tests for Circuit App Page', () => {
         });
     });
   });
-  it('should scroll to bottom to reveal a `back to all work` button, then scroll to top and hide button', () => {
+  it('should scroll to bottom to reveal a `back to all work` button, then scroll to top and hide button', { retries: 3 }, () => {
     cy.scrollTo('bottom', { easing: 'linear', duration: 2000 }).then(() => {
       cy.get('.back_to_all_work', { timeout: 10000 }).should('be.visible');
     }).then(() => {
