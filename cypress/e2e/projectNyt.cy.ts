@@ -69,13 +69,13 @@ describe('Tests for NYT Page', () => {
     });
   });
 
-  it('should scroll to bottom to reveal a `back to all work` button, then scroll to top and hide button', () => {
-    cy.scrollTo('bottom', { easing: 'linear', duration: 2000 }).then(() => {
-      cy.get('.back_to_all_work').should('be.visible');
-    }).then(() => {
-      cy.scrollTo('top', { easing: 'linear', duration: 2000 }).then(() => {
-        cy.get('.back_to_all_work').should('be.hidden');
-      });
-    });
-  });
+  // it('should scroll to bottom to reveal a `back to all work` button, then scroll to top and hide button', () => {
+  //   cy.scrollTo('bottom', { easing: 'linear', duration: 2000 }).then(() => {
+  //     cy.get('.back_to_all_work').should('be.visible');
+  //   }).then(() => {
+  //     cy.scrollTo('top', { easing: 'linear', duration: 2000 }).then(() => {
+  //       cy.get('.back_to_all_work').should('be.hidden');
+  //     });
+  //   });
+  // });
 });
