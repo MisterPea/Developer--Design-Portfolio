@@ -115,12 +115,6 @@ describe('Find project links on main page', () => {
   });
 });
 
-
-
-
-
-
-
 describe('Check click-through of links on home screen', () => {
   beforeEach(() => {
     cy.visit(website);
