@@ -36,6 +36,7 @@ export interface LandingProjectHeadProps {
 export interface LandingProjectCardProps extends LandingProjectHeadProps {
   image: ResponsiveImageProps;
   slug: string;
+  isProject?: boolean;
 }
 
 export type LinkProps = {

@@ -1,0 +1,3296 @@
+[
+  {
+    "date": "1-1-2016",
+    "max_temp": 42,
+    "min_temp": 34,
+    "avg_temp": 38,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-1-2016",
+    "max_temp": 40,
+    "min_temp": 32,
+    "avg_temp": 36,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-1-2016",
+    "max_temp": 45,
+    "min_temp": 35,
+    "avg_temp": 40,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-1-2016",
+    "max_temp": 36,
+    "min_temp": 14,
+    "avg_temp": 25,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-1-2016",
+    "max_temp": 29,
+    "min_temp": 11,
+    "avg_temp": 20,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-1-2016",
+    "max_temp": 41,
+    "min_temp": 25,
+    "avg_temp": 33,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-1-2016",
+    "max_temp": 46,
+    "min_temp": 31,
+    "avg_temp": 38.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-1-2016",
+    "max_temp": 46,
+    "min_temp": 31,
+    "avg_temp": 38.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-1-2016",
+    "max_temp": 47,
+    "min_temp": 40,
+    "avg_temp": 43.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-1-2016",
+    "max_temp": 59,
+    "min_temp": 40,
+    "avg_temp": 49.5,
+    "precip": 1.8,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-1-2016",
+    "max_temp": 40,
+    "min_temp": 26,
+    "avg_temp": 33,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-1-2016",
+    "max_temp": 44,
+    "min_temp": 25,
+    "avg_temp": 34.5,
+    "precip": 0,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-1-2016",
+    "max_temp": 30,
+    "min_temp": 22,
+    "avg_temp": 26,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-1-2016",
+    "max_temp": 38,
+    "min_temp": 22,
+    "avg_temp": 30,
+    "precip": 0,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-1-2016",
+    "max_temp": 51,
+    "min_temp": 34,
+    "avg_temp": 42.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-1-2016",
+    "max_temp": 52,
+    "min_temp": 42,
+    "avg_temp": 47,
+    "precip": 0.24,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-1-2016",
+    "max_temp": 42,
+    "min_temp": 30,
+    "avg_temp": 36,
+    "precip": 0.05,
+    "snow_fall": 0.4,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-1-2016",
+    "max_temp": 31,
+    "min_temp": 18,
+    "avg_temp": 24.5,
+    "precip": 0.01,
+    "snow_fall": 0.01,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "19-1-2016",
+    "max_temp": 28,
+    "min_temp": 16,
+    "avg_temp": 22,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "20-1-2016",
+    "max_temp": 37,
+    "min_temp": 27,
+    "avg_temp": 32,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "21-1-2016",
+    "max_temp": 36,
+    "min_temp": 26,
+    "avg_temp": 31,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-1-2016",
+    "max_temp": 30,
+    "min_temp": 21,
+    "avg_temp": 25.5,
+    "precip": 0.01,
+    "snow_fall": 0.2,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-1-2016",
+    "max_temp": 27,
+    "min_temp": 24,
+    "avg_temp": 25.5,
+    "precip": 2.31,
+    "snow_fall": 27.3,
+    "snow_depth": 6
+  },
+  {
+    "date": "24-1-2016",
+    "max_temp": 35,
+    "min_temp": 20,
+    "avg_temp": 27.5,
+    "precip": 0.01,
+    "snow_fall": 0.01,
+    "snow_depth": 22
+  },
+  {
+    "date": "25-1-2016",
+    "max_temp": 39,
+    "min_temp": 28,
+    "avg_temp": 33.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 19
+  },
+  {
+    "date": "26-1-2016",
+    "max_temp": 48,
+    "min_temp": 38,
+    "avg_temp": 43,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 17
+  },
+  {
+    "date": "27-1-2016",
+    "max_temp": 47,
+    "min_temp": 34,
+    "avg_temp": 40.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 9
+  },
+  {
+    "date": "28-1-2016",
+    "max_temp": 42,
+    "min_temp": 32,
+    "avg_temp": 37,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 6
+  },
+  {
+    "date": "29-1-2016",
+    "max_temp": 41,
+    "min_temp": 30,
+    "avg_temp": 35.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 6
+  },
+  {
+    "date": "30-1-2016",
+    "max_temp": 39,
+    "min_temp": 28,
+    "avg_temp": 33.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 6
+  },
+  {
+    "date": "31-1-2016",
+    "max_temp": 56,
+    "min_temp": 36,
+    "avg_temp": 46,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 4
+  },
+  {
+    "date": "1-2-2016",
+    "max_temp": 59,
+    "min_temp": 44,
+    "avg_temp": 51.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 2
+  },
+  {
+    "date": "2-2-2016",
+    "max_temp": 50,
+    "min_temp": 38,
+    "avg_temp": 44,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "3-2-2016",
+    "max_temp": 59,
+    "min_temp": 42,
+    "avg_temp": 50.5,
+    "precip": 0.73,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-2-2016",
+    "max_temp": 59,
+    "min_temp": 44,
+    "avg_temp": 51.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-2-2016",
+    "max_temp": 44,
+    "min_temp": 31,
+    "avg_temp": 37.5,
+    "precip": 0.53,
+    "snow_fall": 2.5,
+    "snow_depth": 1
+  },
+  {
+    "date": "6-2-2016",
+    "max_temp": 40,
+    "min_temp": 30,
+    "avg_temp": 35,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-2-2016",
+    "max_temp": 47,
+    "min_temp": 33,
+    "avg_temp": 40,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-2-2016",
+    "max_temp": 39,
+    "min_temp": 28,
+    "avg_temp": 33.5,
+    "precip": 0.05,
+    "snow_fall": 0.1,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-2-2016",
+    "max_temp": 36,
+    "min_temp": 27,
+    "avg_temp": 31.5,
+    "precip": 0,
+    "snow_fall": 0.01,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "10-2-2016",
+    "max_temp": 39,
+    "min_temp": 31,
+    "avg_temp": 35,
+    "precip": 0.01,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-2-2016",
+    "max_temp": 31,
+    "min_temp": 18,
+    "avg_temp": 24.5,
+    "precip": 0.01,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-2-2016",
+    "max_temp": 27,
+    "min_temp": 15,
+    "avg_temp": 21,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-2-2016",
+    "max_temp": 22,
+    "min_temp": 6,
+    "avg_temp": 14,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-2-2016",
+    "max_temp": 15,
+    "min_temp": -1,
+    "avg_temp": 7,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-2-2016",
+    "max_temp": 35,
+    "min_temp": 13,
+    "avg_temp": 24,
+    "precip": 0.44,
+    "snow_fall": 1.4,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-2-2016",
+    "max_temp": 54,
+    "min_temp": 35,
+    "avg_temp": 44.5,
+    "precip": 1.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-2-2016",
+    "max_temp": 39,
+    "min_temp": 35,
+    "avg_temp": 37,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-2-2016",
+    "max_temp": 36,
+    "min_temp": 27,
+    "avg_temp": 31.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-2-2016",
+    "max_temp": 39,
+    "min_temp": 24,
+    "avg_temp": 31.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-2-2016",
+    "max_temp": 61,
+    "min_temp": 39,
+    "avg_temp": 50,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-2-2016",
+    "max_temp": 55,
+    "min_temp": 44,
+    "avg_temp": 49.5,
+    "precip": 0.03,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-2-2016",
+    "max_temp": 52,
+    "min_temp": 38,
+    "avg_temp": 45,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-2-2016",
+    "max_temp": 40,
+    "min_temp": 35,
+    "avg_temp": 37.5,
+    "precip": 0.3,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-2-2016",
+    "max_temp": 60,
+    "min_temp": 36,
+    "avg_temp": 48,
+    "precip": 1.22,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-2-2016",
+    "max_temp": 61,
+    "min_temp": 37,
+    "avg_temp": 49,
+    "precip": 0.02,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-2-2016",
+    "max_temp": 39,
+    "min_temp": 27,
+    "avg_temp": 33,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-2-2016",
+    "max_temp": 41,
+    "min_temp": 26,
+    "avg_temp": 33.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-2-2016",
+    "max_temp": 60,
+    "min_temp": 38,
+    "avg_temp": 49,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-2-2016",
+    "max_temp": 61,
+    "min_temp": 47,
+    "avg_temp": 54,
+    "precip": 0.05,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-3-2016",
+    "max_temp": 52,
+    "min_temp": 39,
+    "avg_temp": 45.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-3-2016",
+    "max_temp": 55,
+    "min_temp": 29,
+    "avg_temp": 42,
+    "precip": 0.14,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-3-2016",
+    "max_temp": 36,
+    "min_temp": 26,
+    "avg_temp": 31,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-3-2016",
+    "max_temp": 39,
+    "min_temp": 30,
+    "avg_temp": 34.5,
+    "precip": 0.11,
+    "snow_fall": 0.4,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "5-3-2016",
+    "max_temp": 41,
+    "min_temp": 28,
+    "avg_temp": 34.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-3-2016",
+    "max_temp": 44,
+    "min_temp": 32,
+    "avg_temp": 38,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-3-2016",
+    "max_temp": 60,
+    "min_temp": 36,
+    "avg_temp": 48,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-3-2016",
+    "max_temp": 67,
+    "min_temp": 47,
+    "avg_temp": 57,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-3-2016",
+    "max_temp": 77,
+    "min_temp": 44,
+    "avg_temp": 60.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-3-2016",
+    "max_temp": 79,
+    "min_temp": 63,
+    "avg_temp": 71,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-3-2016",
+    "max_temp": 68,
+    "min_temp": 48,
+    "avg_temp": 58,
+    "precip": 0.06,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-3-2016",
+    "max_temp": 59,
+    "min_temp": 40,
+    "avg_temp": 49.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-3-2016",
+    "max_temp": 62,
+    "min_temp": 50,
+    "avg_temp": 56,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-3-2016",
+    "max_temp": 51,
+    "min_temp": 40,
+    "avg_temp": 45.5,
+    "precip": 0.29,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-3-2016",
+    "max_temp": 57,
+    "min_temp": 44,
+    "avg_temp": 50.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-3-2016",
+    "max_temp": 65,
+    "min_temp": 48,
+    "avg_temp": 56.5,
+    "precip": 0.02,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-3-2016",
+    "max_temp": 63,
+    "min_temp": 45,
+    "avg_temp": 54,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-3-2016",
+    "max_temp": 57,
+    "min_temp": 42,
+    "avg_temp": 49.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-3-2016",
+    "max_temp": 46,
+    "min_temp": 36,
+    "avg_temp": 41,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-3-2016",
+    "max_temp": 43,
+    "min_temp": 32,
+    "avg_temp": 37.5,
+    "precip": 0.07,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-3-2016",
+    "max_temp": 50,
+    "min_temp": 32,
+    "avg_temp": 41,
+    "precip": 0.06,
+    "snow_fall": 0.5,
+    "snow_depth": 0.01
+  },
+  {
+    "date": "22-3-2016",
+    "max_temp": 56,
+    "min_temp": 35,
+    "avg_temp": 45.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-3-2016",
+    "max_temp": 71,
+    "min_temp": 48,
+    "avg_temp": 59.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-3-2016",
+    "max_temp": 55,
+    "min_temp": 44,
+    "avg_temp": 49.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-3-2016",
+    "max_temp": 72,
+    "min_temp": 44,
+    "avg_temp": 58,
+    "precip": 0.04,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-3-2016",
+    "max_temp": 55,
+    "min_temp": 38,
+    "avg_temp": 46.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-3-2016",
+    "max_temp": 55,
+    "min_temp": 43,
+    "avg_temp": 49,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-3-2016",
+    "max_temp": 62,
+    "min_temp": 42,
+    "avg_temp": 52,
+    "precip": 0.38,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-3-2016",
+    "max_temp": 53,
+    "min_temp": 40,
+    "avg_temp": 46.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-3-2016",
+    "max_temp": 56,
+    "min_temp": 37,
+    "avg_temp": 46.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "31-3-2016",
+    "max_temp": 73,
+    "min_temp": 49,
+    "avg_temp": 61,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-4-2016",
+    "max_temp": 79,
+    "min_temp": 61,
+    "avg_temp": 70,
+    "precip": 0.02,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-4-2016",
+    "max_temp": 61,
+    "min_temp": 49,
+    "avg_temp": 55,
+    "precip": 0.16,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-4-2016",
+    "max_temp": 50,
+    "min_temp": 34,
+    "avg_temp": 42,
+    "precip": 0.09,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-4-2016",
+    "max_temp": 45,
+    "min_temp": 29,
+    "avg_temp": 37,
+    "precip": 0.47,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-4-2016",
+    "max_temp": 43,
+    "min_temp": 26,
+    "avg_temp": 34.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-4-2016",
+    "max_temp": 48,
+    "min_temp": 30,
+    "avg_temp": 39,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-4-2016",
+    "max_temp": 58,
+    "min_temp": 48,
+    "avg_temp": 53,
+    "precip": 0.09,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-4-2016",
+    "max_temp": 50,
+    "min_temp": 40,
+    "avg_temp": 45,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-4-2016",
+    "max_temp": 43,
+    "min_temp": 36,
+    "avg_temp": 39.5,
+    "precip": 0.11,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-4-2016",
+    "max_temp": 50,
+    "min_temp": 31,
+    "avg_temp": 40.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-4-2016",
+    "max_temp": 65,
+    "min_temp": 43,
+    "avg_temp": 54,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-4-2016",
+    "max_temp": 59,
+    "min_temp": 45,
+    "avg_temp": 52,
+    "precip": 0.2,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-4-2016",
+    "max_temp": 58,
+    "min_temp": 40,
+    "avg_temp": 49,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-4-2016",
+    "max_temp": 62,
+    "min_temp": 43,
+    "avg_temp": 52.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-4-2016",
+    "max_temp": 65,
+    "min_temp": 42,
+    "avg_temp": 53.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-4-2016",
+    "max_temp": 68,
+    "min_temp": 43,
+    "avg_temp": 55.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-4-2016",
+    "max_temp": 75,
+    "min_temp": 44,
+    "avg_temp": 59.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-4-2016",
+    "max_temp": 82,
+    "min_temp": 51,
+    "avg_temp": 66.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-4-2016",
+    "max_temp": 73,
+    "min_temp": 55,
+    "avg_temp": 64,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-4-2016",
+    "max_temp": 69,
+    "min_temp": 49,
+    "avg_temp": 59,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-4-2016",
+    "max_temp": 73,
+    "min_temp": 49,
+    "avg_temp": 61,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-4-2016",
+    "max_temp": 79,
+    "min_temp": 62,
+    "avg_temp": 70.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-4-2016",
+    "max_temp": 71,
+    "min_temp": 54,
+    "avg_temp": 62.5,
+    "precip": 0.16,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-4-2016",
+    "max_temp": 68,
+    "min_temp": 47,
+    "avg_temp": 57.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-4-2016",
+    "max_temp": 69,
+    "min_temp": 50,
+    "avg_temp": 59.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-4-2016",
+    "max_temp": 60,
+    "min_temp": 47,
+    "avg_temp": 53.5,
+    "precip": 0.24,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-4-2016",
+    "max_temp": 62,
+    "min_temp": 46,
+    "avg_temp": 54,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-4-2016",
+    "max_temp": 59,
+    "min_temp": 48,
+    "avg_temp": 53.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-4-2016",
+    "max_temp": 58,
+    "min_temp": 45,
+    "avg_temp": 51.5,
+    "precip": 0.05,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-4-2016",
+    "max_temp": 65,
+    "min_temp": 46,
+    "avg_temp": 55.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-5-2016",
+    "max_temp": 51,
+    "min_temp": 45,
+    "avg_temp": 48,
+    "precip": 0.16,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-5-2016",
+    "max_temp": 60,
+    "min_temp": 45,
+    "avg_temp": 52.5,
+    "precip": 0.04,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-5-2016",
+    "max_temp": 56,
+    "min_temp": 51,
+    "avg_temp": 53.5,
+    "precip": 0.61,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-5-2016",
+    "max_temp": 52,
+    "min_temp": 48,
+    "avg_temp": 50,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-5-2016",
+    "max_temp": 57,
+    "min_temp": 46,
+    "avg_temp": 51.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-5-2016",
+    "max_temp": 54,
+    "min_temp": 48,
+    "avg_temp": 51,
+    "precip": 0.54,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-5-2016",
+    "max_temp": 60,
+    "min_temp": 48,
+    "avg_temp": 54,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-5-2016",
+    "max_temp": 66,
+    "min_temp": 49,
+    "avg_temp": 57.5,
+    "precip": 0.16,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-5-2016",
+    "max_temp": 72,
+    "min_temp": 52,
+    "avg_temp": 62,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-5-2016",
+    "max_temp": 63,
+    "min_temp": 50,
+    "avg_temp": 56.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-5-2016",
+    "max_temp": 76,
+    "min_temp": 50,
+    "avg_temp": 63,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-5-2016",
+    "max_temp": 80,
+    "min_temp": 56,
+    "avg_temp": 68,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-5-2016",
+    "max_temp": 65,
+    "min_temp": 57,
+    "avg_temp": 61,
+    "precip": 0.25,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-5-2016",
+    "max_temp": 73,
+    "min_temp": 56,
+    "avg_temp": 64.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-5-2016",
+    "max_temp": 59,
+    "min_temp": 46,
+    "avg_temp": 52.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-5-2016",
+    "max_temp": 66,
+    "min_temp": 43,
+    "avg_temp": 54.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-5-2016",
+    "max_temp": 64,
+    "min_temp": 52,
+    "avg_temp": 58,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-5-2016",
+    "max_temp": 68,
+    "min_temp": 52,
+    "avg_temp": 60,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-5-2016",
+    "max_temp": 73,
+    "min_temp": 54,
+    "avg_temp": 63.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-5-2016",
+    "max_temp": 76,
+    "min_temp": 53,
+    "avg_temp": 64.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-5-2016",
+    "max_temp": 66,
+    "min_temp": 54,
+    "avg_temp": 60,
+    "precip": 0.04,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-5-2016",
+    "max_temp": 70,
+    "min_temp": 52,
+    "avg_temp": 61,
+    "precip": 0.09,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-5-2016",
+    "max_temp": 78,
+    "min_temp": 56,
+    "avg_temp": 67,
+    "precip": 0.02,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-5-2016",
+    "max_temp": 73,
+    "min_temp": 58,
+    "avg_temp": 65.5,
+    "precip": 0.18,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-5-2016",
+    "max_temp": 88,
+    "min_temp": 61,
+    "avg_temp": 74.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-5-2016",
+    "max_temp": 90,
+    "min_temp": 69,
+    "avg_temp": 79.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-5-2016",
+    "max_temp": 87,
+    "min_temp": 73,
+    "avg_temp": 80,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-5-2016",
+    "max_temp": 92,
+    "min_temp": 71,
+    "avg_temp": 81.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-5-2016",
+    "max_temp": 87,
+    "min_temp": 70,
+    "avg_temp": 78.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-5-2016",
+    "max_temp": 82,
+    "min_temp": 68,
+    "avg_temp": 75,
+    "precip": 1.65,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "31-5-2016",
+    "max_temp": 85,
+    "min_temp": 71,
+    "avg_temp": 78,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-6-2016",
+    "max_temp": 83,
+    "min_temp": 66,
+    "avg_temp": 74.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-6-2016",
+    "max_temp": 78,
+    "min_temp": 62,
+    "avg_temp": 70,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-6-2016",
+    "max_temp": 70,
+    "min_temp": 63,
+    "avg_temp": 66.5,
+    "precip": 0.04,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-6-2016",
+    "max_temp": 83,
+    "min_temp": 66,
+    "avg_temp": 74.5,
+    "precip": 0.4,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-6-2016",
+    "max_temp": 71,
+    "min_temp": 65,
+    "avg_temp": 68,
+    "precip": 0.91,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-6-2016",
+    "max_temp": 83,
+    "min_temp": 65,
+    "avg_temp": 74,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-6-2016",
+    "max_temp": 85,
+    "min_temp": 64,
+    "avg_temp": 74.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-6-2016",
+    "max_temp": 67,
+    "min_temp": 52,
+    "avg_temp": 59.5,
+    "precip": 0.45,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-6-2016",
+    "max_temp": 71,
+    "min_temp": 54,
+    "avg_temp": 62.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-6-2016",
+    "max_temp": 77,
+    "min_temp": 57,
+    "avg_temp": 67,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-6-2016",
+    "max_temp": 88,
+    "min_temp": 59,
+    "avg_temp": 73.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-6-2016",
+    "max_temp": 83,
+    "min_temp": 62,
+    "avg_temp": 72.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-6-2016",
+    "max_temp": 74,
+    "min_temp": 57,
+    "avg_temp": 65.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-6-2016",
+    "max_temp": 79,
+    "min_temp": 58,
+    "avg_temp": 68.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-6-2016",
+    "max_temp": 85,
+    "min_temp": 62,
+    "avg_temp": 73.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-6-2016",
+    "max_temp": 74,
+    "min_temp": 65,
+    "avg_temp": 69.5,
+    "precip": 0.22,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-6-2016",
+    "max_temp": 78,
+    "min_temp": 63,
+    "avg_temp": 70.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-6-2016",
+    "max_temp": 87,
+    "min_temp": 61,
+    "avg_temp": 74,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-6-2016",
+    "max_temp": 88,
+    "min_temp": 66,
+    "avg_temp": 77,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-6-2016",
+    "max_temp": 84,
+    "min_temp": 64,
+    "avg_temp": 74,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-6-2016",
+    "max_temp": 87,
+    "min_temp": 72,
+    "avg_temp": 79.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-6-2016",
+    "max_temp": 86,
+    "min_temp": 68,
+    "avg_temp": 77,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-6-2016",
+    "max_temp": 83,
+    "min_temp": 69,
+    "avg_temp": 76,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-6-2016",
+    "max_temp": 84,
+    "min_temp": 67,
+    "avg_temp": 75.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-6-2016",
+    "max_temp": 86,
+    "min_temp": 64,
+    "avg_temp": 75,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-6-2016",
+    "max_temp": 87,
+    "min_temp": 67,
+    "avg_temp": 77,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-6-2016",
+    "max_temp": 83,
+    "min_temp": 67,
+    "avg_temp": 75,
+    "precip": 0.45,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-6-2016",
+    "max_temp": 76,
+    "min_temp": 68,
+    "avg_temp": 72,
+    "precip": 0.12,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-6-2016",
+    "max_temp": 83,
+    "min_temp": 67,
+    "avg_temp": 75,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-6-2016",
+    "max_temp": 85,
+    "min_temp": 67,
+    "avg_temp": 76,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-7-2016",
+    "max_temp": 79,
+    "min_temp": 66,
+    "avg_temp": 72.5,
+    "precip": 0.83,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-7-2016",
+    "max_temp": 76,
+    "min_temp": 63,
+    "avg_temp": 69.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-7-2016",
+    "max_temp": 78,
+    "min_temp": 64,
+    "avg_temp": 71,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-7-2016",
+    "max_temp": 84,
+    "min_temp": 66,
+    "avg_temp": 75,
+    "precip": 0.49,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-7-2016",
+    "max_temp": 86,
+    "min_temp": 69,
+    "avg_temp": 77.5,
+    "precip": 0.66,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-7-2016",
+    "max_temp": 91,
+    "min_temp": 75,
+    "avg_temp": 83,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-7-2016",
+    "max_temp": 89,
+    "min_temp": 77,
+    "avg_temp": 83,
+    "precip": 0.04,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-7-2016",
+    "max_temp": 86,
+    "min_temp": 67,
+    "avg_temp": 76.5,
+    "precip": 0.08,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-7-2016",
+    "max_temp": 72,
+    "min_temp": 65,
+    "avg_temp": 68.5,
+    "precip": 0.53,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-7-2016",
+    "max_temp": 80,
+    "min_temp": 66,
+    "avg_temp": 73,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-7-2016",
+    "max_temp": 81,
+    "min_temp": 65,
+    "avg_temp": 73,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-7-2016",
+    "max_temp": 82,
+    "min_temp": 68,
+    "avg_temp": 75,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-7-2016",
+    "max_temp": 85,
+    "min_temp": 71,
+    "avg_temp": 78,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-7-2016",
+    "max_temp": 88,
+    "min_temp": 73,
+    "avg_temp": 80.5,
+    "precip": 0.62,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-7-2016",
+    "max_temp": 88,
+    "min_temp": 79,
+    "avg_temp": 83.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-7-2016",
+    "max_temp": 90,
+    "min_temp": 75,
+    "avg_temp": 82.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-7-2016",
+    "max_temp": 89,
+    "min_temp": 75,
+    "avg_temp": 82,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-7-2016",
+    "max_temp": 93,
+    "min_temp": 72,
+    "avg_temp": 82.5,
+    "precip": 0.35,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-7-2016",
+    "max_temp": 83,
+    "min_temp": 73,
+    "avg_temp": 78,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-7-2016",
+    "max_temp": 85,
+    "min_temp": 68,
+    "avg_temp": 76.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-7-2016",
+    "max_temp": 90,
+    "min_temp": 71,
+    "avg_temp": 80.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-7-2016",
+    "max_temp": 94,
+    "min_temp": 74,
+    "avg_temp": 84,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-7-2016",
+    "max_temp": 96,
+    "min_temp": 80,
+    "avg_temp": 88,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-7-2016",
+    "max_temp": 94,
+    "min_temp": 75,
+    "avg_temp": 84.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-7-2016",
+    "max_temp": 93,
+    "min_temp": 73,
+    "avg_temp": 83,
+    "precip": 1,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-7-2016",
+    "max_temp": 89,
+    "min_temp": 72,
+    "avg_temp": 80.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-7-2016",
+    "max_temp": 91,
+    "min_temp": 74,
+    "avg_temp": 82.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-7-2016",
+    "max_temp": 95,
+    "min_temp": 75,
+    "avg_temp": 85,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-7-2016",
+    "max_temp": 85,
+    "min_temp": 69,
+    "avg_temp": 77,
+    "precip": 1.09,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-7-2016",
+    "max_temp": 84,
+    "min_temp": 73,
+    "avg_temp": 78.5,
+    "precip": 0.25,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "31-7-2016",
+    "max_temp": 78,
+    "min_temp": 71,
+    "avg_temp": 74.5,
+    "precip": 1.08,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-8-2016",
+    "max_temp": 80,
+    "min_temp": 69,
+    "avg_temp": 74.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-8-2016",
+    "max_temp": 79,
+    "min_temp": 68,
+    "avg_temp": 73.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-8-2016",
+    "max_temp": 80,
+    "min_temp": 66,
+    "avg_temp": 73,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-8-2016",
+    "max_temp": 81,
+    "min_temp": 67,
+    "avg_temp": 74,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-8-2016",
+    "max_temp": 83,
+    "min_temp": 69,
+    "avg_temp": 76,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-8-2016",
+    "max_temp": 87,
+    "min_temp": 72,
+    "avg_temp": 79.5,
+    "precip": 0.05,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-8-2016",
+    "max_temp": 86,
+    "min_temp": 70,
+    "avg_temp": 78,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-8-2016",
+    "max_temp": 86,
+    "min_temp": 71,
+    "avg_temp": 78.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-8-2016",
+    "max_temp": 87,
+    "min_temp": 71,
+    "avg_temp": 79,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-8-2016",
+    "max_temp": 86,
+    "min_temp": 75,
+    "avg_temp": 80.5,
+    "precip": 0.09,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-8-2016",
+    "max_temp": 91,
+    "min_temp": 74,
+    "avg_temp": 82.5,
+    "precip": 0.15,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-8-2016",
+    "max_temp": 93,
+    "min_temp": 73,
+    "avg_temp": 83,
+    "precip": 0.32,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-8-2016",
+    "max_temp": 96,
+    "min_temp": 81,
+    "avg_temp": 88.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-8-2016",
+    "max_temp": 94,
+    "min_temp": 78,
+    "avg_temp": 86,
+    "precip": 0.06,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-8-2016",
+    "max_temp": 92,
+    "min_temp": 77,
+    "avg_temp": 84.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-8-2016",
+    "max_temp": 87,
+    "min_temp": 78,
+    "avg_temp": 82.5,
+    "precip": 0.11,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-8-2016",
+    "max_temp": 85,
+    "min_temp": 77,
+    "avg_temp": 81,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-8-2016",
+    "max_temp": 85,
+    "min_temp": 72,
+    "avg_temp": 78.5,
+    "precip": 0.03,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-8-2016",
+    "max_temp": 88,
+    "min_temp": 74,
+    "avg_temp": 81,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-8-2016",
+    "max_temp": 83,
+    "min_temp": 70,
+    "avg_temp": 76.5,
+    "precip": 0.82,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-8-2016",
+    "max_temp": 86,
+    "min_temp": 73,
+    "avg_temp": 79.5,
+    "precip": 0.31,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-8-2016",
+    "max_temp": 79,
+    "min_temp": 65,
+    "avg_temp": 72,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-8-2016",
+    "max_temp": 82,
+    "min_temp": 61,
+    "avg_temp": 71.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-8-2016",
+    "max_temp": 88,
+    "min_temp": 68,
+    "avg_temp": 78,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-8-2016",
+    "max_temp": 86,
+    "min_temp": 69,
+    "avg_temp": 77.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-8-2016",
+    "max_temp": 90,
+    "min_temp": 75,
+    "avg_temp": 82.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-8-2016",
+    "max_temp": 89,
+    "min_temp": 73,
+    "avg_temp": 81,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-8-2016",
+    "max_temp": 89,
+    "min_temp": 72,
+    "avg_temp": 80.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-8-2016",
+    "max_temp": 91,
+    "min_temp": 74,
+    "avg_temp": 82.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-8-2016",
+    "max_temp": 86,
+    "min_temp": 69,
+    "avg_temp": 77.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "31-8-2016",
+    "max_temp": 89,
+    "min_temp": 74,
+    "avg_temp": 81.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-9-2016",
+    "max_temp": 79,
+    "min_temp": 69,
+    "avg_temp": 74,
+    "precip": 0.5,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-9-2016",
+    "max_temp": 81,
+    "min_temp": 66,
+    "avg_temp": 73.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-9-2016",
+    "max_temp": 75,
+    "min_temp": 66,
+    "avg_temp": 70.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-9-2016",
+    "max_temp": 80,
+    "min_temp": 65,
+    "avg_temp": 72.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-9-2016",
+    "max_temp": 84,
+    "min_temp": 65,
+    "avg_temp": 74.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-9-2016",
+    "max_temp": 80,
+    "min_temp": 71,
+    "avg_temp": 75.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-9-2016",
+    "max_temp": 85,
+    "min_temp": 71,
+    "avg_temp": 78,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-9-2016",
+    "max_temp": 89,
+    "min_temp": 71,
+    "avg_temp": 80,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-9-2016",
+    "max_temp": 91,
+    "min_temp": 75,
+    "avg_temp": 83,
+    "precip": 0.22,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-9-2016",
+    "max_temp": 90,
+    "min_temp": 74,
+    "avg_temp": 82,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-9-2016",
+    "max_temp": 83,
+    "min_temp": 67,
+    "avg_temp": 75,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-9-2016",
+    "max_temp": 78,
+    "min_temp": 62,
+    "avg_temp": 70,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-9-2016",
+    "max_temp": 83,
+    "min_temp": 64,
+    "avg_temp": 73.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-9-2016",
+    "max_temp": 91,
+    "min_temp": 67,
+    "avg_temp": 79,
+    "precip": 0.56,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-9-2016",
+    "max_temp": 74,
+    "min_temp": 61,
+    "avg_temp": 67.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-9-2016",
+    "max_temp": 73,
+    "min_temp": 61,
+    "avg_temp": 67,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-9-2016",
+    "max_temp": 77,
+    "min_temp": 59,
+    "avg_temp": 68,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-9-2016",
+    "max_temp": 82,
+    "min_temp": 70,
+    "avg_temp": 76,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-9-2016",
+    "max_temp": 76,
+    "min_temp": 69,
+    "avg_temp": 72.5,
+    "precip": 0.68,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-9-2016",
+    "max_temp": 82,
+    "min_temp": 68,
+    "avg_temp": 75,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-9-2016",
+    "max_temp": 84,
+    "min_temp": 68,
+    "avg_temp": 76,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-9-2016",
+    "max_temp": 86,
+    "min_temp": 65,
+    "avg_temp": 75.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-9-2016",
+    "max_temp": 87,
+    "min_temp": 64,
+    "avg_temp": 75.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-9-2016",
+    "max_temp": 71,
+    "min_temp": 58,
+    "avg_temp": 64.5,
+    "precip": 0.2,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-9-2016",
+    "max_temp": 70,
+    "min_temp": 54,
+    "avg_temp": 62,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-9-2016",
+    "max_temp": 74,
+    "min_temp": 54,
+    "avg_temp": 64,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-9-2016",
+    "max_temp": 74,
+    "min_temp": 64,
+    "avg_temp": 69,
+    "precip": 0.22,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-9-2016",
+    "max_temp": 69,
+    "min_temp": 56,
+    "avg_temp": 62.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-9-2016",
+    "max_temp": 64,
+    "min_temp": 57,
+    "avg_temp": 60.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-9-2016",
+    "max_temp": 59,
+    "min_temp": 56,
+    "avg_temp": 57.5,
+    "precip": 0.4,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-10-2016",
+    "max_temp": 62,
+    "min_temp": 56,
+    "avg_temp": 59,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-10-2016",
+    "max_temp": 63,
+    "min_temp": 57,
+    "avg_temp": 60,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-10-2016",
+    "max_temp": 72,
+    "min_temp": 60,
+    "avg_temp": 66,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-10-2016",
+    "max_temp": 69,
+    "min_temp": 60,
+    "avg_temp": 64.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-10-2016",
+    "max_temp": 67,
+    "min_temp": 53,
+    "avg_temp": 60,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-10-2016",
+    "max_temp": 73,
+    "min_temp": 55,
+    "avg_temp": 64,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-10-2016",
+    "max_temp": 75,
+    "min_temp": 57,
+    "avg_temp": 66,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-10-2016",
+    "max_temp": 68,
+    "min_temp": 58,
+    "avg_temp": 63,
+    "precip": 0.23,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-10-2016",
+    "max_temp": 65,
+    "min_temp": 51,
+    "avg_temp": 58,
+    "precip": 0.55,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-10-2016",
+    "max_temp": 64,
+    "min_temp": 47,
+    "avg_temp": 55.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-10-2016",
+    "max_temp": 63,
+    "min_temp": 46,
+    "avg_temp": 54.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-10-2016",
+    "max_temp": 66,
+    "min_temp": 53,
+    "avg_temp": 59.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-10-2016",
+    "max_temp": 67,
+    "min_temp": 53,
+    "avg_temp": 60,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-10-2016",
+    "max_temp": 62,
+    "min_temp": 47,
+    "avg_temp": 54.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-10-2016",
+    "max_temp": 65,
+    "min_temp": 45,
+    "avg_temp": 55,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-10-2016",
+    "max_temp": 69,
+    "min_temp": 53,
+    "avg_temp": 61,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-10-2016",
+    "max_temp": 81,
+    "min_temp": 63,
+    "avg_temp": 72,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-10-2016",
+    "max_temp": 81,
+    "min_temp": 67,
+    "avg_temp": 74,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-10-2016",
+    "max_temp": 85,
+    "min_temp": 65,
+    "avg_temp": 75,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-10-2016",
+    "max_temp": 70,
+    "min_temp": 62,
+    "avg_temp": 66,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-10-2016",
+    "max_temp": 69,
+    "min_temp": 57,
+    "avg_temp": 63,
+    "precip": 1.11,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-10-2016",
+    "max_temp": 57,
+    "min_temp": 47,
+    "avg_temp": 52,
+    "precip": 0.29,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-10-2016",
+    "max_temp": 61,
+    "min_temp": 45,
+    "avg_temp": 53,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-10-2016",
+    "max_temp": 62,
+    "min_temp": 47,
+    "avg_temp": 54.5,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-10-2016",
+    "max_temp": 52,
+    "min_temp": 43,
+    "avg_temp": 47.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-10-2016",
+    "max_temp": 51,
+    "min_temp": 38,
+    "avg_temp": 44.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-10-2016",
+    "max_temp": 55,
+    "min_temp": 40,
+    "avg_temp": 47.5,
+    "precip": 1.41,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-10-2016",
+    "max_temp": 51,
+    "min_temp": 42,
+    "avg_temp": 46.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-10-2016",
+    "max_temp": 64,
+    "min_temp": 39,
+    "avg_temp": 51.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-10-2016",
+    "max_temp": 76,
+    "min_temp": 54,
+    "avg_temp": 65,
+    "precip": 0.56,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "31-10-2016",
+    "max_temp": 54,
+    "min_temp": 44,
+    "avg_temp": 49,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-11-2016",
+    "max_temp": 58,
+    "min_temp": 40,
+    "avg_temp": 49,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-11-2016",
+    "max_temp": 70,
+    "min_temp": 54,
+    "avg_temp": 62,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-11-2016",
+    "max_temp": 72,
+    "min_temp": 57,
+    "avg_temp": 64.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-11-2016",
+    "max_temp": 61,
+    "min_temp": 47,
+    "avg_temp": 54,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-11-2016",
+    "max_temp": 62,
+    "min_temp": 44,
+    "avg_temp": 53,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-11-2016",
+    "max_temp": 59,
+    "min_temp": 45,
+    "avg_temp": 52,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-11-2016",
+    "max_temp": 53,
+    "min_temp": 41,
+    "avg_temp": 47,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-11-2016",
+    "max_temp": 66,
+    "min_temp": 41,
+    "avg_temp": 53.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-11-2016",
+    "max_temp": 59,
+    "min_temp": 49,
+    "avg_temp": 54,
+    "precip": 0.06,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-11-2016",
+    "max_temp": 56,
+    "min_temp": 40,
+    "avg_temp": 48,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-11-2016",
+    "max_temp": 63,
+    "min_temp": 41,
+    "avg_temp": 52,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-11-2016",
+    "max_temp": 50,
+    "min_temp": 37,
+    "avg_temp": 43.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-11-2016",
+    "max_temp": 61,
+    "min_temp": 41,
+    "avg_temp": 51,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-11-2016",
+    "max_temp": 62,
+    "min_temp": 46,
+    "avg_temp": 54,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-11-2016",
+    "max_temp": 56,
+    "min_temp": 47,
+    "avg_temp": 51.5,
+    "precip": 1.81,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-11-2016",
+    "max_temp": 61,
+    "min_temp": 45,
+    "avg_temp": 53,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-11-2016",
+    "max_temp": 61,
+    "min_temp": 49,
+    "avg_temp": 55,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "18-11-2016",
+    "max_temp": 64,
+    "min_temp": 44,
+    "avg_temp": 54,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "19-11-2016",
+    "max_temp": 63,
+    "min_temp": 37,
+    "avg_temp": 50,
+    "precip": 0.25,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-11-2016",
+    "max_temp": 42,
+    "min_temp": 34,
+    "avg_temp": 38,
+    "precip": 0.31,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-11-2016",
+    "max_temp": 41,
+    "min_temp": 36,
+    "avg_temp": 38.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-11-2016",
+    "max_temp": 41,
+    "min_temp": 37,
+    "avg_temp": 39,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-11-2016",
+    "max_temp": 45,
+    "min_temp": 35,
+    "avg_temp": 40,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-11-2016",
+    "max_temp": 48,
+    "min_temp": 38,
+    "avg_temp": 43,
+    "precip": 0.03,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-11-2016",
+    "max_temp": 54,
+    "min_temp": 45,
+    "avg_temp": 49.5,
+    "precip": 0.02,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-11-2016",
+    "max_temp": 50,
+    "min_temp": 40,
+    "avg_temp": 45,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-11-2016",
+    "max_temp": 50,
+    "min_temp": 39,
+    "avg_temp": 44.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-11-2016",
+    "max_temp": 52,
+    "min_temp": 38,
+    "avg_temp": 45,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-11-2016",
+    "max_temp": 60,
+    "min_temp": 51,
+    "avg_temp": 55.5,
+    "precip": 2.2,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-11-2016",
+    "max_temp": 58,
+    "min_temp": 50,
+    "avg_temp": 54,
+    "precip": 0.73,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "1-12-2016",
+    "max_temp": 54,
+    "min_temp": 42,
+    "avg_temp": 48,
+    "precip": 0.07,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "2-12-2016",
+    "max_temp": 51,
+    "min_temp": 40,
+    "avg_temp": 45.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "3-12-2016",
+    "max_temp": 47,
+    "min_temp": 41,
+    "avg_temp": 44,
+    "precip": 0.01,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "4-12-2016",
+    "max_temp": 47,
+    "min_temp": 39,
+    "avg_temp": 43,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "5-12-2016",
+    "max_temp": 49,
+    "min_temp": 38,
+    "avg_temp": 43.5,
+    "precip": 0.19,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "6-12-2016",
+    "max_temp": 46,
+    "min_temp": 37,
+    "avg_temp": 41.5,
+    "precip": 0.35,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "7-12-2016",
+    "max_temp": 46,
+    "min_temp": 40,
+    "avg_temp": 43,
+    "precip": 0.09,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "8-12-2016",
+    "max_temp": 45,
+    "min_temp": 35,
+    "avg_temp": 40,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "9-12-2016",
+    "max_temp": 39,
+    "min_temp": 29,
+    "avg_temp": 34,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "10-12-2016",
+    "max_temp": 35,
+    "min_temp": 28,
+    "avg_temp": 31.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "11-12-2016",
+    "max_temp": 35,
+    "min_temp": 28,
+    "avg_temp": 31.5,
+    "precip": 0.03,
+    "snow_fall": 0.4,
+    "snow_depth": 0
+  },
+  {
+    "date": "12-12-2016",
+    "max_temp": 46,
+    "min_temp": 34,
+    "avg_temp": 40,
+    "precip": 0.5,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "13-12-2016",
+    "max_temp": 43,
+    "min_temp": 35,
+    "avg_temp": 39,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "14-12-2016",
+    "max_temp": 42,
+    "min_temp": 34,
+    "avg_temp": 38,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "15-12-2016",
+    "max_temp": 34,
+    "min_temp": 19,
+    "avg_temp": 26.5,
+    "precip": 0,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "16-12-2016",
+    "max_temp": 27,
+    "min_temp": 17,
+    "avg_temp": 22,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "17-12-2016",
+    "max_temp": 39,
+    "min_temp": 24,
+    "avg_temp": 31.5,
+    "precip": 0.73,
+    "snow_fall": 2.8,
+    "snow_depth": 2
+  },
+  {
+    "date": "18-12-2016",
+    "max_temp": 58,
+    "min_temp": 31,
+    "avg_temp": 44.5,
+    "precip": 0.04,
+    "snow_fall": 0,
+    "snow_depth": 1
+  },
+  {
+    "date": "19-12-2016",
+    "max_temp": 31,
+    "min_temp": 23,
+    "avg_temp": 27,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "20-12-2016",
+    "max_temp": 33,
+    "min_temp": 20,
+    "avg_temp": 26.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "21-12-2016",
+    "max_temp": 40,
+    "min_temp": 30,
+    "avg_temp": 35,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "22-12-2016",
+    "max_temp": 49,
+    "min_temp": 37,
+    "avg_temp": 43,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "23-12-2016",
+    "max_temp": 47,
+    "min_temp": 38,
+    "avg_temp": 42.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "24-12-2016",
+    "max_temp": 47,
+    "min_temp": 38,
+    "avg_temp": 42.5,
+    "precip": 0.47,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "25-12-2016",
+    "max_temp": 50,
+    "min_temp": 36,
+    "avg_temp": 43,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "26-12-2016",
+    "max_temp": 50,
+    "min_temp": 33,
+    "avg_temp": 41.5,
+    "precip": 0.02,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "27-12-2016",
+    "max_temp": 60,
+    "min_temp": 40,
+    "avg_temp": 50,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "28-12-2016",
+    "max_temp": 40,
+    "min_temp": 34,
+    "avg_temp": 37,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "29-12-2016",
+    "max_temp": 46,
+    "min_temp": 33,
+    "avg_temp": 39.5,
+    "precip": 0.39,
+    "snow_fall": 0,
+    "snow_depth": 0
+  },
+  {
+    "date": "30-12-2016",
+    "max_temp": 40,
+    "min_temp": 33,
+    "avg_temp": 36.5,
+    "precip": 0.01,
+    "snow_fall": 0.01,
+    "snow_depth": 0
+  },
+  {
+    "date": "31-12-2016",
+    "max_temp": 44,
+    "min_temp": 31,
+    "avg_temp": 37.5,
+    "precip": 0,
+    "snow_fall": 0,
+    "snow_depth": 0
+  }
+]

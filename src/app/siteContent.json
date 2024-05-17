@@ -1,6 +1,7 @@
 [
   {
     "slug": "the-times-pilot",
+    "isProject": false,
     "projectHeadline": "the.times.pilot: Tailoring Your NY Times Digest",
     "description": "Seamlessly curate and receive the stories that matter to you with a custom news aggregator and subscriber-focused daily email service.",
     "landingToolList": [
@@ -133,7 +134,7 @@
       },
       "siteFlow": {
         "headline": "High-Level Site Flow",
-        "body": "It's important that users are able to get a sense of what the site has to offer without going through the signup process. Too often users are forced through a signup funnel only to find out they're not interested in the product. To allow this, the site is set up in a tiered fashion, where an unauthenticated user can still look around, but they will be unable to save articles or subscribe to email topics, as those require an email address."
+        "body": "It's important that users are able to get a sense of what the site has to offer without going through the signup process. Too often users are forced through a signup funnel only to find out they're not interested in the product. To allow this, the site is set up in a tiered fashion, where an unauthenticated user can still look around, but they will be unable to save articles or subscribe to email topics, as those functions require an email address."
       },
       "problems": {
         "headline": "Problems Met, Issues Solved",
@@ -177,6 +178,7 @@
   },
   {
     "slug": "circuit-app",
+    "isProject": false,
     "projectHeadline": "Circuit: Revolutionizing Time Management for Creatives",
     "description": "An iOS app to empower creative minds by bettering focus and eliminating burnout.",
     "landingToolList": [
@@ -268,6 +270,35 @@
         "headline": "Potential App Structure",
         "body": "The app is divided into 3 screens and 1 large-detent sheet. User data can be stored within the device’s persistent storage which would allow transferring or offloading of data to different devices. This app should also make use of Apple’s Live Activities for iOS. This would allow the user to view progress from their iPhone lock-screen without explicitly opening the Circuit app."
       }
+    }
+  },
+  {
+    "slug": "made-with-d3",
+    "isProject": true,
+    "projectHeadline": "Made With D3.js: From Numbers to Narratives",
+    "description": "Exploring datasets with JavaScript and D3.js visualizations.",
+    "landingToolList": [
+      "D3.js",
+      "TypeScript",
+      "React"
+    ],
+    "projectPage": {
+      "headlineOne": "Made With D3.js",
+      "headlineTwo": "From Numbers to Narratives",
+      "role": "Concept, Design, Development",
+      "summaryHeadline": "Making the Invisible, Visible",
+      "summaryBody": "This ever-growing collection of projects is dedicated to delivering clear, actionable information through data visualizations. By transforming large, complex datasets into intelligible, graphical charts, we convert previously cryptic information into forms that are readily understandable for users.",
+      "tools": [
+        "D3.js",
+        "TypeScript",
+        "React"
+      ],
+      "links": [
+        {
+          "label": "Browse the Github Repo",
+          "url": "#"
+        }
+      ]
     }
   }
 ]

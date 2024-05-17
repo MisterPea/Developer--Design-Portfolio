@@ -36,8 +36,8 @@ const VideoPlayer = ({ webmVideoSource, mp4VideoSource, requireAlpha = false, in
 
   return (
     <figure {...rest} className={className} ref={elementRef}>
-      <video autoPlay muted loop playsInline>
-        {(!isSafari || !requireAlpha) && <source src={webmVideoSource} type="video/webm" />}
+      <video autoPlay muted loop playsInline preload="auto">
+        {!isSafari && <source src={webmVideoSource} type="video/webm" />}
         {isSafari && <source src={mp4VideoSource} type="video/mp4" />}
       </video>
     </figure>

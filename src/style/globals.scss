@@ -23,10 +23,15 @@
 @import "../components/mobileCircuitDiagram.scss";
 @import "../components/navHomeAbout.scss";
 @import "../components/responsiveImage.scss";
+@import "../components/checkbox.scss";
+@import "../components/dualThumbSlider.scss";
+@import "../components/radioButton.scss";
 @import "../style/main-page.scss";
 @import "../style/project-pages.scss";
+@import "../style/project-pages-d3.scss";
 @import "../style/circuit-project-page.scss";
 @import "../style/about.scss";
+
 html {
   box-sizing: border-box;
 }

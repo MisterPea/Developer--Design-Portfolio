@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import { BodyContent, MixedText, ProjectTextBlockProps } from "./_types";
 import useIntersection from "./_helpers/useIntersection";
+import parse from 'html-react-parser';
 
 export default function ProjectTextBlock({
   title,
@@ -55,9 +56,11 @@ export default function ProjectTextBlock({
         </>
       );
     } else {
-      return <p>{body as unknown as string}</p>;
+      // Added parse to interpret <i> or <b> etc.
+      return<p>{parse(body as string) as unknown as string}</p>;
     }
   };
+
 
   const titleTreatment = () => {
     if (titleIsBold) {

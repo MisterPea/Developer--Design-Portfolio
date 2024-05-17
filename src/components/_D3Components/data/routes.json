@@ -1,0 +1,1065 @@
+[
+  {
+    "route_id": "1",
+    "route_long_name": "Babylon Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central",
+      "Atlantic Terminal",
+      "Jamaica"
+    ],
+    "westboundStarts": [
+      "Babylon",
+      "Massapequa",
+      "Wantagh",
+      "Freeport"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 7.020988058779438
+      },
+      {
+        "station": "Forest Hills",
+        "distance": 8.078143984532574
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 8.97584330823641
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "St. Albans",
+        "distance": 12.628864890577281
+      },
+      {
+        "station": "Valley Stream",
+        "distance": 16.331760228149783
+      },
+      {
+        "station": "Lynbrook",
+        "distance": 17.867680402148977
+      },
+      {
+        "station": "Rockville Centre",
+        "distance": 19.26272147864149
+      },
+      {
+        "station": "Baldwin",
+        "distance": 21.253871041660034
+      },
+      {
+        "station": "Freeport",
+        "distance": 22.481832406460924
+      },
+      {
+        "station": "Merrick",
+        "distance": 23.963153592232526
+      },
+      {
+        "station": "Bellmore",
+        "distance": 24.986988877733346
+      },
+      {
+        "station": "Wantagh",
+        "distance": 25.940908006840807
+      },
+      {
+        "station": "Seaford",
+        "distance": 27.05233589529894
+      },
+      {
+        "station": "Massapequa",
+        "distance": 27.93759524664401
+      },
+      {
+        "station": "Massapequa Park",
+        "distance": 28.663719721731468
+      },
+      {
+        "station": "Amityville",
+        "distance": 30.412962018465084
+      },
+      {
+        "station": "Copiague",
+        "distance": 31.541063215069272
+      },
+      {
+        "station": "Lindenhurst",
+        "distance": 32.97861563857767
+      },
+      {
+        "station": "Babylon",
+        "distance": 35.226773742564625
+      }
+    ]
+  },
+  {
+    "route_id": "2",
+    "route_long_name": "Hempstead Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central",
+      "Atlantic Terminal",
+      "Bellerose"
+    ],
+    "westboundStarts": [
+      "Hempstead",
+      "Floral Park"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 7.020988058779438
+      },
+      {
+        "station": "Forest Hills",
+        "distance": 8.078143984532574
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 8.97584330823641
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "Hillside Facility",
+        "distance": 11.72239218346089
+      },
+      {
+        "station": "Hollis",
+        "distance": 12.200199548779901
+      },
+      {
+        "station": "Queens Village",
+        "distance": 13.65503108297213
+      },
+      {
+        "station": "Elmont-UBS Arena",
+        "distance": 14.190258916197584
+      },
+      {
+        "station": "Bellerose",
+        "distance": 14.630313879989815
+      },
+      {
+        "station": "Floral Park",
+        "distance": 15.141464737327363
+      },
+      {
+        "station": "Stewart Manor",
+        "distance": 16.474080442007804
+      },
+      {
+        "station": "Nassau Boulevard",
+        "distance": 17.427725444049944
+      },
+      {
+        "station": "Garden City",
+        "distance": 18.589544634291087
+      },
+      {
+        "station": "Country Life Press",
+        "distance": 19.0
+      },
+      {
+        "station": "Hempstead",
+        "distance": 19.467467884234967
+      }
+    ]
+  },
+  {
+    "route_id": "3",
+    "route_long_name": "Oyster Bay Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Long Island City",
+      "Hunterspoint Ave",
+      "Jamaica"
+    ],
+    "westboundStarts": [
+      "Oyster Bay"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Long Island City",
+        "distance": 1.9870349276022892
+      },
+      {
+        "station": "Hunterspoint Ave",
+        "distance": 2.514096512755513
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "Mineola",
+        "distance": 15.0
+      },
+      {
+        "station": "East Williston",
+        "distance": 15.5
+      },
+      {
+        "station": "Albertson",
+        "distance": 16.0
+      },
+      {
+        "station": "Roslyn",
+        "distance": 17.0
+      },
+      {
+        "station": "Greenvale",
+        "distance": 18.05776771175763
+      },
+      {
+        "station": "Glen Head",
+        "distance": 19.0
+      },
+      {
+        "station": "Sea Cliff",
+        "distance": 20.0
+      },
+      {
+        "station": "Glen St",
+        "distance": 20.5
+      },
+      {
+        "station": "Glen Cove",
+        "distance": 21.5
+      },
+      {
+        "station": "Locust Valley",
+        "distance": 22.7257716820734
+      },
+      {
+        "station": "Oyster Bay",
+        "distance": 25.530266974831463
+      }
+    ]
+  },
+  {
+    "route_id": "4",
+    "route_long_name": "Ronkonkoma Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central",
+      "Ronkonkoma"
+    ],
+    "westboundStarts": [
+      "Greenport",
+      "Riverhead",
+      "Ronkonkoma",
+      "Farmingdale"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.5
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.654122557822245
+      },
+      {
+        "station": "Forest Hills",
+        "distance": 7.78143984532574
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 10.2
+      },
+      {
+        "station": "Jamaica",
+        "distance": 12.4
+      },
+      {
+        "station": "Hillside Facility",
+        "distance": 14.6
+      },
+      {
+        "station": "Hollis",
+        "distance": 16.8
+      },
+      {
+        "station": "Queens Village",
+        "distance": 19.0
+      },
+      {
+        "station": "Elmont-UBS Arena",
+        "distance": 21.2
+      },
+      {
+        "station": "Floral Park",
+        "distance": 23.4
+      },
+      {
+        "station": "New Hyde Park",
+        "distance": 25.6
+      },
+      {
+        "station": "Merillon Ave",
+        "distance": 27.8
+      },
+      {
+        "station": "Mineola",
+        "distance": 30.0
+      },
+      {
+        "station": "Carle Place",
+        "distance": 32.2
+      },
+      {
+        "station": "Westbury",
+        "distance": 34.4
+      },
+      {
+        "station": "Hicksville",
+        "distance": 36.6
+      },
+      {
+        "station": "Bethpage",
+        "distance": 38.8
+      },
+      {
+        "station": "Farmingdale",
+        "distance": 41
+      },
+      {
+        "station": "Pinelawn",
+        "distance": 42
+      },
+      {
+        "station": "Wyandanch",
+        "distance": 44
+      },
+      {
+        "station": "Deer Park",
+        "distance": 46
+      },
+      {
+        "station": "Brentwood",
+        "distance": 48
+      },
+      {
+        "station": "Central Islip",
+        "distance": 50
+      },
+      {
+        "station": "Ronkonkoma",
+        "distance": 52.610546327948086
+      },
+      {
+        "station": "Medford",
+        "distance": 54.24134190716482
+      },
+      {
+        "station": "Yaphank",
+        "distance": 56.61509374153832
+      },
+      {
+        "station": "Riverhead",
+        "distance": 70.3308391097305
+      },
+      {
+        "station": "Mattituck",
+        "distance": 77.95262263765187
+      },
+      {
+        "station": "Southold",
+        "distance": 84.61649234176735
+      },
+      {
+        "station": "Greenport",
+        "distance": 88.46887583444861
+      }
+    ]
+  },
+  {
+    "route_id": "5",
+    "route_long_name": "Montauk Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Long Island City",
+      "Hunterspoint Ave",
+      "Jamaica",
+      "Babylon",
+      "Speonk",
+      "Hampton Bays"
+    ],
+    "westboundStarts": [
+      "Montauk",
+      "Amagansett",
+      "Southampton",
+      "Speonk",
+      "Patchogue"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Long Island City",
+        "distance": 1.9870349276022892
+      },
+      {
+        "station": "Hunterspoint Ave",
+        "distance": 3.75
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "Hillside Facility",
+        "distance": 11.72239218346089
+      },
+      {
+        "station": "Mineola",
+        "distance": 18.477164909857514
+      },
+      {
+        "station": "Hicksville",
+        "distance": 24.365687533215198
+      },
+      {
+        "station": "Babylon",
+        "distance": 35.226773742564625
+      },
+      {
+        "station": "Bay Shore",
+        "distance": 38.75676895706664
+      },
+      {
+        "station": "Islip",
+        "distance": 41.067105340746956
+      },
+      {
+        "station": "Great River",
+        "distance": 43.106781741712076
+      },
+      {
+        "station": "Oakdale",
+        "distance": 45.07937055351358
+      },
+      {
+        "station": "Sayville",
+        "distance": 47.48982648611938
+      },
+      {
+        "station": "Patchogue",
+        "distance": 51.183612516766026
+      },
+      {
+        "station": "Bellport",
+        "distance": 54.95272759282091
+      },
+      {
+        "station": "Mastic-Shirley",
+        "distance": 59.17543065842985
+      },
+      {
+        "station": "Speonk",
+        "distance": 67.57403633337844
+      },
+      {
+        "station": "Westhampton",
+        "distance": 70.48183759559068
+      },
+      {
+        "station": "Hampton Bays",
+        "distance": 77.34172259598574
+      },
+      {
+        "station": "Southampton",
+        "distance": 84.42575929382711
+      },
+      {
+        "station": "Bridgehampton",
+        "distance": 88.95123845374111
+      },
+      {
+        "station": "East Hampton",
+        "distance": 95.2400302653149
+      },
+      {
+        "station": "Amagansett",
+        "distance": 98.53531333767366
+      },
+      {
+        "station": "Montauk",
+        "distance": 108.4736788114232
+      }
+    ]
+  },
+  {
+    "route_id": "6",
+    "route_long_name": "Long Beach Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central"
+    ],
+    "westboundStarts": [
+      "Long Beach",
+      "Island Park"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 7.020988058779438
+      },
+      {
+        "station": "Forest Hills",
+        "distance": 8.078143984532574
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 8.97584330823641
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "Locust Manor",
+        "distance": 13.05510198829172
+      },
+      {
+        "station": "Laurelton",
+        "distance": 13.87847910195657
+      },
+      {
+        "station": "Rosedale",
+        "distance": 14.725745397837889
+      },
+      {
+        "station": "Valley Stream",
+        "distance": 16.331760228149783
+      },
+      {
+        "station": "Lynbrook",
+        "distance": 17.867680402148977
+      },
+      {
+        "station": "Centre Ave",
+        "distance": 18.656075145674865
+      },
+      {
+        "station": "East Rockaway",
+        "distance": 19.09746569726
+      },
+      {
+        "station": "Oceanside",
+        "distance": 19.476554054692265
+      },
+      {
+        "station": "Island Park",
+        "distance": 20.0
+      },
+      {
+        "station": "Long Beach",
+        "distance": 20.695679836
+      }
+    ]
+  },
+  {
+    "route_id": "7",
+    "route_long_name": "Far Rockaway Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central",
+      "Atlantic Terminal"
+    ],
+    "westboundStarts": [
+      "Far Rockaway"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 7.020988058779438
+      },
+      {
+        "station": "Forest Hills",
+        "distance": 8.078143984532574
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 8.97584330823641
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "Locust Manor",
+        "distance": 13.05510198829172
+      },
+      {
+        "station": "Laurelton",
+        "distance": 13.87847910195657
+      },
+      {
+        "station": "Rosedale",
+        "distance": 14.725745397837889
+      },
+      {
+        "station": "Valley Stream",
+        "distance": 15.331760228149783
+      },
+      {
+        "station": "Gibson",
+        "distance": 15.80999293295425
+      },
+      {
+        "station": "Hewlett",
+        "distance": 16.3
+      },
+      {
+        "station": "Woodmere",
+        "distance": 16.55
+      },
+      {
+        "station": "Cedarhurst",
+        "distance": 16.8
+      },
+      {
+        "station": "Lawrence",
+        "distance": 17.1
+      },
+      {
+        "station": "Inwood",
+        "distance": 17.5
+      },
+      {
+        "station": "Far Rockaway",
+        "distance": 18.0
+      }
+    ]
+  },
+  {
+    "route_id": "8",
+    "route_long_name": "West Hempstead Branch",
+    "eastboundStarts": [
+      "Jamaica",
+      "Atlantic Terminal",
+      "Penn Station"
+    ],
+    "westboundStarts": [
+      "West Hempstead",
+      "St. Albans"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 7.020988058779438
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 8.97584330823641
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "St. Albans",
+        "distance": 12.628864890577281
+      },
+      {
+        "station": "Westwood",
+        "distance": 17.0
+      },
+      {
+        "station": "Malverne",
+        "distance": 17.580371119745183
+      },
+      {
+        "station": "Lakeview",
+        "distance": 18.4
+      },
+      {
+        "station": "Hempstead Grdns",
+        "distance": 18.6
+      },
+      {
+        "station": "West Hempstead",
+        "distance": 19.0
+      }
+    ]
+  },
+  {
+    "route_id": "9",
+    "route_long_name": "Port Washington Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central"
+    ],
+    "westboundStarts": [
+      "Port Washington",
+      "Great Neck"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Mets-Willets Point",
+        "distance": 7.84612104510759
+      },
+      {
+        "station": "Flushing Main St",
+        "distance": 8.506380207728851
+      },
+      {
+        "station": "Murray Hill",
+        "distance": 9.408091485751932
+      },
+      {
+        "station": "Broadway",
+        "distance": 10.068403655703689
+      },
+      {
+        "station": "Auburndale",
+        "distance": 10.683654459100714
+      },
+      {
+        "station": "Bayside",
+        "distance": 11.66869550961482
+      },
+      {
+        "station": "Douglaston",
+        "distance": 12.835734249995294
+      },
+      {
+        "station": "Little Neck",
+        "distance": 13.344275770919017
+      },
+      {
+        "station": "Great Neck",
+        "distance": 14.223770502927044
+      },
+      {
+        "station": "Manhasset",
+        "distance": 15.693917356521622
+      },
+      {
+        "station": "Plandome",
+        "distance": 16.15330367924015
+      },
+      {
+        "station": "Port Washington",
+        "distance": 16.909075730302266
+      }
+    ]
+  },
+  {
+    "route_id": "10",
+    "route_long_name": "Port Jefferson Branch",
+    "eastboundStarts": [
+      "Penn Station",
+      "Grand Central",
+      "Long Island City",
+      "Hunterspoint Ave",
+      "Jamaica",
+      "Hicksville",
+      "Huntington"
+    ],
+    "westboundStarts": [
+      "Port Jefferson",
+      "Stony Brook",
+      "Huntington",
+      "Hicksville",
+      "Westbury"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Grand Central",
+        "distance": 1.0001185555663195
+      },
+      {
+        "station": "Long Island City",
+        "distance": 1.9870349276022892
+      },
+      {
+        "station": "Hunterspoint Ave",
+        "distance": 2.9096512755513
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 3.5
+      },
+      {
+        "station": "Woodside",
+        "distance": 4.754122557822245
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 7.020988058779438
+      },
+      {
+        "station": "Forest Hills",
+        "distance": 8.078143984532574
+      },
+      {
+        "station": "Kew Gardens",
+        "distance": 8.97584330823641
+      },
+      {
+        "station": "Jamaica",
+        "distance": 10.310215742638128
+      },
+      {
+        "station": "Hillside Facility",
+        "distance": 11.72239218346089
+      },
+      {
+        "station": "Hollis",
+        "distance": 12.600199548779901
+      },
+      {
+        "station": "Queens Village",
+        "distance": 13.5503108297213
+      },
+      {
+        "station": "Elmont-UBS Arena",
+        "distance": 14.290258916197584
+      },
+      {
+        "station": "Floral Park",
+        "distance": 15.21464737327363
+      },
+      {
+        "station": "New Hyde Park",
+        "distance": 16.42318339675428
+      },
+      {
+        "station": "Merillon Ave",
+        "distance": 17.363260256171476
+      },
+      {
+        "station": "Mineola",
+        "distance": 18.477164909857514
+      },
+      {
+        "station": "Carle Place",
+        "distance": 20.41030073771524
+      },
+      {
+        "station": "Westbury",
+        "distance": 21.34129685551285
+      },
+      {
+        "station": "Hicksville",
+        "distance": 24.365687533215198
+      },
+      {
+        "station": "Syosset",
+        "distance": 26.302907152958223
+      },
+      {
+        "station": "Cold Spring Harbor",
+        "distance": 28.979381771268848
+      },
+      {
+        "station": "Huntington",
+        "distance": 31.356251483127014
+      },
+      {
+        "station": "Greenlawn",
+        "distance": 33.97855497606735
+      },
+      {
+        "station": "Northport",
+        "distance": 35.92079495236598
+      },
+      {
+        "station": "Kings Park",
+        "distance": 39.63628179771495
+      },
+      {
+        "station": "Smithtown",
+        "distance": 42.246752854197915
+      },
+      {
+        "station": "St. James",
+        "distance": 44.55147245615879
+      },
+      {
+        "station": "Stony Brook",
+        "distance": 46.71572785000572
+      },
+      {
+        "station": "Port Jefferson",
+        "distance": 50.80552080026476
+      }
+    ]
+  },
+  {
+    "route_id": "12",
+    "route_long_name": "City Terminal Zone Branch",
+    "eastboundStarts": [
+      "Atlantic Terminal"
+    ],
+    "westboundStarts": [
+      "Jamaica"
+    ],
+    "stops": [
+      {
+        "station": "Penn Station",
+        "distance": 0
+      },
+      {
+        "station": "Atlantic Terminal",
+        "distance": 2
+      },
+      {
+        "station": "Nostrand Ave",
+        "distance": 5.525377244312594
+      },
+      {
+        "station": "East New York",
+        "distance": 6.020988058779438
+      },
+      {
+        "station": "Jamaica",
+        "distance": 8.9
+      }
+    ]
+  }
+]

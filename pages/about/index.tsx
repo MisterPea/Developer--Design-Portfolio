@@ -29,7 +29,7 @@ export default function CircuitApp() {
             </div>
             <h3 className="first_heading">That&apos;s me!</h3>
           </section>
-          <p className="about_page-body_text">Serial creator ; restless learner.<br /> Making things with code, pixels, and paper.<br /> Lauded for my development, design and homemade salted caramel and strawberry ice creams.</p>
+          <p className="about_page-body_text">Serial creator; restless learner.<br /> Making things with code, pixels, and paper.<br /> Lauded for my development, design and homemade salted caramel and strawberry ice creams.</p>
           <h3 className="last_heading">Say hi!</h3>
           <ProjectFooter isAboutPage />
         </div >
