@@ -386,6 +386,7 @@
     }
     &-section_three {
       @include six-wide-desktop;
+      row-gap: 2rem;
       .project_text_block {
         grid-column: 2 / 5;
       }

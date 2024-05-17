@@ -1,0 +1,34 @@
+@import "../style/mixins.scss";
+
+.dual_range-container {
+  position: relative;
+  height: 1rem;
+  margin: 0;
+  .drag {
+    cursor: pointer;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--dark-2);
+    top: -4.5px;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+  .dual_range-selection {
+    position: absolute;
+    height: 6px;
+    // background-color: var(--dark-3);
+    background-color: var(--dark-2);
+  }
+}
+.dual_range-track {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: lightgray;
+  border-radius: 3px;
+}

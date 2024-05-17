@@ -1,21 +1,13 @@
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-export default function BackToAllWork() {
+export default function BackToAllWork({ triggerDifference = 150 }: { triggerDifference?: number; }) {
   const contentFrame = useRef<HTMLElement | null>(null);
   const hasClicked = useRef<boolean>(false); // temp state holder for click
   const [isOpen, setIsOpen] = useState(false);
   const [isHover, setIsHover] = useState<boolean | null>(null);
 
-  useEffect(() => {
-    contentFrame.current = document.querySelector('.project_page-wrapper');
-    window.addEventListener('scroll', getElementDistanceToBottom);
-    return () => {
-      window.removeEventListener('scroll', getElementDistanceToBottom);
-    };
-  }, []);
-
-  function getElementDistanceToBottom() {
+  const getElementDistanceToBottom = useCallback(() => {
     // Get the element's bottom edge position relative to the document.
 
     if (contentFrame.current) {
@@ -23,13 +15,21 @@ export default function BackToAllWork() {
       const elementBottom = elementRect.bottom;
       const windowHeight = window.innerHeight;
       const difference = elementBottom - windowHeight;
-      if (difference < 150) {
+      if (difference < triggerDifference) {
         setIsOpen(true);
       } else {
         setIsOpen(false);
       }
     }
-  }
+  }, [triggerDifference]);
+
+  useEffect(() => {
+    contentFrame.current = document.querySelector('.project_page-wrapper');
+    window.addEventListener('scroll', getElementDistanceToBottom);
+    return () => {
+      window.removeEventListener('scroll', getElementDistanceToBottom);
+    };
+  }, [getElementDistanceToBottom, triggerDifference]);
 
   const hoverOn = () => setIsHover(true);
   const hoverOff = () => setIsHover(false);

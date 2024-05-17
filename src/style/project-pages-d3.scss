@@ -1,0 +1,334 @@
+@import "./mixins.scss";
+
+// .project_page_d3 {
+//   &-project_wrapper {
+//     grid-column: 1 / -1;
+//     @include tablet {
+//       grid-column: 2 / -2;
+//     }
+//   }
+// }
+.d3_section_line {
+  grid-column: 1 / -1;
+  @include desktop {
+    grid-column: 2 / -2;
+  }
+}
+
+/* PROJECTS */
+// Anscombe Quartet
+.anscombe-text {
+  @include tablet {
+    width: 60%;
+  }
+}
+.project_page_d3-project_wrapper-anscombe {
+  grid-column: 1 / -1;
+  @include desktop {
+    grid-column: 2 / -2;
+  }
+}
+.anscombe-main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &:first-child {
+    margin-top: 1rem;
+  }
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+  @include desktop {
+    gap: 2rem;
+  }
+  .domain,
+  line {
+    stroke: #202020;
+    stroke-width: 0.5;
+  }
+}
+
+.anscombe-box {
+  width: 100%;
+  background-color: rgba(251, 243, 235, 0.734);
+  border-radius: 5px;
+  border: 1px solid #20202010;
+  text {
+    font-size: 10px;
+  }
+}
+
+// Subway Ridership
+.ridership-text {
+  @include tablet {
+    width: 60%;
+  }
+}
+.project_page_d3-project_wrapper-ridership {
+  grid-column: 1 / -1;
+  @include desktop {
+    grid-column: 2 / -2;
+  }
+
+  .info-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+
+  .info-box-group {
+    opacity: 0;
+    display: block;
+    transition: opacity 400ms ease-in-out;
+  }
+
+  .info-box-group.active {
+    opacity: 1;
+  }
+
+  .sub-bar {
+    fill: rgb(159, 190, 207);
+    transition: all 200ms ease-in-out;
+    &.weekend {
+      fill: rgba(130, 175, 201, 0.5);
+    }
+  }
+
+  .sub-bar:hover {
+    fill: #303030;
+  }
+
+  .mta_ridership {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mta_ridership-input {
+    display: flex;
+  }
+
+  .overlay-text {
+    font-family: var(--main-font);
+    font-size: 10.5px;
+    letter-spacing: 0.01em;
+  }
+
+  .mta_ridership-chart {
+    margin-top: 1rem;
+    .overlay-text {
+      opacity: 0;
+      transition: opacity 400ms cubic-bezier(0.8, 0.25, 0.32, 1);
+    }
+    .overlay-line {
+      opacity: 0;
+      transition: opacity 400ms cubic-bezier(0.8, 0.25, 0.32, 1);
+    }
+    &.show-info {
+      .overlay-text {
+        opacity: 1;
+      }
+      .overlay-line {
+        opacity: 1;
+      }
+    }
+  }
+
+  .mta_ridership-controls {
+    .d3-list {
+      display: flex;
+      gap: 1rem;
+    }
+    .show_info_wrapper {
+      margin-left: 3rem;
+    }
+    margin-left: 24px;
+    margin-top: 1rem;
+    div[class$="-group"] {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 2rem max-content;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      h4 {
+        margin: 0;
+        font-family: var(--main-font);
+        color: var(--dark-2);
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding-top: 2px;
+      }
+    }
+  }
+}
+
+// NYC Weather
+.weather-text {
+  @include tablet {
+    width: 60%;
+  }
+}
+.project_page_d3-project_wrapper-weather {
+  grid-column: 1 / -1;
+  @include desktop {
+    grid-column: 2 / -2;
+  }
+
+  .nyc_weather-wrap {
+    text,
+    div {
+      font-family: var(--main-font);
+      color: #202020;
+    }
+    .axis-label,
+    .y-axis-snow-text {
+      font-size: 12px;
+    }
+    .precip-label {
+      font-size: 10px;
+    }
+    .high-temp-text,
+    .low-temp-text {
+      font-size: 10px;
+      fill: #202020;
+    }
+    .about-text {
+      font-family: var(--main-font);
+      font-size: 0.75rem;
+      text-align: center;
+      color: var(--dark-2);
+      @include tablet {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// LIRR - Ibry/Marey Train Schedule
+.lirr-text {
+  @include tablet {
+    width: 60%;
+  }
+}
+.project_page_d3-project_wrapper-lirr {
+  .d3-parent {
+    margin-top: 1rem;
+  }
+  grid-column: 1 / -1;
+  @include desktop {
+    grid-column: 2 / -2;
+  }
+
+  .x-axis-group .domain {
+    display: none;
+    overflow: hidden;
+  }
+  .domain {
+    stroke: rgb(209, 192, 172);
+  }
+  .train-line:hover {
+    stroke: rgb(52, 199, 89);
+  }
+
+  .range_slider-wrapper {
+    max-width: 400px;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    &-display {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 0.2rem;
+      p {
+        font-family: var(--main-font);
+        color: var(--dark-3);
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .lirr_schedule-controls {
+    margin-top: 1rem;
+    @include tablet {
+      margin-top: 2rem;
+      margin-left: 75px;
+    }
+
+    div[class$="-group"] {
+      width: 100%;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 7rem max-content;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      &:last-child {
+        grid-template-columns: 7rem 1fr;
+        align-items: start;
+      }
+      h4 {
+        margin: 0;
+        font-family: var(--main-font);
+        color: var(--dark-2);
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding-top: 2px;
+      }
+    }
+    .d3-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      @include tablet {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+// Insertion Sort
+.insertion_sort-text {
+  @include tablet {
+    width: 60%;
+  }
+}
+.project_page_d3-project_wrapper-insertion_sort {
+  grid-column: 1 / -1;
+  @include desktop {
+    grid-column: 2 / -2;
+  }
+}
+.insertion_sort-controls {
+  margin: 1rem 0;
+  button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: var(--dark-1);
+    border-radius: 2rem;
+    cursor: pointer;
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}
+.insertion_sort-number_of_elements-group {
+  display: flex;
+  h4 {
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--dark-2);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-top: 2px;
+    margin-right: 1rem;
+  }
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+}

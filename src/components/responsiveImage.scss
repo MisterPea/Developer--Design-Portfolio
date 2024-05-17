@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   position: relative;
+  transform: rotate(0deg);
 }
 
 .image_frame--image {
@@ -27,14 +28,18 @@
     filter: blur(0);
   }
   &.-drop_shadow-1 {
+    transform: rotate(0deg);
     filter: blur(0) drop-shadow(2px 1px 3px rgba(0, 0, 0, 0.8)) drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2));
     @include tablet {
+      transform: rotate(0deg);
       filter: blur(0) drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2)) drop-shadow(2px 1px 4px rgba(0, 0, 0, 0.5));
     }
   }
   &.-drop_shadow-2 {
+    transform: rotate(0deg);
     filter: blur(0) drop-shadow(2px 1px 3px rgba(0, 0, 0, 0.8)) drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2));
     @include tablet {
+      transform: rotate(0deg);
       filter: drop-shadow(6px 8px 6px rgba(0, 0, 0, 0.6)) drop-shadow(12px 19px 14px rgba(0, 0, 0, 0.33));
     }
   }

@@ -124,6 +124,7 @@ export default function TimesPilot() {
                 intersectDelay={250}
                 oneShot
                 webmVideoSource="/video/times_pilot/nyt_email_select-766x2.webm"
+                mp4VideoSource="/video/times_pilot/nyt_email_select-766x2.mp4"
               />
             </motion.section>
             <Spacer amount={6} />
@@ -165,7 +166,8 @@ export default function TimesPilot() {
                 intersect
                 intersectDelay={300}
                 oneShot
-                webmVideoSource="/video/times_pilot/nyt_settings_raw_766x2.webm" />
+                webmVideoSource="/video/times_pilot/nyt_settings_raw_766x2.webm" 
+                mp4VideoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4"/>
             </section>
           </article >
 

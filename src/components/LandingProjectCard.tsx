@@ -5,7 +5,7 @@ import { Icon } from "./Icons";
 import Link from "next/link";
 import ResponsiveImage from "./ResponsiveImage";
 
-export default function LandingProjectCard({ headline, desc, tools, image, slug }: LandingProjectCardProps) {
+export default function LandingProjectCard({ headline, desc, tools, image, slug, isProject }: LandingProjectCardProps) {
   const { alt, imageSize, imageUrls, blurDataUrl } = image;
 
   return (
@@ -23,7 +23,7 @@ export default function LandingProjectCard({ headline, desc, tools, image, slug 
             className="landing_image"
           />
         </figure>
-        <p className="landing_project_card-cta">View Case Study<span>{Icon.rightArrow()}</span></p>
+        <p className="landing_project_card-cta">{isProject ? "View Project":"View Case Study"}<span>{Icon.rightArrow()}</span></p>
       </div>
     </Link>
   );
