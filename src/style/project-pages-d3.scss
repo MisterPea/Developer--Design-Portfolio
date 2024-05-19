@@ -1,13 +1,5 @@
 @import "./mixins.scss";
 
-// .project_page_d3 {
-//   &-project_wrapper {
-//     grid-column: 1 / -1;
-//     @include tablet {
-//       grid-column: 2 / -2;
-//     }
-//   }
-// }
 .d3_section_line {
   grid-column: 1 / -1;
   @include desktop {
@@ -15,13 +7,44 @@
   }
 }
 
-/* PROJECTS */
-// Anscombe Quartet
-.anscombe-text {
-  @include tablet {
-    width: 60%;
+.d3_project-headline-grid {
+  &.--hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  &.--visible {
+    opacity: 0;
+    @include fade-in-up-med($delay: 50ms);
+  }
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  .d3_project-headline-button_wrapper {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 4px;
+    a {
+      height: 40px;
+      width: 40px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+    p {
+      font-family: var(--main-font);
+      font-weight: 600;
+      color: var(--dark-2);
+      font-size: 10px;
+      width: 40px;
+    }
   }
 }
+
+/* PROJECTS */
+// Anscombe Quartet
 .project_page_d3-project_wrapper-anscombe {
   grid-column: 1 / -1;
   @include desktop {
@@ -53,7 +76,7 @@
 
 .anscombe-box {
   width: 100%;
-  background-color: rgba(251, 243, 235, 0.734);
+  background-color: hsl(30, 40%, 92%);
   border-radius: 5px;
   border: 1px solid #20202010;
   text {
@@ -62,11 +85,11 @@
 }
 
 // Subway Ridership
-.ridership-text {
-  @include tablet {
-    width: 60%;
-  }
-}
+// .ridership-text {
+//   @include tablet {
+//     width: 60%;
+//   }
+// }
 .project_page_d3-project_wrapper-ridership {
   grid-column: 1 / -1;
   @include desktop {
@@ -164,11 +187,11 @@
 }
 
 // NYC Weather
-.weather-text {
-  @include tablet {
-    width: 60%;
-  }
-}
+// .weather-text {
+//   @include tablet {
+//     width: 60%;
+//   }
+// }
 .project_page_d3-project_wrapper-weather {
   grid-column: 1 / -1;
   @include desktop {
@@ -206,11 +229,11 @@
 }
 
 // LIRR - Ibry/Marey Train Schedule
-.lirr-text {
-  @include tablet {
-    width: 60%;
-  }
-}
+// .lirr-text {
+//   @include tablet {
+//     width: 60%;
+//   }
+// }
 .project_page_d3-project_wrapper-lirr {
   .d3-parent {
     margin-top: 1rem;
@@ -289,11 +312,11 @@
 }
 
 // Insertion Sort
-.insertion_sort-text {
-  @include tablet {
-    width: 60%;
-  }
-}
+// .insertion_sort-text {
+//   @include tablet {
+//     width: 60%;
+//   }
+// }
 .project_page_d3-project_wrapper-insertion_sort {
   grid-column: 1 / -1;
   @include desktop {

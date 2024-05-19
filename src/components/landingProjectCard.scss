@@ -11,8 +11,8 @@
     transition: background-color 600ms ease;
   }
   .landing_project_card-cta {
-    text-align: right;
-    align-self: flex-end;
+    text-align: left;
+    align-self: flex-start;
     will-change: transform;
     transform: translateX(-0.5rem) translateZ(0);
     transition: transform 600ms cubic-bezier(0.88, 0.01, 0.36, 0.99);

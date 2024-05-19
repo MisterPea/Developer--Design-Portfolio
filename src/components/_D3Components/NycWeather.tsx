@@ -1,12 +1,8 @@
 import * as React from 'react';
-import { useRef, useEffect, useState, useCallback } from 'react';
+import { useRef, useEffect, useCallback } from 'react';
 import * as d3 from 'd3';
-import './style/nycWeather.scss';
 import weatherData from './data/weatherData.json';
 
-interface NycWeatherProps {
-  parentRef: React.RefObject<HTMLDivElement>;
-}
 interface MinMax {
   date: string;
   temp: number;
@@ -15,14 +11,10 @@ interface MinMax {
   title: string;
 }
 
-export default function NycWeather({ parentRef }: NycWeatherProps) {
-  // const [width, setWidth] = useState<number>(0);
+export default function NycWeather() {
   const width = 1090;
   const tempHeight = 545;
-  // const [tempHeight, setTempHeight] = useState<number>(0);
-  // const [precipHeight, setPrecipHeight] = useState<number>(0);
   const precipHeight = 164;
-  // const [barWidth, setBarWidth] = useState<number>(0);
   const barWidth = Math.floor(width / weatherData.length);
   const temperatureSvg = useRef<SVGSVGElement>(null);
   const precipitationSvg = useRef<SVGSVGElement>(null);
@@ -34,16 +26,6 @@ export default function NycWeather({ parentRef }: NycWeatherProps) {
     return new Date(`${dateArray[1]}/${dateArray[0]}/${dateArray[2]}`);
   };
 
-  // useEffect(() => {
-  //   if (parentRef.current) {
-  //     const localWidth = parentRef.current.clientWidth;
-  //     // setWidth(localWidth);
-  //     // setTempHeight(localWidth * 0.5);
-  //     // setPrecipHeight(localWidth * 0.15);
-  //     // setBarWidth(Math.floor(localWidth / weatherData.length));
-  //   }
-  // }, [parentRef]);
-
   const axisXY = useCallback((svgSelection: any, height: number, yScale: any, label: string, rightAxis: boolean, isPrecip: boolean) => {
     const snowYScale = d3
       .scaleLinear()
@@ -54,8 +36,6 @@ export default function NycWeather({ parentRef }: NycWeatherProps) {
       .scaleTime()
       .domain([formatNewDate(weatherData[0].date), formatNewDate(weatherData[weatherData.length - 1].date)])
       .range([margin.left, width - margin.right]);
-
-
 
     // Precip Chart
     if (isPrecip) {
@@ -239,7 +219,7 @@ export default function NycWeather({ parentRef }: NycWeatherProps) {
 
       drawMinMax(d3.select(temperatureSvg.current));
     }
-  }, [axisXY, barWidth, drawMinMax, margin.bottom, margin.left, margin.right, margin.top, parentRef, precipHeight, tempHeight, tempRange.max, tempRange.min, tempYScale, width, xScale]);
+  }, [axisXY, barWidth, drawMinMax, tempYScale, xScale]);
 
   /* ********************** Precipitation Chart ********************** */
   const drawPrecipLine = useCallback((svgSelection: any, array: any[]) => {
@@ -273,7 +253,7 @@ export default function NycWeather({ parentRef }: NycWeatherProps) {
       .attr('x', (d: (string | number)[]) => xScale(+d[0]))
       .attr('y', (d: (string | number)[]) => (precipHeight - snowYScale(+d[1]) - margin.bottom))
       .attr('fill', 'rgb(221,198,229)');
-  }, [barWidth, margin.bottom, precipHeight, snowYScale, xScale]);
+  }, [barWidth, margin.bottom, snowYScale, xScale]);
 
   useEffect(() => {
     if (width > 0 && precipitationSvg.current) {
@@ -312,7 +292,7 @@ export default function NycWeather({ parentRef }: NycWeatherProps) {
         }
       }
     }
-  }, [axisXY, drawPrecipLine, drawSnowGraph, margin.bottom, precipHeight, precipYScale, width, xScale]);
+  }, [axisXY, drawPrecipLine, drawSnowGraph, precipYScale]);
 
   /* ********************** Acquire MinMax Temp ********************** */
   function getMinMax() {

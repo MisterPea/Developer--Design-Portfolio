@@ -5,17 +5,13 @@ import mtaData from './data/mtaRiders.json';
 import infoData from './data/mtaRidersTags.json';
 import Checkbox from '../ControlledCheckbox';
 
-interface MtaRidershipProps {
-  parentRef: React.RefObject<HTMLDivElement>;
-}
-
 type ScaleType = {
   xScale: d3.ScaleTime<number, number, never> | undefined,
   subwayY: d3.ScaleLinear<number, number, never> | undefined,
   xBand: d3.ScaleBand<string> | undefined;
 };
 
-export default function MtaRidership(this: any, { parentRef }: MtaRidershipProps) {
+export default function MtaRidership() {
   const mainRef = useRef<HTMLDivElement>(null);
   const width = 1090;
   const height = 674;
@@ -144,7 +140,7 @@ export default function MtaRidership(this: any, { parentRef }: MtaRidershipProps
               .ticks(d3.timeMonth.every(1))
               .tickFormat(d3.timeFormat('%b %y') as any))
             .selectAll(".tick text")  // Select all text elements in ticks
-            .style('display', function (_:any, i:number) {
+            .style('display', function (_: any, i: number) {
               if (currentYear.length > 1) {
                 return i % 2 === 0 ? "block" : "none";  // Display text only for every other tick
               }
@@ -171,7 +167,7 @@ export default function MtaRidership(this: any, { parentRef }: MtaRidershipProps
       }
     }
 
-  }, [width, currentYear, convertTimeStamp, scale, margin.left, margin.right, margin.bottom, margin.top, height]);
+  }, [convertTimeStamp, currentYear.length, margin.bottom, margin.left, margin.right, margin.top, scale]);
 
   /* ********************************* Info Box ******************************** */
   function createInfoBox(selection: any) {
@@ -193,7 +189,7 @@ export default function MtaRidership(this: any, { parentRef }: MtaRidershipProps
       .attr('transform', 'translate(0,5)')
       .attr('text-anchor', 'middle')
       .attr('fill', '#302020')
-      .style('font-weight',600)
+      .style('font-weight', 600)
       .attr('width', 96)
       .attr('x', 48)
       .attr('y', 10);
