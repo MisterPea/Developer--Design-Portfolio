@@ -75,6 +75,7 @@ export default function InsertionSort() {
         }
       });
     }
+  
     // On Completion - we'll have advanced `j` 1 past the usable index,
     // therefore we're looking for length, not length-1
     if (j === lineHeights.length) {
@@ -106,8 +107,6 @@ export default function InsertionSort() {
   }
 
   function animateSwapElements(swapElements: { one: any; two: any; }, callback: { (): void; (): void; }) {
-    // It seems duration has to be passed to this local variable in order to update ¯\_(ツ)_/¯
-    // const d = duration;
     const { one, two } = swapElements;
     const sel1 = `#${concatId(one)}`;
     const sel2 = `#${concatId(two)}`;

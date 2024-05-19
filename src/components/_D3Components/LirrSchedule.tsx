@@ -3,7 +3,6 @@ import { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import * as d3 from 'd3';
 import routes from './data/routes.json';
 import trainData from './data/trainData.json';
-import './style/lirrSchedule.scss';
 import Checkbox from '../ControlledCheckbox';
 import DualThumbSlider from '../DualThumbSlider';
 import RadioButton from '../RadioButton';
@@ -18,8 +17,6 @@ interface TrainData {
   destination: string;
   direction_id: string;
 }
-
-// Add train direction radio, route checkboxes
 
 interface LirrScheduleProps {
   parentRef: React.RefObject<HTMLDivElement>;
@@ -92,7 +89,7 @@ export default function LirrSchedule({ parentRef }: LirrScheduleProps) {
   }, [timeRange]);
 
   const plotTrains = useCallback(() => {
-    // ** Create Route Pairs ** //
+    // ** Create Route Pairs : from station:time / to station:time ** //
     function createRoutePairs() {
       const eastWestSort = mainRoutesArray.filter(
         ({ direction_id }) => direction_id === trainDirection,
@@ -111,6 +108,7 @@ export default function LirrSchedule({ parentRef }: LirrScheduleProps) {
       for (let i = 0; i < eastWestSort.length - 1; i += 1) {
         const { stop_name, stop_sequence } = makeRoutePart(eastWestSort[i]);
         if (stop_sequence === '1') {
+          // ensure we're only grabbing pairs of routes - no orphans
           if (!startingStation.includes(stop_name)) {
             ignoreBranch = true;
           } else {
