@@ -1,16 +1,17 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
 import { motion, useAnimation } from 'framer-motion';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 
 export default function LandingTag() {
   const [index, setIndex] = useState(0);
   const controls = useAnimation();
   const isMounted = useRef(false);
+  const firstRun = useRef(true);
+
+  const rootTag = useMemo(() => ({ one: 'Developer', two: '/', three: 'Designer', four: '/', five: 'Programmatic Pixel Pusher' }), []);
 
   const [tags, setTags] = useState([
-    { one: 'Developer', two: '/', three: 'Designer', four: '/', five: 'Programmatic Pixel Pusher' },
     { one: 'Cat Wrangler', two: '/', three: 'Friend of CSS' },
     { one: 'Identity theft is not a joke, Jim!' },
     { one: 'Curator of Pixels', two: '/', three: 'Connoisseur of Coffee' },
@@ -22,48 +23,61 @@ export default function LandingTag() {
     { one: 'Nationally Ranked Cones of Dunshire Player' }
   ]);
 
-  function shuffleArray() {
-    for (let i = tags.length - 1; i > 0; i--) {
+  const shuffleArray = useCallback((array: any[]) => {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [tags[i], tags[j]] = [tags[j], tags[i]];
+      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
     }
-    setTags(tags);
-  }
+    return [rootTag, ...newArray];
+  }, [rootTag]);
 
   /*
   Instead of randomizing the index on each iteration, we're incrementing 
-  the index by 1 and randomizing the list on every reset to index 0 
+  the index by 1 and randomizing the list on every reset to index 0.
+  When calling the setTags, we're removing the zeroth index, when shuffling, and
+  then adding it back in after the shuffling is complete.
   */
-  function cycleTags() {
+  const cycleTags = useCallback(() => {
     setIndex((i) => {
       const nextIndex = (i + 1) % tags.length;
       if (nextIndex === 0) {
         // Shuffle array on 0 index
-        shuffleArray();
+        const tagsMinusZeroth = [...tags];
+        tagsMinusZeroth.shift();
+        setTags(shuffleArray(tagsMinusZeroth));
       }
       return nextIndex;
     });
+  }, [shuffleArray, tags]);
+
+  // This runs once - on load we shuffle and set the tags which kicks off the animation
+  if (firstRun.current === true) {
+    setTags(shuffleArray(tags));
+    setIndex(0);
+    firstRun.current = false;
   }
 
+  /* 
+  Disengaging this function from the useEffect seems to work better; at least
+  it's cleaner and the logic is more...logical.
+  */
+  const sequence = useCallback(async () => {
+    await controls.start('show'); // Start the show animation
+    const delay = Math.random() * (10000 - 5000) + 5000;
+    await new Promise((resolve: any) => setTimeout(resolve, delay));
+    if (isMounted.current === false) return;
+    await controls.start('hidden'); // Hide after showing
+    cycleTags(); // Change the tag
+  }, [controls, cycleTags]);
 
   useEffect(() => {
-    isMounted.current = true;
-
-    const sequence = async () => {
-      await controls.start('show'); // Start the show animation
-      const delay = Math.random() * (10000 - 5000) + 5000;
-      await new Promise((resolve: any) => setTimeout(resolve, delay));
-      if (isMounted.current === false) return;
-      await controls.start('hidden'); // Hide after showing
-      cycleTags(); // Change the tag
-      // controls.start('show'); // Show the next tag
-    };
-
-    sequence();
-    return () => {
-      isMounted.current = false;
-    };
-  }, [index, controls]); // This effect runs every time the index changes
+    if (firstRun.current === false) {
+      isMounted.current = true;
+      sequence();
+    }
+    return () => { isMounted.current = false; };
+  }, [index, sequence]);
 
   const container = {
     hidden: {
@@ -92,8 +106,8 @@ export default function LandingTag() {
     },
     show: {
       opacity: 1,
-      y: 0,
-      x: '0px',
+      y: '20%',
+      x: '1px',
       transition: {
         duration: 0.85,
         ease: [0.8, 0, 0.1, 0.99]
