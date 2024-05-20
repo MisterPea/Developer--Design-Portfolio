@@ -9,6 +9,7 @@
     color: var(--dark-2);
     margin-left: 0.125rem;
     gap: 0.25rem;
+    height: 1.25rem;
 
     @include hi-dpi-mobile {
       gap: 0.125rem; // Giving some space for smaller screens
@@ -24,7 +25,6 @@
   }
   &-text {
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
   &-text.--slash {
