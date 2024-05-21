@@ -105,15 +105,15 @@
 $base-delay: 0ms;
 $delay-increment: 300ms;
 .landing_project-li {
-  // 2 is number of items to affect
-  @for $i from 1 through 3 {
+  // 3 is number of items to affect
+  @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
       .landing_project_card-image {
         will-change: transform;
         opacity: 0;
         @include fade-in-custom(
           $amount: 12px,
-          $delay: 300 +
+          $delay: 200 +
             (
               $delay-increment * ($i - 1)
             )

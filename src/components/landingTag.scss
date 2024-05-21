@@ -17,10 +17,12 @@
     @include tablet {
       font-size: 1rem;
       margin-top: 0.5rem;
+      height: 1.25rem
     }
     @include desktop {
       margin-top: -1rem;
       font-size: clamp(0.88rem, 1.5rem, 1vw);
+      height: 1.5vw;
     }
   }
   &-text {
