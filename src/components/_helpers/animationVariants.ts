@@ -10,7 +10,7 @@ export const indexVariant: Variants = {
     opacity: 1,
     transition: {
       ease: [.5, .29, .74, 1],
-      duration: 1.5,
+      duration:2,
     },
   },
   exit: {
