@@ -14,24 +14,24 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
     },
     imageUrls: {
       small: {
-        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-514.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-771.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-1166.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-514.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-771.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-1166.WEBP"
       },
       medium: {
-        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-287.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-579.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-861.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-287.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-579.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-861.WEBP"
       },
       large: {
-        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-257.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-514.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-771.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-257.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-514.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitPickerScreen.5c31af41-opt-771.WEBP"
       }
     }
   };
   const circuitDesignConsiderationsTwo: ResponsiveImageProps = {
-    alt: "Design Considerations: Completed session - recap screem - highlighting the various features of the screen.",
+    alt: "Design Considerations: Completed session - recap screen - highlighting the various features of the screen.",
     dropShadow: 2,
     PlaceholderComponent: Placeholder.CircuitDiagramTwo, 
     imageSize: {
@@ -40,24 +40,24 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
     },
     imageUrls: {
       small: {
-        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-514.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-771.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-1166.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-514.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-771.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-1166.WEBP"
       },
       medium: {
-        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-287.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-579.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-861.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-287.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-579.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-861.WEBP"
       },
       large: {
-        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-257.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-514.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-771.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-257.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-514.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitOverviewResults.711b0d7d-opt-771.WEBP"
       }
     }
   };
   const circuitDesignConsiderationsThree: ResponsiveImageProps = {
-    alt: "Design Considerations: Completed session - recap screem - highlighting the various features of the screen.",
+    alt: "Design Considerations: Completed session - recap screen - highlighting the various features of the screen.",
     dropShadow: 2,
     PlaceholderComponent: Placeholder.CircuitDiagramThree, 
     imageSize: {
@@ -66,19 +66,19 @@ export default function MobileCircuitDiagram({ variant, ...rest }: { variant: 'o
     },
     imageUrls: {
       small: {
-        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-514.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-771.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-1166.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-514.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-771.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-1166.WEBP"
       },
       medium: {
-        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-287.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-579.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-861.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-287.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-579.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-861.WEBP"
       },
       large: {
-        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-257.WEBPa",
-        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-514.WEBPa",
-        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-771.WEBPa"
+        imageUrl_1x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-257.WEBP",
+        imageUrl_2x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-514.WEBP",
+        imageUrl_3x: "/sourceImages/CircuitDetailedResults.ef534f30-opt-771.WEBP"
       }
     }
   };
