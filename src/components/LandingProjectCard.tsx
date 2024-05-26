@@ -6,7 +6,7 @@ import Link from "next/link";
 import ResponsiveImage from "./ResponsiveImage";
 
 export default function LandingProjectCard({ headline, desc, tools, image, slug, isProject }: LandingProjectCardProps) {
-  const { alt, imageSize, imageUrls, blurDataUrl } = image;
+  const { alt, imageSize, imageUrls,PlaceholderComponent} = image;
 
   return (
     <Link href={`project/${slug}`} scroll={false}>
@@ -17,10 +17,10 @@ export default function LandingProjectCard({ headline, desc, tools, image, slug,
             alt={alt}
             imageSize={imageSize}
             imageUrls={imageUrls}
-            blurDataUrl={blurDataUrl}
             dropShadow={1}
             loading="eager"
             className="landing_image"
+            PlaceholderComponent={PlaceholderComponent}
           />
         </figure>
         <p className="landing_project_card-cta">{isProject ? "View Project":"View Case Study"}<span>{Icon.rightArrow()}</span></p>

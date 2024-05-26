@@ -92,7 +92,7 @@ export interface ResponsiveImageProps {
   alt: any;
   loading?: 'lazy' | 'eager';
   imageSize: ImageSize;
-  blurDataUrl: string;
+  PlaceholderComponent?: any;
   // Add drop shadow filter to the final image. 1 is regular, 2 is for phone images
   dropShadow?: number;
   // Add Blur to the animation

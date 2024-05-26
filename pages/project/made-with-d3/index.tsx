@@ -65,10 +65,10 @@ export default function CircuitApp() {
           <figure className="project_page-hero">
             <ResponsiveImage
               alt={d3HeroImage.alt}
-              blurDataUrl={d3HeroImage.blurDataUrl}
               imageUrls={d3HeroImage.imageUrls}
               imageSize={d3HeroImage.imageSize}
               dropShadow={d3HeroImage.dropShadow}
+              PlaceholderComponent={d3HeroImage.PlaceholderComponent}
             />
           </figure>
 

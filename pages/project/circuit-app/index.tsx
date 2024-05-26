@@ -75,10 +75,10 @@ export default function CircuitApp() {
           <figure className="project_page-hero">
             <ResponsiveImage
               alt={circuitHeroImage.alt}
-              blurDataUrl={circuitHeroImage.blurDataUrl}
               imageUrls={circuitHeroImage.imageUrls}
               imageSize={circuitHeroImage.imageSize}
               dropShadow={circuitHeroImage.dropShadow}
+              PlaceholderComponent={circuitHeroImage.PlaceholderComponent}
             />
           </figure>
 
@@ -161,11 +161,11 @@ export default function CircuitApp() {
               <h5 className="sequence_approach_heading one">Initial</h5>
               <ResponsiveImage
                 alt={circuitInitialScreen.alt}
-                blurDataUrl={circuitInitialScreen.blurDataUrl}
                 imageSize={circuitInitialScreen.imageSize}
                 imageUrls={circuitInitialScreen.imageUrls}
                 dropShadow={circuitInitialScreen.dropShadow}
                 className="image_one"
+                PlaceholderComponent={circuitInitialScreen.PlaceholderComponent}
               />
               <ImageCaption
                 body="Initial screen for a basic Pomodoro timer, consisting of 4 - 25 minute active and 5 - 1 minute rest periods."
@@ -175,12 +175,12 @@ export default function CircuitApp() {
               <h5 className="sequence_approach_heading two">In Progress…</h5>
               <ResponsiveImage
                 alt={circuitInProgressScreen.alt}
-                blurDataUrl={circuitInProgressScreen.blurDataUrl}
                 imageSize={circuitInProgressScreen.imageSize}
                 imageUrls={circuitInProgressScreen.imageUrls}
                 dropShadow={circuitInProgressScreen.dropShadow}
                 className="image_two"
                 intersectDelay={200}
+                PlaceholderComponent={circuitInProgressScreen.PlaceholderComponent}
               />
               <ImageCaption
                 body="While in progress, the current minute is animated and bottom text tells the user how much time until the next period."
@@ -190,12 +190,12 @@ export default function CircuitApp() {
               <h5 className="sequence_approach_heading three">Completed</h5>
               <ResponsiveImage
                 alt={circuitCompletedScreen.alt}
-                blurDataUrl={circuitCompletedScreen.blurDataUrl}
                 imageSize={circuitCompletedScreen.imageSize}
                 imageUrls={circuitCompletedScreen.imageUrls}
                 dropShadow={circuitCompletedScreen.dropShadow}
                 className="image_three"
                 intersectDelay={400}
+                PlaceholderComponent={circuitCompletedScreen.PlaceholderComponent}
               />
               <ImageCaption
                 body="Once completed, the user is offered the option to reset the timer, or finish and view their progress."
@@ -244,10 +244,10 @@ export default function CircuitApp() {
             <Spacer amount={0.5} />
             <ResponsiveImage
               alt={circuitFlowchart.alt}
-              blurDataUrl={circuitFlowchart.blurDataUrl}
               imageSize={circuitFlowchart.imageSize}
               imageUrls={circuitFlowchart.imageUrls}
               dropShadow={undefined}
+              PlaceholderComponent={circuitFlowchart.PlaceholderComponent}
             />
           </article>
           <DivideLine className="full-width-line" />
@@ -261,11 +261,11 @@ export default function CircuitApp() {
 
             <ResponsiveImage
               alt={circuitAltDesignOne.alt}
-              blurDataUrl={circuitAltDesignOne.blurDataUrl}
               imageSize={circuitAltDesignOne.imageSize}
               imageUrls={circuitAltDesignOne.imageUrls}
               dropShadow={circuitAltDesignOne.dropShadow}
               className="alt_one"
+              PlaceholderComponent={circuitAltDesignOne.PlaceholderComponent}
             />
             <ProjectTextBlock
               intersect
@@ -276,12 +276,12 @@ export default function CircuitApp() {
               className="text_one" />
             <ResponsiveImage
               alt={circuitAltDesignTwo.alt}
-              blurDataUrl={circuitAltDesignTwo.blurDataUrl}
               imageSize={circuitAltDesignTwo.imageSize}
               imageUrls={circuitAltDesignTwo.imageUrls}
               dropShadow={circuitAltDesignTwo.dropShadow}
               className="alt_two"
               intersectDelay={200}
+              PlaceholderComponent={circuitAltDesignTwo.PlaceholderComponent}
             />
             <ProjectTextBlock
               intersect

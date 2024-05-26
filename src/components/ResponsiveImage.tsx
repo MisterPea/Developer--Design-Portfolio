@@ -5,17 +5,18 @@ import { ResponsiveImageProps } from "./_types";
 interface ResponsiveImageComponentProps extends React.HTMLAttributes<HTMLDivElement>, ResponsiveImageProps { }
 
 import React, { useEffect, useRef } from 'react';
-
+// import Placeholder from '@/components/SvgPlaceHolder';
 export default function ResponsiveImage({
+  PlaceholderComponent,
   imageUrls,
   alt,
   imageSize,
-  blurDataUrl,
   loading = 'lazy',
   dropShadow,
   addBlur,
   intersectDelay = 0,
   ...rest }: ResponsiveImageComponentProps) {
+
   const imageRef = useRef<HTMLImageElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
 
@@ -118,13 +119,9 @@ export default function ResponsiveImage({
         loading={loading}
         alt=''
       />
-      <div
-        ref={placeholderRef}
-        className="image_frame--placeholder"
-        style={{
-          backgroundImage: `url(${blurDataUrl})`,
-        }}
-      />
+      <div ref={placeholderRef} className="image_frame--placeholder">
+        {PlaceholderComponent && <PlaceholderComponent />}
+      </div>
     </picture>
   );
 };
