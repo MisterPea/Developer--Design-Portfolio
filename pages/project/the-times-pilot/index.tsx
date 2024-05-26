@@ -67,7 +67,7 @@ export default function TimesPilot() {
               imageUrls={heroImage.imageUrls}
               imageSize={heroImage.imageSize}
               alt={heroImage.alt}
-              blurDataUrl={heroImage.blurDataUrl}
+              PlaceholderComponent={heroImage.PlaceholderComponent}
               dropShadow={heroImage.dropShadow}
               intersectDelay={300}
               loading="eager"
@@ -152,7 +152,7 @@ export default function TimesPilot() {
                 className="project-figure svg">
                 <ResponsiveImage
                   alt={sectionSelection.alt}
-                  blurDataUrl={sectionSelection.blurDataUrl}
+                  PlaceholderComponent={sectionSelection.PlaceholderComponent}
                   imageSize={sectionSelection.imageSize}
                   imageUrls={sectionSelection.imageUrls}
                 />
@@ -166,8 +166,8 @@ export default function TimesPilot() {
                 intersect
                 intersectDelay={300}
                 oneShot
-                webmVideoSource="/video/times_pilot/nyt_settings_raw_766x2.webm" 
-                mp4VideoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4"/>
+                webmVideoSource="/video/times_pilot/nyt_settings_raw_766x2.webm"
+                mp4VideoSource="/video/times_pilot/nyt_settings_raw_766x2.mp4" />
             </section>
           </article >
 
@@ -201,9 +201,10 @@ export default function TimesPilot() {
             <Spacer amount={0.5} />
             <ResponsiveImage
               alt={flowchart.alt}
-              blurDataUrl={flowchart.blurDataUrl}
               imageSize={flowchart.imageSize}
               imageUrls={flowchart.imageUrls}
+              PlaceholderComponent={flowchart.PlaceholderComponent}
+
             />
             {/* <ExportedImage src={nytFlowchart} alt="High-level site flow of the Times.Pilot; showing different authentication states as it relates to user access." /> */}
           </article>
@@ -237,10 +238,10 @@ export default function TimesPilot() {
                 <figure className="nyt_project_page-problems-section_three-image image_one">
                   <ResponsiveImage
                     alt={newUserOne.alt}
-                    blurDataUrl={newUserOne.blurDataUrl}
                     dropShadow={newUserOne.dropShadow}
                     imageSize={newUserOne.imageSize}
                     imageUrls={newUserOne.imageUrls}
+                    PlaceholderComponent={newUserOne.PlaceholderComponent}
                   />
                   <figcaption>
                     <ImageCaption headline={problems!.problemThree.imageCaption[0].headline} body={problems!.problemThree.imageCaption[0].body} />
@@ -249,10 +250,10 @@ export default function TimesPilot() {
                 <figure className="nyt_project_page-problems-section_three-image image_two">
                   <ResponsiveImage
                     alt={newUserTwo.alt}
-                    blurDataUrl={newUserTwo.blurDataUrl}
                     dropShadow={newUserTwo.dropShadow}
                     imageSize={newUserTwo.imageSize}
                     imageUrls={newUserTwo.imageUrls}
+                    PlaceholderComponent={newUserTwo.PlaceholderComponent}
                     intersectDelay={200}
                   />
                   <figcaption>
@@ -262,10 +263,10 @@ export default function TimesPilot() {
                 <figure className="nyt_project_page-problems-section_three-image image_three">
                   <ResponsiveImage
                     alt={newUserThree.alt}
-                    blurDataUrl={newUserThree.blurDataUrl}
                     dropShadow={newUserThree.dropShadow}
                     imageSize={newUserThree.imageSize}
                     imageUrls={newUserThree.imageUrls}
+                    PlaceholderComponent={newUserThree.PlaceholderComponent}
                     intersectDelay={400}
                   />
                   <figcaption>
@@ -275,10 +276,10 @@ export default function TimesPilot() {
                 <figure className="nyt_project_page-problems-section_three-image image_four">
                   <ResponsiveImage
                     alt={newUserFour.alt}
-                    blurDataUrl={newUserFour.blurDataUrl}
                     dropShadow={newUserFour.dropShadow}
                     imageSize={newUserFour.imageSize}
                     imageUrls={newUserFour.imageUrls}
+                    PlaceholderComponent={newUserFour.PlaceholderComponent}
                     intersectDelay={600}
                   />
                   <figcaption>
