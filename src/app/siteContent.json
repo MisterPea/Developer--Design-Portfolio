@@ -287,7 +287,7 @@
       "headlineTwo": "From Numbers to Narratives",
       "role": "Concept, Design, Development",
       "summaryHeadline": "Making the Invisible, Visible",
-      "summaryBody": "This collection of projects showcases another tool for storytelling: D3.js. D3.js streamlines the process of transforming large, complex datasets into intelligible, graphical charts. This allows us to convert previously cryptic information into forms that are readily understandable for users.",
+      "summaryBody": "These projects showcase another tool for storytelling: D3.js. D3.js streamlines the process of transforming large, complex datasets into intelligible, graphical charts. This allows us to convert previously cryptic information into forms that are readily understandable for users.",
       "tools": [
         "D3.js",
         "TypeScript",
