@@ -11,13 +11,13 @@ const greyThree = "#f0f0f0";//"rgb(237,237,237)";
 function GradientDef({ localId }: { localId: string; }) {
   return <defs>
     <linearGradient id={`${localId}`} x1="-100%" y1="0%" x2="100%" y2="0%">
-      <stop offset="25%" stop-color={greyOne}>
+      <stop offset="25%" stopColor={greyOne}>
         <animate attributeName="offset" values="-0.25;1.25" dur="800ms" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color={greyTwo}>
+      <stop offset="50%" stopColor={greyTwo}>
         <animate attributeName="offset" values="0;1.5" dur="800ms" repeatCount="indefinite" />
       </stop>
-      <stop offset="75%" stop-color={greyOne}>
+      <stop offset="75%" stopColor={greyOne}>
         <animate attributeName="offset" values="0.25;1.75" dur="800ms" repeatCount="indefinite" />
       </stop>
     </linearGradient>

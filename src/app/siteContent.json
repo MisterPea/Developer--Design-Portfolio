@@ -268,7 +268,7 @@
       },
       "siteFlow": {
         "headline": "Potential App Structure",
-        "body": "The app is divided into 3 screens and 1 large-detent sheet. User data can be stored within the device’s persistent storage which would allow transferring or offloading of data to different devices. This app should also make use of Apple’s Live Activities for iOS. This would allow the user to view progress from their iPhone lock-screen without explicitly opening the Circuit app."
+        "body": "The app is divided into 3 screens and 1 large-detent sheet. User data can be stored within the device's persistent storage which would allow transferring or offloading of data to different devices. This app should also make use of Apple’s Live Activities for iOS. This would allow the user to view progress from their iPhone lock-screen without explicitly opening the Circuit app."
       }
     }
   },
@@ -287,7 +287,7 @@
       "headlineTwo": "From Numbers to Narratives",
       "role": "Concept, Design, Development",
       "summaryHeadline": "Making the Invisible, Visible",
-      "summaryBody": "This ever-growing collection of projects is dedicated to delivering clear, actionable information through data visualizations. By transforming large, complex datasets into intelligible, graphical charts, we convert previously cryptic information into forms that are readily understandable for users.",
+      "summaryBody": "This collection of projects showcases another tool for storytelling: D3.js. D3.js streamlines the process of transforming large, complex datasets into intelligible, graphical charts. This allows us to convert previously cryptic information into forms that are readily understandable for users.",
       "tools": [
         "D3.js",
         "TypeScript",
