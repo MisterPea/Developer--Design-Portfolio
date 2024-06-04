@@ -5,7 +5,7 @@ import { ResponsiveImageProps } from "./_types";
 interface ResponsiveImageComponentProps extends React.HTMLAttributes<HTMLDivElement>, ResponsiveImageProps { }
 
 import React, { useEffect, useRef } from 'react';
-// import Placeholder from '@/components/SvgPlaceHolder';
+
 export default function ResponsiveImage({
   PlaceholderComponent,
   imageUrls,
@@ -97,7 +97,6 @@ export default function ResponsiveImage({
   };
 
   const cleanUpLoadImage = (imageElement: HTMLImageElement, pictureElement: HTMLPictureElement, placeholderElement: HTMLDivElement) => {
-    console.log(imageElement,"***")
     window.setTimeout(() => {
       imageElement.classList.add('--mounted');
       imageElement.classList.add(appendToClass);
