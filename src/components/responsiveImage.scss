@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  transform: rotate(0deg);
+  transform: translateZ(0);
   display: inline-block;
 }
 
@@ -17,29 +17,25 @@
   height: auto;
   opacity: 0;
   filter: blur(1px);
+  will-change: transform, filter, opacity;
 
   transition:
     filter 2000ms cubic-bezier(0.49, 0.18, 0.35, 0.99),
     opacity 2500ms cubic-bezier(0.49, 0.18, 0.35, 0.99);
-    // transform 500ms cubic-bezier(0.49, 0.18, 0.35, 0.99);
   transform: translate3d(0, 0, 0);
   &.--mounted {
-    will-change: transform;
     opacity: 1;
   }
   &.-drop_shadow-0 {
     filter: blur(0);
   }
   &.-drop_shadow-1 {
-    transform: rotate(0deg);
     filter: blur(0) drop-shadow(2px 1px 3px rgba(0, 0, 0, 0.8)) drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2));
     @include tablet {
-      transform: rotate(0deg);
       filter: blur(0) drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2)) drop-shadow(2px 1px 4px rgba(0, 0, 0, 0.5));
     }
   }
   &.-drop_shadow-2 {
-    transform: rotate(0deg);
     filter: blur(0) drop-shadow(2px 1px 3px rgba(0, 0, 0, 0.8)) drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.2));
     @include tablet {
       transform: rotate(0deg);
