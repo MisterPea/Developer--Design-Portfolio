@@ -43,16 +43,16 @@ export default function HomeAboutNavigation({ currentPage }: HomeAboutNavProps) 
   return (
     <nav>
       <Link
-        onMouseEnter={handleRollOver.bind(null, homeRef)}
-        onMouseLeave={handleRollOut.bind(null, homeRef)}
-        onMouseDown={handleRollOut.bind(null, homeRef)}
+        onMouseEnter={() => handleRollOver(homeRef)}
+        onMouseLeave={() => handleRollOut(homeRef)}
+        onMouseDown={() => handleRollOut(homeRef)}
         ref={homeRef}
         href='/'
         scroll={false}>Home</Link>
       <Link
-        onMouseEnter={handleRollOver.bind(null, aboutRef)}
-        onMouseLeave={handleRollOut.bind(null, aboutRef)}
-        onMouseDown={handleRollOut.bind(null, aboutRef)}
+        onMouseEnter={() => handleRollOver(aboutRef)}
+        onMouseLeave={() => handleRollOut(aboutRef)}
+        onMouseDown={() => handleRollOut(aboutRef)}
         ref={aboutRef}
         href='/about'
         scroll={false}>About</Link>

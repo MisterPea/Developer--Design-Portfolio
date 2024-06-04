@@ -59,7 +59,7 @@ export default function ResponsiveImage({
     const placeholderElement = placeholderRef.current;
     if (!placeholderElement) return;
 
-    imageElement.addEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement, placeholderElement));
+    imageElement.addEventListener('load', () => cleanUpLoadImage(imageElement, pictureElement, placeholderElement));
 
     const sourceSizes = [
       { size: 'large', minWidth: '1200px' },
@@ -97,14 +97,15 @@ export default function ResponsiveImage({
   };
 
   const cleanUpLoadImage = (imageElement: HTMLImageElement, pictureElement: HTMLPictureElement, placeholderElement: HTMLDivElement) => {
+    console.log(imageElement,"***")
     window.setTimeout(() => {
       imageElement.classList.add('--mounted');
       imageElement.classList.add(appendToClass);
       imageElement.setAttribute('alt', alt);
-      imageElement.removeEventListener('load', cleanUpLoadImage.bind(null, imageElement, pictureElement, placeholderElement));
+      imageElement.removeEventListener('load', () => cleanUpLoadImage(imageElement, pictureElement, placeholderElement));
       placeholderElement.classList.add('--load-complete');
       // remove placeholder div upon completion
-      placeholderElement.addEventListener('transitionend', removePlaceholder.bind(null, placeholderElement), { once: true });
+      placeholderElement.addEventListener('transitionend', () => removePlaceholder(placeholderElement), { once: true });
       (imageElement as HTMLImageElement | null) = null;
     }, intersectDelay);
   };
