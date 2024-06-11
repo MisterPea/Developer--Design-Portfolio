@@ -123,7 +123,6 @@ export default function AnscombeQuartet() {
   }, [makeChart]);
 
   function linearRegression(data: AnscombeData[]) {
-    console.log(data);
     const n = data.length;
     const sumX = data.reduce((prev: number, curr: { x: number; }) => prev + +curr.x, 0);
     const sumY = data.reduce((prev: number, curr: { y: number; }) => prev + +curr.y, 0);
