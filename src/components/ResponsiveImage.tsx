@@ -5,6 +5,7 @@ import { ResponsiveImageProps } from "./_types";
 interface ResponsiveImageComponentProps extends React.HTMLAttributes<HTMLDivElement>, ResponsiveImageProps { }
 
 import React, { useEffect, useRef } from 'react';
+import { requestIdleCallbackPolyfill, cancelIdleCallbackPolyfill } from '../components/_helpers/requestIdleCallbackPolyfill';
 
 export default function ResponsiveImage({
   PlaceholderComponent,
@@ -20,7 +21,27 @@ export default function ResponsiveImage({
   const imageRef = useRef<HTMLImageElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
 
+
   useEffect(() => {
+    if ( !window.requestIdleCallback ) {
+      requestIdleCallbackPolyfill();
+    }
+    
+    if ( !window.cancelIdleCallback ) {
+      cancelIdleCallbackPolyfill();
+    }
+
+    const callRequestIdleCallback = (callback: () => void) => {
+      const idleCallbackId = requestIdleCallback(() => {
+        callback();
+        clearTimeout(fallbackTimeout);
+      });
+      const fallbackTimeout = setTimeout(() => {
+        cancelIdleCallback(idleCallbackId);
+        requestAnimationFrame(callback);
+      }, 300);
+    };
+
     const observerOptions = {
       root: null,
       rootMargin: '0px 0px 10% 0px',
@@ -30,7 +51,7 @@ export default function ResponsiveImage({
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && imageRef.current) {
-          populatePictureTag();
+          callRequestIdleCallback(populatePictureTag);
           observer.disconnect();
         }
       });
@@ -38,7 +59,7 @@ export default function ResponsiveImage({
 
     // If `eager` bypass observer and load image
     if (loading === 'eager') {
-      populatePictureTag();
+      callRequestIdleCallback(populatePictureTag);
     }
 
     // If `lazy` implement observer
