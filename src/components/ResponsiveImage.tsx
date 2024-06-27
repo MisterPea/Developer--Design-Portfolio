@@ -20,26 +20,31 @@ export default function ResponsiveImage({
 
   const imageRef = useRef<HTMLImageElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
+  const idleCallbackRef = useRef<any>(undefined);
+  const fallbackTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
+  const imageLoadTimeoutRef = useRef<NodeJS.Timeout | number | undefined>(undefined);
 
 
   useEffect(() => {
-    if ( !window.requestIdleCallback ) {
+    if (!window.requestIdleCallback) {
       requestIdleCallbackPolyfill();
     }
-    
-    if ( !window.cancelIdleCallback ) {
+
+    if (!window.cancelIdleCallback) {
       cancelIdleCallbackPolyfill();
     }
 
     const callRequestIdleCallback = (callback: () => void) => {
       const idleCallbackId = requestIdleCallback(() => {
         callback();
-        clearTimeout(fallbackTimeout);
+        clearTimeout(fallbackTimeoutRef.current);
       });
-      const fallbackTimeout = setTimeout(() => {
+      fallbackTimeoutRef.current = setTimeout(() => {
         cancelIdleCallback(idleCallbackId);
         requestAnimationFrame(callback);
       }, 300);
+
+      idleCallbackRef.current = idleCallbackId;
     };
 
     const observerOptions = {
@@ -67,7 +72,23 @@ export default function ResponsiveImage({
       observer.observe(imageRef.current);
     }
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (idleCallbackRef.current) {
+        cancelIdleCallback(idleCallbackRef.current);
+      }
+      // We're clearing the timeouts and listeners if they're active on dismount
+      if (fallbackTimeoutRef.current) {
+        clearTimeout(fallbackTimeoutRef.current);
+      }
+      if (imageLoadTimeoutRef.current) {
+        clearTimeout(imageLoadTimeoutRef.current);
+      }
+      if (imageRef.current && placeholderRef.current) {
+        imageRef.current.removeEventListener('load', () => cleanUpLoadImage(imageRef.current!, imageRef.current!.parentElement!, placeholderRef.current!));
+      }
+
+    };
   }, []); // useEffect dependency array is intentionally left empty to ensure this setup runs once
 
   const populatePictureTag = () => {
@@ -118,7 +139,7 @@ export default function ResponsiveImage({
   };
 
   const cleanUpLoadImage = (imageElement: HTMLImageElement, pictureElement: HTMLPictureElement, placeholderElement: HTMLDivElement) => {
-    window.setTimeout(() => {
+    imageLoadTimeoutRef.current = window.setTimeout(() => {
       imageElement.classList.add('--mounted');
       imageElement.classList.add(appendToClass);
       imageElement.setAttribute('alt', alt);

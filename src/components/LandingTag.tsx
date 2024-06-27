@@ -8,6 +8,7 @@ export default function LandingTag() {
   const controls = useAnimation();
   const isMounted = useRef(false);
   const firstRun = useRef(true);
+  const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   const rootTag = useMemo(() => ({ one: 'Developer', two: '/', three: 'Designer', four: '/', five: 'Programmatic Pixel Pusher' }), []);
 
@@ -65,7 +66,9 @@ export default function LandingTag() {
   const sequence = useCallback(async () => {
     await controls.start('show'); // Start the show animation
     const delay = Math.random() * (10000 - 5000) + 5000;
-    await new Promise((resolve: any) => setTimeout(resolve, delay));
+    await new Promise((resolve: any) => {
+      timeoutRef.current = setTimeout(resolve, delay);
+    });
     if (isMounted.current === false) return;
     await controls.start('hidden'); // Hide after showing
     cycleTags(); // Change the tag
@@ -76,7 +79,10 @@ export default function LandingTag() {
       isMounted.current = true;
       sequence();
     }
-    return () => { isMounted.current = false; };
+    return () => {
+      isMounted.current = false;
+      clearTimeout(timeoutRef.current);
+    };
   }, [index, sequence]);
 
   const container = {
