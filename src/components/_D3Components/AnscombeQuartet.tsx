@@ -18,6 +18,7 @@ export default function AnscombeQuartet() {
   const boxWidth = 500;
   const boxHeight = 309;
   const margin = { top: 10, right: 20, bottom: 25, left: 25 };
+  const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   /* Axis Creation */
   const drawAxes = useCallback((svg: Selection<SVGSVGElement, unknown, null, undefined>, xScale: ScaleLinear<number, number, never>, yScale: ScaleLinear<number, number, never>) => {
@@ -99,7 +100,7 @@ export default function AnscombeQuartet() {
       .attr('stroke', '#202020');
 
     // This was to solve a hiccup between drawing the chart and axes
-    setTimeout(() => drawAxes(svg, xScale, yScale), 0);
+    timeoutRef.current = setTimeout(() => drawAxes(svg, xScale, yScale), 0);
 
     return svg;
   }, [drawAxes, margin.bottom, margin.left, margin.right, margin.top]);
@@ -120,6 +121,12 @@ export default function AnscombeQuartet() {
       const svgs = classNames.map(({ dSet }) => makeChart(dSet, container));
       svgs.forEach((elem) => container.appendChild(elem.node() as Node));
     }
+    
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [makeChart]);
 
   function linearRegression(data: AnscombeData[]) {
