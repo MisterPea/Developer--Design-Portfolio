@@ -34,7 +34,7 @@ export default function Home() {
           imageUrl_3x: "/sourceImages/timesPilotSingle.c577402c-opt-2332.WEBP",
         }
       },
-      PlaceholderComponent:Placeholder.TimesPilotOneUp,
+      PlaceholderComponent: Placeholder.TimesPilotOneUp,
     },
     {
       alt: "Three screens from the Circuit iOS App",
@@ -59,12 +59,12 @@ export default function Home() {
           imageUrl_3x: "/sourceImages/MainStaticFrontPage.1443cdea-opt-2332.WEBP",
         }
       },
-      PlaceholderComponent:Placeholder.CircuitHero,
+      PlaceholderComponent: Placeholder.CircuitHero,
     },
     {
       alt: "Image of Ibry/Marey Train Schedule in situ.",
       dropShadow: 2,
-      PlaceholderComponent:Placeholder.D3Hero,
+      PlaceholderComponent: Placeholder.D3Hero,
       imageSize: {
         h: 2523, w: 3498
       },
