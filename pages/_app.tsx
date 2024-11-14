@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>{urlMapTitle[router.pathname]}</title>
         <meta name="description" content="Perry's Portfolio - Developer / Designer / Technologist" key="description" />
+        <meta name="google" content="nositelinkssearchbox" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0 viewport-fit=cover" />
         <link rel="dns-prefetch" href="//use.typekit.net" />
         <link rel="preload" href="/fonts/TWKLausanne-150.woff" as="font" type="font/woff" crossOrigin="anonymous" />
