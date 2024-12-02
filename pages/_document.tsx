@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang='en'>
       <Head>
         <meta charSet='utf-8' />
+        <link rel="preload" href="https://use.typekit.net" />
         <link rel="stylesheet" href="https://use.typekit.net/kpt2yww.css" />
       </Head>
       <body>

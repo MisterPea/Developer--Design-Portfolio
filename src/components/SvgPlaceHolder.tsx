@@ -24,13 +24,10 @@ function GradientDef({ localId }: { localId: string; }) {
   </defs>;
 }
 
-function createId(): string {
-  return Math.random().toString(36).replace(/[^a-z]+/g, '').substring(0, 9);
-}
 
 const Placeholder = {
   TimesPilotTwoUp: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-times-pilot-two-up";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 361.09">
       <GradientDef localId={LOCAL_ID} />
       {/* Background Group */}
@@ -70,7 +67,7 @@ const Placeholder = {
     </svg>;
   },
   TimesPilotOneUp: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-times-pilot-one-up";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.76 358.16">
       <GradientDef localId={LOCAL_ID} />;
       <g fill={greyThree} strokeWidth="0" data-name="Whole">
@@ -104,7 +101,7 @@ const Placeholder = {
     </svg>;
   },
   SelectionPick: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-selection-pick";
     return < svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505 324.9" >
       <GradientDef localId={LOCAL_ID} />
       <mask id="section-pick-mask">
@@ -124,7 +121,7 @@ const Placeholder = {
     </svg >;
   },
   TimesPilotFlowchart: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-times-pilot-flowchart";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 861 325">
       <GradientDef localId={LOCAL_ID} />
       <mask id="times-pilot-flowchart" >
@@ -143,7 +140,7 @@ const Placeholder = {
     </svg>;
   },
   TimesPilotPhone: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-times-pilot-phone";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365.36 758.22">
       <GradientDef localId={LOCAL_ID} />
       <g data-name="Whole Back">
@@ -173,7 +170,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitHero: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-circuit-hero";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587.05 360.68">
       <GradientDef localId={LOCAL_ID} />
       <g fill={greyZero} stroke={greyOne} strokeMiterlimit="10" strokeWidth="4" data-name="Whole">
@@ -206,7 +203,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitSingle: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-single-circuit";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.5 361.09">
       <GradientDef localId={LOCAL_ID} />
       <g fill={greyZero} stroke={greyOne} strokeMiterlimit="10" strokeWidth="4" data-name="Whole">
@@ -219,7 +216,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitDiagramOne: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-circuit-diagram-one";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.5 363.09">
       <GradientDef localId={LOCAL_ID} />
       <g fill={greyZero} stroke={greyOne} strokeMiterlimit="10" strokeWidth="4" data-name="Whole">
@@ -240,7 +237,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitDiagramTwo: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-circuit-diagram-two";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.5 362.54">
       <GradientDef localId={LOCAL_ID} />
       <g fill={greyZero} stroke={greyOne} strokeMiterlimit="10" strokeWidth="4" data-name="Whole">
@@ -260,7 +257,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitDiagramThree: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-circuit-diagram-three";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.91 362.54">
       <GradientDef localId={LOCAL_ID} />
       <g fill={greyZero} stroke={greyOne} strokeMiterlimit="10" strokeWidth="4" data-name="Whole">
@@ -279,7 +276,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitAlt: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-circuit-alt";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.43 362.54">
       <GradientDef localId={LOCAL_ID} />
       <g fill={greyZero} stroke={greyOne} strokeMiterlimit="10" strokeWidth="4" data-name="Whole">
@@ -297,7 +294,7 @@ const Placeholder = {
     </svg>;
   },
   CircuitFlowchart: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-circuit-flowchart";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1369.29 603.61">
       <GradientDef localId={LOCAL_ID} />
       <mask id="circuit-flowchart">
@@ -315,7 +312,7 @@ const Placeholder = {
     </svg>;
   },
   D3Hero: function () {
-    const LOCAL_ID = createId();
+    const LOCAL_ID = "gradient-d3-hero";
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1002.42 768">
       <GradientDef localId={LOCAL_ID} />
       <g data-name="Main">

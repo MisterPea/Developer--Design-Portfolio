@@ -42,7 +42,6 @@ html {
 }
 
 body {
-  font-family: var(--font-lausanne);
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   background-color: var(--white);
@@ -75,6 +74,13 @@ a {
   --links: rgb(0, 102, 204);
   --grid-base-size: 100px;
   --main-font: "Lausanne", sans-serif;
+}
+
+// Not currently implemented
+[data-theme="dark"] {
+  --dark-1: #f6f6f6;
+  --dark-2: #e6e6e6;
+  --white: #3b3b3b;
 }
 
 @font-face {
