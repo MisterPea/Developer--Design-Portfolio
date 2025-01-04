@@ -21,7 +21,7 @@
     "framer-motion": "^11.0.8",
     "html-react-parser": "^5.1.10",
     "intersection-observer": "^0.12.2",
-    "next": "14.2.18",
+    "next": "14.2.22",
     "next-image-export-optimizer": "^1.12.3",
     "react": "^18",
     "react-dom": "^18"
